@@ -1,0 +1,38 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body{
+  background: black;
+}
+
+
+
+
+ol{
+  display: flex;
+  width: 40vw;
+  list-style: none; 
+  color: white;
+  margin-left: 60vw; 
+/* justify-content: space-around; */
+  
+}
+.navLinkStyle,li{
+flex: 1; 
+}
+
+
+.logo{
+  float: left;
+  display: inline;
+  margin-left: 1vw;
+  margin-top: 0vh;
+  background:green;
+  color: white;
+  
+}
+
