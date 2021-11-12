@@ -1,0 +1,37 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: black;
+}
+
+.nav-box{
+  display:flex;
+  justify-content:flex-end;
+  height: 10vh;
+  align-items: center;
+}
+
+.navLinkStyle{
+  margin: 0vh 3vw;
+
+  color: white;
+  list-style: none;
+}
+
+
+.logo{
+  
+  float: left;
+  display: flex;
+  margin-left: 1vw;
+  color: white;
+  height: 10vh;
+  align-items: center;  
+  margin: 0vh 3vw;
+
+}
+

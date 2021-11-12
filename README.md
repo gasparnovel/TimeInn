@@ -2,10 +2,10 @@
 
 ## Vista Wireframe (Phone):
 
-![Vista_ordenador](src/images/Wireframe_phone.png)
+![Vista_ordenador](src/img/Wireframe_phone.png)
 
 #
 
 ## Vista Wireframe (Desktop):
 
-![Vista_telefono](src/images/Wireframe_desktop.png)
+![Vista_telefono](src/img/Wireframe_desktop.png)
