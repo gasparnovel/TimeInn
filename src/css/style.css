@@ -4,35 +4,34 @@
   box-sizing: border-box;
 }
 
-
 body{
   background: black;
 }
 
-
-
-
-ol{
-  display: flex;
-  width: 40vw;
-  list-style: none; 
-  color: white;
-  margin-left: 60vw; 
-/* justify-content: space-around; */
-  
+.nav-box{
+  display:flex;
+  justify-content:flex-end;
+  height: 10vh;
+  align-items: center;
 }
-.navLinkStyle,li{
-flex: 1; 
+
+.navLinkStyle{
+  margin: 0vh 3vw;
+
+  color: white;
+  list-style: none;
 }
 
 
 .logo{
-  float: left;
-  display: inline;
-  margin-left: 1vw;
-  margin-top: 0vh;
-  background:green;
-  color: white;
   
+  float: left;
+  display: flex;
+  margin-left: 1vw;
+  color: white;
+  height: 10vh;
+  align-items: center;  
+  margin: 0vh 3vw;
+
 }
 
