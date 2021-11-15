@@ -20,6 +20,7 @@ body{
   color: white;
   list-style: none;
 }
+
 .logo{
   
   float: left;
@@ -43,12 +44,11 @@ body{
   border-radius: 8px;
 }
 
-.profile-img {
+.profileImg {
   width: 130px;
   height: 130px;
   border-radius: 100%;
   position: absolute;
-  left: 50%;
   transform: translate(-50%, -70%);
   border: 2px solid orange;
   box-shadow: 0 0 20px #00000033;
@@ -74,7 +74,7 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 30px 60px 30px 60px;
+  margin: 20px 60px 30px 60px;
   border: 2px purple solid;
   border-top-left-radius: 100px;
   border-bottom-left-radius: 100px;
