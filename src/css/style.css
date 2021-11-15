@@ -8,7 +8,6 @@
 
 body{
   background: black;
-  min-height: 100vh;
 }
 
 #container{
@@ -40,7 +39,12 @@ nav{
 
 .navLinkStyle{
   margin: 0vh 3vw;
+  color: white;
+  list-style: none;
+}
 
+.fotLinkStyle{
+  margin: 2vh 3vw;
   color: white;
   list-style: none;
 }
@@ -80,18 +84,6 @@ nav{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 .footerStyle{
   background-color: #7B2CBF;
   color: white;
@@ -99,5 +91,4 @@ nav{
   display: flex;
   position: sticky;
   top: 100%;
-
 }
