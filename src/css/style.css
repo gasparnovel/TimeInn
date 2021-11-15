@@ -1,0 +1,111 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: black;
+}
+
+.nav-box{
+  display:flex;
+  justify-content:flex-end;
+  height: 10vh;
+  align-items: center;
+}
+
+.navLinkStyle{
+  margin: 0vh 3vw;
+  color: white;
+  list-style: none;
+}
+
+.logo{
+  
+  float: left;
+  display: flex;
+  margin-left: 1vw;
+  color: white;
+  height: 10vh;
+  align-items: center;  
+  margin: 0vh 3vw;
+
+}
+
+.card {
+  max-width: 250px;
+  margin: 150px auto 0;
+  background-color: white;
+  box-shadow: 0 10px 90px #00000024;
+  text-align: center;
+  font-size: 20px;
+  border: 2px solid orange;
+  border-radius: 8px;
+}
+
+.profileImg {
+  width: 130px;
+  height: 130px;
+  border-radius: 100%;
+  position: absolute;
+  transform: translate(-50%, -70%);
+  border: 2px solid orange;
+  box-shadow: 0 0 20px #00000033;
+}
+
+.cardBody {
+  padding: 10px 40px;
+}
+
+.name {
+  margin-top: 30px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.description {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+
+.buttonStyle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 60px 30px 60px;
+  border: 2px purple solid;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+  padding: 3px;
+  font-size: 16px;
+}
+
+.buttonStyle:hover {
+  border: 2px white solid;
+  background-color: purple;
+}
+
+.linkStyle {
+  text-decoration: none;
+  color: purple;
+}
+
+.buttonStyle:hover .linkStyle{
+  background-color: purple;
+  color: white; 
+}
+
+.cardFooter {
+  padding-bottom: 10px;
+}
+
+.date {
+  font-size: 14px;
+  display: flex;
+  justify-content: end;
+  margin-right: 15px;
+}
