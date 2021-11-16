@@ -17,7 +17,7 @@ body{
   grid-template-areas: 
   "nav nav nav nav "
   "clip . .  ."
-  ". desc1 tarOneTwo . "
+  ". card1 card2 . "
   ". calend descCalendar ."
   "fot fot fot fot";
 }
@@ -166,4 +166,14 @@ nav{
   position: sticky;
   top: 100%;
   justify-content: space-between;
+}
+
+
+#firstCard{
+  grid-area: card1;
+}
+
+#secondCard{
+  grid-area: card2;
+
 }
