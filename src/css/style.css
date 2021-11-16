@@ -2,17 +2,39 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Genos', sans-serif;
 }
+
 
 body{
   background: black;
 }
 
+#container{
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas: 
+  "nav nav nav nav "
+  "clip . .  ."
+  ". card1 card2 . "
+  ". calend descCalendar ."
+  "fot fot fot fot";
+}
+
+nav{
+  grid-area: nav;
+  border-bottom: 1px white solid;
+}
+
 .nav-box{
+  
   display:flex;
   justify-content:flex-end;
   height: 10vh;
   align-items: center;
+  font-size: 1.1rem;
+  
 }
 
 .navLinkStyle{
@@ -20,6 +42,13 @@ body{
   color: white;
   list-style: none;
 }
+
+.fotLinkStyle{
+  margin: 2vh 3vw;
+  color: white;
+  list-style: none;
+}
+
 
 .logo{
   
@@ -30,8 +59,26 @@ body{
   height: 10vh;
   align-items: center;  
   margin: 0vh 3vw;
+  font-family: 'Caesar Dressing', cursive;
+  font-size: 2rem;
+}
+
+.videoTitle{
+  grid-area: clip;
+  margin: 2vh 0vw;
+  text-align: center;
 
 }
+
+#videoStyle{
+  grid-area: clip;
+/*   aspect-ratio: auto 1 / 1 */
+  height: 50vh;
+  border-radius: 24px;
+  margin: 6vh 3vw;
+  width: 40vw;
+}
+
 
 .card {
   max-width: 250px;
@@ -108,4 +155,25 @@ body{
   display: flex;
   justify-content: end;
   margin-right: 15px;
+}
+
+
+.footerStyle{
+  background-color: #7B2CBF;
+  color: white;
+  grid-area: fot;
+  display: flex;
+  position: sticky;
+  top: 100%;
+  justify-content: space-between;
+}
+
+
+#firstCard{
+  grid-area: card1;
+}
+
+#secondCard{
+  grid-area: card2;
+
 }
