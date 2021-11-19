@@ -62,7 +62,7 @@ nav {
 
 .loginImg {
     grid-area: clip;
-    height: 50vh;
+    height: 60vh;
     border-radius: 24px;
     margin: 17vh;
 }
@@ -73,6 +73,7 @@ nav {
     grid-area: form;
     margin: 10vh 10vw;    
     border-radius: 8px;
+    align-self: center;
 }
 
 h1 {
