@@ -8,6 +8,8 @@
 
 body{
   background: black;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 #container{
@@ -110,7 +112,7 @@ padding: 2vh 6vw;
 
 #btnSubmit{
   border: none;
-  transition:0.3s ease;
+/*   transition:0.3s ease; */
   font-size: 1rem;
 }
 #btnSubmit:hover{
@@ -120,41 +122,30 @@ padding: 2vh 6vw;
 
 textarea{
   resize: none;
+  scrollbar-width: thin;
 }
-
 
 /* ---------------------------- */
-
-.addEventLayout {
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  opacity: 10;
+#backEvent{
   visibility: hidden;
-  transform: scale(1.1);
-}
-
-.show-modal {
+  position: fixed;
   display: flex;
   justify-content: center;
-  align-content: center;
-  opacity: 1;
-  visibility: visible;
-  transform: scale(1.0);
-  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+  margin-top: 2vh ;
+  width:100%;
+  /* background: gray; */
+  /* opacity: 97%; */
 }
-
 
 .modal-content {
   background-color: white;
   padding: 1rem 1.5rem;
-  width: 50vw;
+  width: 30vw;
   border-radius: 0.5rem;
+  opacity: 1
 }
 
+/* ------form layout----- */
 
 
 #closeLayout {
@@ -164,7 +155,6 @@ textarea{
   border-radius: 0.25rem;
   margin: 0vh 42vw;
 }
-
 
 #closeLayout:hover {
   background-color: darkgray;
