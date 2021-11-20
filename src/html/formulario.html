@@ -30,22 +30,27 @@
                     <a href="#"><li class="navLinkStyle">Sign In</li></a>
                 </ol>
             </nav>
-                <h1 id="title">Aqui Podras Añadir Tus Eventos</h1>            
-                
-            <div class="addEventLayout">
-                <div class="modal-content">
-                    <form class="formBox">
-                        <h1>Add Event</h1>
-                        <span  id="closeLayout">&times;</span>
-                        <input class="eventFormStyle" type="text" name="eventName" placeholder="Name of Event">
-                        <input class="eventFormStyle" type="text" name="dateValues" placeholder="Add a Date" id="dateValue">
-                        <textarea class="eventFormStyle" name="eventDescription" placeholder="Add a Descripion of the event"></textarea>
-                        <input class="eventFormStyle" type="file" name="eventImage" placeholder="Add an Image">
-                        <input class="eventFormStyle" type="submit" name="btnSubmit" id="btnSubmit" value="Add Event">
-                    </form>
+                <h1 id="title">Aqui Podras Añadir Tus Eventos</h1>     
+
+                <div id="backEvent">
+                    <div class="modal-content">
+                        <form class="formBox">
+                            <h1>Add Event</h1>
+                            <span  id="closeLayout">&times;</span>
+                            <input class="eventFormStyle" type="text" name="eventName" placeholder="Name of Event">
+                            <input class="eventFormStyle" type="text" name="dateValues" placeholder="Add a Date" id="dateValue">
+                            <textarea class="eventFormStyle" name="eventDescription" placeholder="Add a Descripion of the event"></textarea>
+                            <input class="eventFormStyle" type="file" name="eventImage" placeholder="Add an Image">
+                            <input class="eventFormStyle" type="submit" name="btnSubmit" id="btnSubmit" value="Add Event">
+                        </form>
+                    </div>
                 </div>
-            </div>
-            <p id="addEventStyle">+</p>
+
+            <!-- addEventLayout -->
+
+            <!-- <div class="buttonPosition"> -->
+                <p id="addEventStyle">+</p>
+            <!-- </div> -->
 
             <footer class="footerStyle" >
                 <li class="fotLinkStyle">c 2021 Evacten Inc.</li>
@@ -54,6 +59,9 @@
                 <li class="iconStyle">Icono2</li>
                 <li class="iconStyle">Icono3</li>
             </footer>
+
+        </div>
+
 </body>
 <script src="../js/addEvent.js"></script>
 </html>
