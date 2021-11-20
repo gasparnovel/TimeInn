@@ -31,7 +31,20 @@
                 </ol>
             </nav>
                 <h1 id="title">Aqui Podras Añadir Tus Eventos</h1>            
-
+                
+            <div class="addEventLayout">
+                <div class="modal-content">
+                    <form class="formBox">
+                        <h1>Add Event</h1>
+                        <span  id="closeLayout">&times;</span>
+                        <input class="eventFormStyle" type="text" name="eventName" placeholder="Name of Event">
+                        <input class="eventFormStyle" type="text" name="dateValues" placeholder="Add a Date" id="dateValue">
+                        <textarea class="eventFormStyle" name="eventDescription" placeholder="Add a Descripion of the event"></textarea>
+                        <input class="eventFormStyle" type="file" name="eventImage" placeholder="Add an Image">
+                        <input class="eventFormStyle" type="submit" name="btnSubmit" id="btnSubmit" value="Add Event">
+                    </form>
+                </div>
+            </div>
             <p id="addEventStyle">+</p>
 
             <footer class="footerStyle" >
