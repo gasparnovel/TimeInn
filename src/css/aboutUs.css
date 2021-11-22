@@ -63,27 +63,47 @@ nav {
 }
 
 .aboutSection {
-    background-color: red;
-    text-align: center;
+    color: white;
+    padding: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
     grid-column: 1/5;
 }
 
 h2 {
-    background-color: green;
-    text-align: center;
+    color: white;
+    font-size: 50px;
+    text-shadow: -2px -2px 1px #47126B, 2px 2px 1px #47126B, -2px 2px 1px #47126B, 2px -2px 1px #47126B;
 }
+
 h3 {
-    margin: 10vh;
-    background-color: green;
+    color: white;
+    text-shadow: -2px -2px 1px #47126B, 2px 2px 1px #47126B, -2px 2px 1px #47126B, 2px -2px 1px #47126B;
+    font-size: 50px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+h4 {
+    margin: 6vh;
+    text-shadow: -2px -2px 1px #47126B, 2px 2px 1px #47126B, -2px 2px 1px #47126B, 2px -2px 1px #47126B;
+    color: white;
     text-align: center;
     grid-row: 3/3;
     grid-column: 1/5;
+    font-size: 30px;
+}
+
+.history{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
 }
 
 .card {
-    height: 40vh;
     width: 250px;
-    margin: 150px auto 0;
+    margin: 130px auto 0;
     background-color: white;
     box-shadow: 0 10px 90px #00000024;
     text-align: center;
@@ -113,14 +133,9 @@ h3 {
     font-weight: bold;
 }
 
-.descriptionOne {
-    margin-top: 20px;
-    font-size: 14px;
-}
-
 .descriptionTwo {
     margin-top: 35px;
-    font-size: 14px;
+    font-size: 18px;
 }
 
 .buttonStyle {
@@ -150,17 +165,6 @@ h3 {
 .buttonStyle:hover .linkStyle {
     background-color: #7B2CBF;
     color: white;
-}
-
-.cardFooter {
-    padding-bottom: 10px;
-}
-
-.date {
-    font-size: 14px;
-    display: flex;
-    justify-content: end;
-    margin-right: 15px;
 }
 
 
