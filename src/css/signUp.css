@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Genos', sans-serif;
+}
+
+
+body {
+    background: black;
+}
+
+#container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "nav nav nav nav "
+        "clip clip form form"
+        "fot fot fot fot";
+}
+
+nav {
+    grid-area: nav;
+    border-bottom: 1px white solid;
+}
+
+.nav-box {
+
+    display: flex;
+    justify-content: flex-end;
+    height: 10vh;
+    align-items: center;
+    font-size: 1.1rem;
+
+}
+
+.navLinkStyle {
+    margin: 0vh 3vw;
+    color: white;
+    text-decoration: none;
+}
+
+.fotLinkStyle {
+    margin: 2vh 3vw;
+    color: white;
+    list-style: none;
+}
+
+
+.logo {
+    float: left;
+    display: flex;
+    margin-left: 1vw;
+    color: white;
+    height: 10vh;
+    align-items: center;
+    margin: 0vh 3vw;
+    font-family: 'Caesar Dressing', cursive;
+    font-size: 2rem;
+}
+
+.loginImg {
+    grid-area: clip;
+    height: 55vh;
+    border-radius: 24px;
+    margin: 17vh;
+}
+
+.formulario {
+    background: #fff;
+    padding: 4vh;
+    grid-area: form;
+    margin: 10vh 10vw;    
+    border-radius: 8px;
+    align-self: center;
+}
+
+h1 {
+    text-align: center;
+    color: #7B2CBF;
+    font-size: 40px;
+    margin-bottom: 1vh;
+}
+
+input[type="text"],
+input[type="password"] {
+    font-size: 20px;
+    width: 82%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+}
+
+.input-contenedor {
+    margin-bottom: 15px;
+    border: 1px solid black;
+    border-radius: 8px;
+
+}
+
+.icon {
+    min-width: 50px;
+    text-align: center;
+    color: black;
+}
+
+.button {
+    width: 100%;    
+    color: #7B2CBF;
+    font-size: 20px;
+    background: white;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 1vh;
+    border: 2px #7B2CBF solid;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+
+.button:hover {
+    border: 2px white solid;
+    background-color: #7B2CBF;
+    color: white;
+}
+
+p {
+    text-align: center;
+}
+
+.link {
+    text-decoration: none;
+    color: #7B2CBF;
+    font-weight: 600;
+}
+
+.link:hover {
+    color: black;
+}
