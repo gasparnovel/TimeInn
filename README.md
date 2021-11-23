@@ -20,7 +20,7 @@ Heu de crear un *wireframe* i un prototip de la pàgina web de **TimeInn**, un p
 # 1 General
 
 
-|<p></p><p></p><p></p><p>**PROJS**</p>|<p>` `[x] Cal seguir les[ ](https://docs.google.com/document/d/1ImIv0MihaxZJWmHPFyxGdp0GTb1QVYFfaTlQVcjVF_w/edit#heading=h.hxgmnv2vpkaw)[**Pautes de treball en Projectes**](https://docs.google.com/document/d/1ImIv0MihaxZJWmHPFyxGdp0GTb1QVYFfaTlQVcjVF_w/edit#heading=h.hxgmnv2vpkaw) vistes a classe.</p><p>` `[x] Crear un projecte a **GITHUB Projects**.</p><p>` `[] Crear TASQUES i classificar-les en:  pendents, en desenvolupament i finalitzades. Etiquetar-les com a bug, documentació, etc.</p><p><br>[x] En cas d’errors o problemes, crear ISSUES i assignar-los a qui pertoqui.</p><p></p><p>[x] Cal que els companys del grup treballin en branques separades durant el desenvolupament del projecte. Els canvis significatius s’han d’integrar en la branca comuna.</p>|
+|<p></p><p></p><p></p><p>**PROJS**</p>|<p>[x] Cal seguir les[ ](https://docs.google.com/document/d/1ImIv0MihaxZJWmHPFyxGdp0GTb1QVYFfaTlQVcjVF_w/edit#heading=h.hxgmnv2vpkaw)[**Pautes de treball en Projectes**](https://docs.google.com/document/d/1ImIv0MihaxZJWmHPFyxGdp0GTb1QVYFfaTlQVcjVF_w/edit#heading=h.hxgmnv2vpkaw) vistes a classe.</p><p>[x] Crear un projecte a **GITHUB Projects**.</p><p>[] Crear TASQUES i classificar-les en:  pendents, en desenvolupament i finalitzades. Etiquetar-les com a bug, documentació, etc.</p><p><br>[x] En cas d’errors o problemes, crear ISSUES i assignar-los a qui pertoqui.</p><p></p><p>[x] Cal que els companys del grup treballin en branques separades durant el desenvolupament del projecte. Els canvis significatius s’han d’integrar en la branca comuna.</p>|
 | :-: | :- |
 
 
@@ -84,7 +84,7 @@ Heu de crear un *wireframe* i un prototip de la pàgina web de **TimeInn**, un p
 # 5 Technical Requirements
 
 
-|**STYLE**|` `[x] Segueix la[ ](https://docs.google.com/document/d/1ImIv0MihaxZJWmHPFyxGdp0GTb1QVYFfaTlQVcjVF_w/edit#heading=h.el0wyqg0rqwy)[Guia d’Estil DIW](https://docs.google.com/document/d/1ImIv0MihaxZJWmHPFyxGdp0GTb1QVYFfaTlQVcjVF_w/edit#heading=h.el0wyqg0rqwy) per escriure estils nets, ordenats i clars.|
+|**STYLE**|[x] Segueix la[ ](https://docs.google.com/document/d/1ImIv0MihaxZJWmHPFyxGdp0GTb1QVYFfaTlQVcjVF_w/edit#heading=h.el0wyqg0rqwy)[Guia d’Estil DIW](https://docs.google.com/document/d/1ImIv0MihaxZJWmHPFyxGdp0GTb1QVYFfaTlQVcjVF_w/edit#heading=h.el0wyqg0rqwy) per escriure estils nets, ordenats i clars.|
 | :-: | :- |
 |**CODE**|[x] Segueix La[ Guia d'estil DWEC](https://docs.google.com/document/d/1ImIv0MihaxZJWmHPFyxGdp0GTb1QVYFfaTlQVcjVF_w/edit#heading=h.ggolcb3ezvce)  per crear un codi clar i ben escrit.|
 |**MODU**|[x] Empra mòduls per a organitzar el codi. ([PILLS FOR PROJECTS)](https://docs.google.com/document/d/1i6S9bQKPk2kWvi5dLfVLZ16hn2x8-CXe25NQe5UaV78/edit#heading=h.eivg23w1jna)|
