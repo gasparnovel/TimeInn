@@ -9,11 +9,11 @@ Heu de crear un *wireframe* i un prototip de la pàgina web de **TimeInn**, un p
 
 ## Vista Wireframe (Phone):
 
+
 ![Vista_ordenador](/src/docs/Wireframe_phone.png)
 
-#
-
 ## Vista Wireframe (Desktop):
+
 
 ![Vista_telefono](/src/docs/Wireframe_desktop.png)
 

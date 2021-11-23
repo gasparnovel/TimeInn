@@ -40,7 +40,9 @@ nav{
 .navLinkStyle{
   margin: 0vh 3vw;
   color: white;
+
   text-decoration: none;
+
 }
 
 .fotLinkStyle{
@@ -78,6 +80,8 @@ nav{
   margin: 6vh 3vw;
   width: 40vw;
 }
+
+
 
 .card {
   max-width: 250px;
@@ -121,6 +125,7 @@ nav{
   justify-content: center;
   align-items: center;
   margin: 20px 60px 30px 60px;
+
   border: 2px #7B2CBF solid;
   border-top-left-radius: 100px;
   border-bottom-left-radius: 100px;
@@ -132,16 +137,20 @@ nav{
 
 .buttonStyle:hover {
   border: 2px white solid;
+
   background-color: #7B2CBF;
+
 }
 
 .linkStyle {
   text-decoration: none;
+
   color: #7B2CBF;
 }
 
 .buttonStyle:hover .linkStyle{
   background-color: #7B2CBF;
+
   color: white; 
 }
 
