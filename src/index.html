@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Evacten</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/index.css">
 
     <!-- FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,78 +16,35 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Genos:ital@1&display=swap" rel="stylesheet"> 
     <!-- FONT -->
+    <link rel="shortcut icon" href="#">
 </head>
 <body>
     <main>
         <div id="container">
             <nav>
-                <h1 class="logo">Evacten</h1>
-
+                <a href="./index.html"><h1 class="logo">Evacten</h1></a>
                 <ol class="nav-box">
-
-                    <a class="navLinkStyle" href="./index.html">Eventos</a>
-                    <a class="navLinkStyle">Formulario</a>
-                    <a class="navLinkStyle" href="./aboutUs.html">About Us</a>
-                    <a class="navLinkStyle" href="./signIN.html">Sign In</a>
+                    <a href="./html/eventos.html"><li class="navLinkStyle">Eventos</li></a>
+                    <a href="./html/formulario.html"><li class="navLinkStyle">Formulario</li></a>
+                    <a href="./html/aboutUs.html"><li class="navLinkStyle">About Us</li></a>
+                    <a href="./html/signIN.html"><li class="navLinkStyle">Sign In</li></a>
                 </ol>
             </nav>
 
-
-            
-            <p class="videoTitle" style="color: white;">SSSS</p>
-            <video autoplay muted preload="none" loop  id="videoStyle" src="./resources/video/hiking.mp4"></video>
-
-        
-            <div id="firstCard">
-                <div class="card cardGridLeft">
-                    <div class="cardHeader">
-                        <img src="./resources/img/boda.jpg" alt="Profile Image" class="profileImg">
-                    </div>
-                    <div class="cardBody">
-                        <p class="name">Boda</p>
-                        <p class="description">En este día especial queremos invitarte a ti para que vengas a este eveneto....</p>
-                    </div>
-            
-                    <div class="buttonStyle">
-                        <a href="#" class="linkStyle">Saber más</a>
-                    </div>
-            
-                    <div class="cardFooter">
-                        <p class="date">10/11/2021</p>
-                    </div>
-                </div>
-            </div>
-            <div id="secondCard">
-
-                <div class="card cardGridRight">
-                    <div class="cardHeader">
-                        <img src="./resources/img/charla.jpg" alt="Profile Image" class="profileImg">
-                    </div>
-                    <div class="cardBody">
-                        <p class="name">Charla</p>
-                        <p class="description">El catedratico Juan va a hacer una charl...</p>
-                    </div>
-            
-                    <div class="buttonStyle">
-                        <a href="#" class="linkStyle">Saber más</a>
-                    </div>
-            
-                    <div class="cardFooter">
-                        <p class="date">13/11/2021</p>
-                    </div>
-                </div>
-
-            </div>
-
-            <footer class="footerStyle" >
-                <li class="fotLinkStyle">c 2021 Evacten Inc.</li>
-                <li class="fotLinkStyle">Palma de Mallorca</li>
-                <li class="">Icono1</li>
-                <li class="">Icono2</li>
-                <li class="">Icono3</li>
-            </footer>
+            <!-- <div class="videoBox"> -->
+                <p class="videoTitle" style="color: white;">SSSS</p>
+                <video autoplay muted preload="none" loop  id="videoStyle" src="./resources/video/hiking.mp4"></video>
+            <!-- </div> -->
+                <footer class="footerStyle" >
+                    <li class="fotLinkStyle">c 2021 Evacten Inc.</li>
+                    <li class="fotLinkStyle">Palma de Mallorca</li>
+                    <li class="iconStyle">Icono1</li>
+                    <li class="iconStyle">Icono2</li>
+                    <li class="iconStyle">Icono3</li>
+                </footer>
         </div>
     </main>
 </body>
-<script src="./js/scripts.js"></script>
+<script type="module" src="../js/index.js"></script>
+<!-- defer nomodule -->
 </html>

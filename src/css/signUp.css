@@ -38,6 +38,10 @@ nav {
 .navLinkStyle {
     margin: 0vh 3vw;
     color: white;
+    list-style: none;
+}
+
+a {
     text-decoration: none;
 }
 
