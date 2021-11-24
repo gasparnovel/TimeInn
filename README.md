@@ -20,7 +20,7 @@ Heu de crear un *wireframe* i un prototip de la pàgina web de **TimeInn**, un p
 # 1 General
 
 
-|<p></p><p></p><p></p><p>**PROJS**</p>|<p>[x] Cal seguir les[ ](https://docs.google.com/document/d/1ImIv0MihaxZJWmHPFyxGdp0GTb1QVYFfaTlQVcjVF_w/edit#heading=h.hxgmnv2vpkaw)[**Pautes de treball en Projectes**](https://docs.google.com/document/d/1ImIv0MihaxZJWmHPFyxGdp0GTb1QVYFfaTlQVcjVF_w/edit#heading=h.hxgmnv2vpkaw) vistes a classe.</p><p>[x] Crear un projecte a **GITHUB Projects**.</p><p>[] Crear TASQUES i classificar-les en:  pendents, en desenvolupament i finalitzades. Etiquetar-les com a bug, documentació, etc.</p><p><br>[x] En cas d’errors o problemes, crear ISSUES i assignar-los a qui pertoqui.</p><p></p><p>[x] Cal que els companys del grup treballin en branques separades durant el desenvolupament del projecte. Els canvis significatius s’han d’integrar en la branca comuna.</p>|
+|<p></p><p></p><p></p><p>**PROJS**</p>|<p>[x] Cal seguir les[ ](https://docs.google.com/document/d/1ImIv0MihaxZJWmHPFyxGdp0GTb1QVYFfaTlQVcjVF_w/edit#heading=h.hxgmnv2vpkaw)[**Pautes de treball en Projectes**](https://docs.google.com/document/d/1ImIv0MihaxZJWmHPFyxGdp0GTb1QVYFfaTlQVcjVF_w/edit#heading=h.hxgmnv2vpkaw) vistes a classe.</p><p>[x] Crear un projecte a **GITHUB Projects**.</p><p>[x] Crear TASQUES i classificar-les en:  pendents, en desenvolupament i finalitzades. Etiquetar-les com a bug, documentació, etc.</p><p><br>[x] En cas d’errors o problemes, crear ISSUES i assignar-los a qui pertoqui.</p><p></p><p>[x] Cal que els companys del grup treballin en branques separades durant el desenvolupament del projecte. Els canvis significatius s’han d’integrar en la branca comuna.</p>|
 | :-: | :- |
 
 
