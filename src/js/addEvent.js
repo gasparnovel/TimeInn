@@ -10,8 +10,56 @@
     sorted = tt.sort((a,b) =>{
     return (a.dateEvent > b.dateEvent) ? 1 : -1
     })
-    console.log(sorted);
+    addCards();
+
+
  })   
+
+ function addCards(){
+    let parentArea = document.getElementById('container') // area message
+    sorted.forEach( c => {
+        let name = c.nameEvent;
+        let date = c.dateEvent;
+        let desc = c.descriptionEvent;
+        console.log(name,date,desc);
+        let divParent = document.createElement('div');
+        divParent.classList.add('card','cardGridLeft');
+
+        let nameDescDiv = document.createElement('div');
+        nameDescDiv.className = 'cardBody';
+
+        let newName = document.createElement('p');
+        newName.className = 'name';
+
+        let newDesc = document.createElement('p');
+        newDesc.className = 'description';
+
+        let divButt = document.createElement('div');
+        divButt.className = 'buttonStyle';
+        let butt = document.createElement('a');
+        butt.className = 'linkStyle';
+
+        let divFott = document.createElement('div');
+        divFott.className = 'cardFooter';
+
+        let newDate = document.createElement('p');
+        newDate.className = 'date';
+        
+        newName.innerHTML = name;
+        newDate.innerHTML = date;
+        newDesc.innerHTML = desc;
+        parentArea.appendChild(divParent);
+        nameDescDiv.appendChild(newName);
+        nameDescDiv.appendChild(newDesc);
+        divButt.appendChild(butt);
+        divFott.appendChild(newDate);
+
+        divParent.appendChild(nameDescDiv);
+        divParent.appendChild(divButt);
+        divParent.appendChild(divFott);
+
+    });
+ }
     
     var contador = 0;
     const layout = document.getElementById("backEvent");
