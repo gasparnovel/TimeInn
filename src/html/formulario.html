@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Evacten</title>
     <link rel="stylesheet" href="../css/formulario.css">
+    <link rel="stylesheet" href="../css/headerFooter.css">
+
 
     <!-- FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,16 +22,8 @@
 </head>
 <body>
     <main>
+        <header id="myHeader"></header>
         <div id="container">
-            <nav>
-                <a href="../index.html"><h1 class="logo">Evacten</h1></a>
-                <ol class="nav-box">
-                    <a href="./eventos.html"><li class="navLinkStyle">Eventos</li></a>
-                    <a href="./formulario.html"><li class="navLinkStyle">Formulario</li></a>
-                    <a href="./aboutUs.html"><li class="navLinkStyle">About Us</li></a>
-                    <a href="./signIN.html"><li class="navLinkStyle">Sign In</li></a>
-                </ol>
-            </nav>
                 <h1 id="title">Aqui Podras Añadir Tus Eventos</h1>     
 
                 <div id="backEvent">
@@ -51,19 +45,13 @@
                 <p id="addEventStyle">+</p>
             <!-- </div> -->
 
-            <footer class="footerStyle" >
-                <li class="fotLinkStyle">c 2021 Evacten Inc.</li>
-                <li class="fotLinkStyle">Palma de Mallorca</li>
-                <li class="iconStyle">Icono1</li>
-                <li class="iconStyle">Icono2</li>
-                <li class="iconStyle">Icono3</li>
-            </footer>
-
         </div>
-
+    <footer id="myFooter"></footer>
+    </main>
 </body>
 <!-- <script type="module" src="../js/main.js"></script> -->
 <script type="module" src="../js/addEvent.js"></script>
+<script src="../js/load_header_footer.js"></script>
 
 </html>
 <!-- async  -->

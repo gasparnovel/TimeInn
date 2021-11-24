@@ -22,30 +22,6 @@ body{
   "fot fot fot fot";
 }
 
-nav{
-  grid-area: nav;
-  border-bottom: 1px white solid;
-}
-
-.nav-box{
-  
-  display:flex;
-  justify-content:flex-end;
-  height: 10vh;
-  align-items: center;
-  font-size: 1.1rem;
-  
-}
-
-.navLinkStyle{
-  margin: 0vh 3vw;
-  color: white;
-  list-style: none;
-}
-a{
-  text-decoration: none;
-}
-
 .fotLinkStyle{
 /*   margin: 2vh 3vw; */
   color: white;
@@ -57,21 +33,6 @@ a{
 .iconStyle{
   display: flex;
   align-items: center;
-}
-
-
-
-.logo{
-  
-  float: left;
-  display: flex;
-  margin-left: 1vw;
-  color: white;
-  height: 10vh;
-  align-items: center;  
-  margin: 0vh 3vw;
-  font-family: 'Caesar Dressing', cursive;
-  font-size: 2rem;
 }
 
 .videoTitle{
@@ -90,17 +51,3 @@ a{
   width: 40vw;
 }
 
-
-
-
-
-
-.footerStyle{
-  background-color: #7B2CBF;
-  color: white;
-  grid-area: fot;
-  display: flex;
-  position: sticky;
-  top: 100%;
-  justify-content: space-between;
-}
