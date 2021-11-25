@@ -1,6 +1,6 @@
 document.getElementById("myHeader").innerHTML =
     "<nav>" +
-    "<a href='../index.html'><h1 class='logo'>Evacten</h1></a>" +
+    "<a href='./index.html'><h1 class='logo'>Evacten</h1></a>" +
     "<ol class='nav-box'>" +
     "<a href='./eventos.html'><li class='navLinkStyle'>Eventos</li></a>" +
     "<a href='./formulario.html'><li class='navLinkStyle'>Formulario</li></a>" +
