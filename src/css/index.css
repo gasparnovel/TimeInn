@@ -16,18 +16,12 @@ body {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-areas:
     "nav nav nav nav "
-    "clip clip clip clip"
+    "clipTitle clipTitle clipTitle clipTitle"
+    ". clip clip ."
     ". calendar calendar ."
     "fot fot fot fot";
 }
 
-.fotLinkStyle {
-  /*   margin: 2vh 3vw; */
-  color: white;
-  list-style: none;
-  display: flex;
-  align-items: center;
-}
 
 .iconStyle {
   display: flex;
@@ -35,31 +29,36 @@ body {
 }
 
 .videoTitle {
-  grid-area: clip;
-  margin: 2vh 0vw;
+  grid-area: clipTitle;
   text-align: center;
-
+  justify-content: center;
+  color: white;
+  font-size: 50px;
+  text-shadow: -2px -2px 1px #7B2CBF, 2px 2px 1px #7B2CBF, -2px 2px 1px #7B2CBF, 2px -2px 1px #7B2CBF;
 }
 
 #videoStyle {
   grid-area: clip;
-  /*   aspect-ratio: auto 1 / 1 */
   height: 40vh;
   border-radius: 24px;
-  margin: 6vh 3vw;
-  width: 40vw;
+  background-image: url("../resources/img/fondoVideo.jpg");
+  width: 50vw;
+  border: 2px solid grey;
+  background-repeat:  repeat-x;
 }
 
 /*------------------------------------------------ */
 
-
 .calendar {
+  grid-area: calendar;
+  height: 42vh;
+  box-shadow: 0px 0px 10px #7B2CBF ;
   background-image: radial-gradient(#7B2CBF , black);
-  width: 80%;
-  max-width: 600px;
-  margin: 50px auto;
+  width: 30vw;
   padding: 30px;
-  box-shadow: 0px 0px 10px #7B2CBF ;}
+  margin-top: 20px;
+  margin-left: 10vw;
+}
 
 .calendarInfo {
   color: white;

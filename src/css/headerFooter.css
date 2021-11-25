@@ -1,3 +1,4 @@
+
 nav {
     grid-area: nav;
     border-bottom: 1px white solid;
@@ -9,7 +10,6 @@ nav {
     height: 10vh;
     align-items: center;
     font-size: 1.1rem;
-
 }
 
 .navLinkStyle {
@@ -21,6 +21,7 @@ nav {
 a {
     text-decoration: none;
 }
+
 .logo{
     float: left;
     display: flex;
@@ -33,16 +34,57 @@ a {
     font-size: 2rem;
 }
 
-footer {
-    grid-area: fot;
-
+/*:::::Pie de Pagina*/
+.footer{
+    width: 100%;
+    background-color: black;
+    border-top: 1px solid white;
+}
+.grupOne{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
 }
 
-.footerStyle {
+.grupOne h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.grupOne .footerP{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+.grupOne .social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #7B2CBF;
+    margin-right: 10px;
+    background: white;
+    border: 2px #7B2CBF solid;
+    text-align: center;
+    transition: all 300ms ease;
+    border-radius: 100%;
+}
+.grupOne .social a:hover{
+    border: 2px white solid;
     background-color: #7B2CBF;
     color: white;
-    display: flex;
-    position: sticky;
-    top: 100%;
-    justify-content: space-between;
 }
+.grupTwo{
+    background-color: #7B2CBF;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+small{
+    font-size: 15px;
+}
+

@@ -20,11 +20,6 @@ body {
         "fot fot fot fot";
 }
 
-.fotLinkStyle {
-    margin: 2vh 3vw;
-    color: white;
-    list-style: none;
-}
 
 
 .loginImg {
@@ -94,7 +89,7 @@ input[type="password"] {
     color: white;
 }
 
-p {
+.center {
     text-align: center;
 }
 
@@ -106,4 +101,9 @@ p {
 
 .link:hover {
     color: black;
+}
+
+a{
+    text-decoration: none;
+    color: white;
 }

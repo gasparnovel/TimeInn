@@ -22,11 +22,6 @@ body {
         "fot fot fot fot";
 }
 
-.fotLinkStyle {
-    margin: 2vh 3vw;
-    color: white;
-    list-style: none;
-}
 
 .aboutSection {
     color: white;
@@ -36,7 +31,7 @@ body {
     grid-column: 1/5;
 }
 
-h2 {
+.h2 {
     color: white;
     font-size: 50px;
     text-shadow: -2px -2px 1px #47126B, 2px 2px 1px #47126B, -2px 2px 1px #47126B, 2px -2px 1px #47126B;
@@ -140,4 +135,9 @@ h4 {
 
 #secondCard {
     grid-area: card2;
+}
+
+a{
+    text-decoration: none;
+    color: white;
 }
