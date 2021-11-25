@@ -14,10 +14,9 @@ body {
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-areas:
         "nav nav nav nav "
-        "h2 h2 h2 h2"
+        "h4 h4 h4 h4"
         ". card1 card2 ."
         "fot fot fot fot";
 }
@@ -47,13 +46,12 @@ h3 {
 
 
 h4 {
-    margin: 6vh;
-    text-shadow: -2px -2px 1px #47126B, 2px 2px 1px #47126B, -2px 2px 1px #47126B, 2px -2px 1px #47126B;
-    color: white;
+    grid-area: h4;
     text-align: center;
-    grid-row: 3/3;
-    grid-column: 1/5;
+    align-self: center;    
+    color: white;
     font-size: 30px;
+    text-shadow: -2px -2px 1px #7b2cbf, 2px 2px 1px #7b2cbf, -2px 2px 1px #7b2cbf, 2px -2px 1px #7b2cbf;
 }
 
 .history {

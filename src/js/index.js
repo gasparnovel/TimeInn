@@ -15,10 +15,14 @@ var nextMonthDOM = document.getElementById('next-month');
 month.textContent = monthNames[monthNumber];
 year.textContent =  currentYear.toString();
 
+
+// llaman a la funcion para pasar el mes o retroceder
+
 prevMonthDOM.addEventListener('click', ()=>lastMonth());
 nextMonthDOM.addEventListener('click', ()=>nextMonth());
 
 
+// Devuelve los numeros del calenadrio
 
 const writeMonth = (month) => {
 
@@ -84,7 +88,6 @@ const nextMonth = () => {
 }
 
 const setNewDate = () => {
-    currentDate.setFullYear(currentYear,monthNumber,currentDay);
     month.textContent = monthNames[monthNumber];
     year.textContent = currentYear.toString();
     dates.textContent = '';
