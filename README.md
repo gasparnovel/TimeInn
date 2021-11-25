@@ -36,7 +36,7 @@ Heu de crear un *wireframe* i un prototip de la pàgina web de **TimeInn**, un p
 
 |**PAGS**|<p>[x] El web ha de contenir les pàgines:</p><p>1) **Front Page**</p><p>2) **Pàgina de llistat d’events**    </p><p>3) **Pàgina Form overlay (per crear un nou event)**</p>|
 | :-: | - |
-|**STRUC**|<p>[] Totes les pàgines disposaran del mateix **Header i Footer**.</p><p>[] Empra algun truc per a inserir el HTML del header i el footer en totes les pàgines ([**PILLS FOR PROJECTS**](https://docs.google.com/document/d/1i6S9bQKPk2kWvi5dLfVLZ16hn2x8-CXe25NQe5UaV78/edit#heading=h.jkbvj42pliv7))</p>|
+|**STRUC**|<p>[x] Totes les pàgines disposaran del mateix **Header i Footer**.</p><p>[x] Empra algun truc per a inserir el HTML del header i el footer en totes les pàgines ([**PILLS FOR PROJECTS**](https://docs.google.com/document/d/1i6S9bQKPk2kWvi5dLfVLZ16hn2x8-CXe25NQe5UaV78/edit#heading=h.jkbvj42pliv7))</p>|
 |**HEAD** |[x] El **Header** i el **Footer** disposaran dels elements que considereu necessaris per a una web d’aquestes característiques.|
 
 ## 1.- Front Page
