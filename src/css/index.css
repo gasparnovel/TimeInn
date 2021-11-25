@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -6,48 +6,129 @@
 }
 
 
-body{
+body {
   background: black;
 }
 
-#container{
+#container {
   height: 100vh;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-areas: 
-  "nav nav nav nav "
-  "clip . .  ."
-  ". desc1 tarOneTwo . "
-  ". calend descCalendar ."
-  "fot fot fot fot";
+  grid-template-areas:
+    "nav nav nav nav "
+    "clip clip clip clip"
+    ". calendar calendar ."
+    "fot fot fot fot";
 }
 
-.fotLinkStyle{
-/*   margin: 2vh 3vw; */
+.fotLinkStyle {
+  /*   margin: 2vh 3vw; */
   color: white;
   list-style: none;
   display: flex;
   align-items: center;
 }
 
-.iconStyle{
+.iconStyle {
   display: flex;
   align-items: center;
 }
 
-.videoTitle{
+.videoTitle {
   grid-area: clip;
   margin: 2vh 0vw;
   text-align: center;
 
 }
 
-#videoStyle{
+#videoStyle {
   grid-area: clip;
-/*   aspect-ratio: auto 1 / 1 */
+  /*   aspect-ratio: auto 1 / 1 */
   height: 40vh;
   border-radius: 24px;
   margin: 6vh 3vw;
   width: 40vw;
 }
 
+/*------------------------------------------------ */
+
+
+.calendar {
+  background-image: radial-gradient(#7B2CBF , black);
+  width: 80%;
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 30px;
+  box-shadow: 0px 0px 10px #7B2CBF ;}
+
+.calendarInfo {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-bottom: 20px;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.calendarArrowPrev,
+.calendarArrowNext {
+  color: white;
+  cursor: pointer;
+  font-size: 40px;
+}
+
+.calendarArrowPrev {
+  margin-right: auto;
+}
+
+.calendarArrowNext {
+  margin-left: auto;
+}
+
+.calendarWeek,
+.calendarDates {
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: 10px;
+}
+
+.calendarMonth,
+.calendarYear {
+  padding: 20px 30px;
+}
+
+.calendarItem {
+  text-align: center;
+  line-height: 2;
+  list-style-type: none;
+}
+
+a{
+  color: white;
+}
+
+.calendarDate:hover {
+  background: #7B2CBF;
+  color: white;
+  width: 50%;
+  border-radius: 50%;
+  margin: auto;
+  border: 1px solid rgba(0, 0, 0, 0.541);
+}
+
+.calendarToday {
+  background: #7B2CBF;
+  color: white;
+  width: 50%;
+  margin: auto;
+  border: 1px solid rgba(0, 0, 0, 0.541);
+}
+
+.calendarLastDays {
+  opacity: 50%;
+}
