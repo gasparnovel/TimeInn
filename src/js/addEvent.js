@@ -2,13 +2,12 @@ import {
     check,
     sorted,
     tt
-} from "./index.js";
+} from "./indextest.js";
 import {
     layoutToggle,
     windowOnClick,
     layout
 } from "./showLayout.js";
-
 
 document.addEventListener('DOMContentLoaded', () => {
     sorted
