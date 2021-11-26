@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +9,6 @@
     <link rel="stylesheet" href="../css/formulario.css">
     <link rel="stylesheet" href="../css/headerFooterTop.css">
 
-
     <!-- FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,43 +16,54 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Genos:ital@1&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Genos:ital@1&display=swap" rel="stylesheet">
     <!-- FONT -->
     <link rel="shortcut icon" href="#">
 </head>
+
 <body>
     <main>
         <header id="myHeader"></header>
         <div id="container">
-                <h1 id="title">Aqui Podras Añadir Tus Eventos</h1>     
+            
+            <h1 id="title">Aqui Podras Añadir y Ver Tus Eventos</h1>
 
-                <div id="backEvent">
-                    <div class="modal-content">
-                        <form class="formBox">
-                            <h1>Add Event</h1>
-                            <span  id="closeLayout">&times;</span>
-                            <input class="eventFormStyle" type="text" name="eventName" id="eventName" placeholder="Name of Event">
-                            <input class="eventFormStyle" type="text" name="dateValue" id="dateValue" placeholder="Add a Date" >
-                            <textarea class="eventFormStyle" name="eventDescription" id="eventDescription" placeholder="Add a Descripion of the event"></textarea>
-                            <input class="eventFormStyle" type="file" name="eventImage" id="eventImage" placeholder="Add an Image">
-                            <input class="eventFormStyle"  name="btnSubmit" id="btnSubmit" value="Add Event">
-                        </form>
-                    </div>
+            <div id="backEvent">
+                <div class="modal-content">
+                    <form class="formBox">
+                        <h1>Add Event</h1>
+                        <span id="closeLayout">&times;</span>
+                        <input class="eventFormStyle" type="text" name="eventName" id="eventName"
+                            placeholder="Name of Event">
+                        <input class="eventFormStyle" type="text" name="dateValue" id="dateValue"
+                            placeholder="Add a Date">
+                        <textarea class="eventFormStyle" name="eventDescription" id="eventDescription"
+                            placeholder="Add a Descripion of the event"></textarea>
+                        <input class="eventFormStyle" type="file" name="eventImage" id="eventImage"
+                            placeholder="Add an Image">
+                        <input class="eventFormStyle" name="btnSubmit" id="btnSubmit" value="Add Event">
+                    </form>
                 </div>
+            </div>
 
 
-            <!-- <div class="buttonPosition"> -->
-                <p id="addEventStyle">+</p>
-            <!-- </div> -->
+            <p id="addEventStyle">+</p>
+
+            <div class="eventBackgorund">
+            </div>
+
+
             <div id="toTop"></div>
+
         </div>
-    
     </main>
-    <footer id="myFooter"></footer>
+        <footer id="myFooter"></footer>
+
 </body>
 <!-- <script type="module" src="../js/main.js"></script> -->
 <script type="module" src="../js/addEvent.js"></script>
 <script src="../js/load_header_footer.js"></script>
 <script src="../js/toTop.js"></script>
+
 </html>
 <!-- async  -->
