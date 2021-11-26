@@ -1,29 +1,29 @@
+// Añadimos despues del div con el id toTop la etiqueta a
 document.getElementById("toTop").innerHTML =
-    "<a href='#' class='scroll-top'>";
+    "<a href='#' id='scrollTop'>🡹</a>";
 
+//Metemos a en una variable
+var mybutton = document.getElementById("scrollTop");
 
-
+//Cuando usamos el scroll y bajamos 20 pixeles de lo alto del documento, mostramos el a
 window.onscroll = function () {
-    console.log(document.documentElement.scrollTop);
-    if (document.documentElement.scrollTop > 100) {
-        document.querySelector('.a.scroll-top').classList.add('show');
+    scrollFunction()
+};
 
+/* Funcion con condicional , si el body es mayor que 20 o el document element es mayor que 20 
+* Le añadimos el estilo al link display block
+*Sino le añadimos el estilo al link display none 
+*/ 
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
     } else {
-        document.querySelector('.a.scroll-top').classList.remove('show');
+        mybutton.style.display = "none";
     }
 }
 
-document.querySelector('.a.scroll-top').addEventListener('click', () => {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-    });
-});
-
-
-$('a.scroll-top').click(function (event) {
-    event.preventDefault();
-    $('html, body').animate({
-        scrollTop: 0
-    }, 600);
-});
+//Cuando el usuario clicka en el a el scroll nos lleva a lo alto del documento 
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
