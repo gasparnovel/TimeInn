@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Evacten</title>
     <link rel="stylesheet" href="../css/index.css">
-    <link rel="stylesheet" href="../css/headerFooter.css">
+    <link rel="stylesheet" href="../css/headerFooterTop.css">
     <!-- FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,27 +30,31 @@
             <video autoplay muted preload="none" loop id="videoStyle" src="../resources/video/hiking.mp4"></video>
             <!-- </div> -->
 
-        <div class="calendar">
-            <div class="calendarInfo">
-                <div class="calendarArrowPrev" id="prev-month">&#9664;</div>
-                <div class="calendarMonth" id="month"></div><p >/</p>
-                <div class="calendarYear" id="year"></div>
-                <div class="calendarArrowNext" id="next-month">&#9654;</div>
+            <div class="calendar">
+                <div class="calendarInfo">
+                    <div class="calendarArrowPrev" id="prev-month">&#9664;</div>
+                    <div class="calendarMonth" id="month"></div>
+                    <p>/</p>
+                    <div class="calendarYear" id="year"></div>
+                    <div class="calendarArrowNext" id="next-month">&#9654;</div>
+                </div>
+
+                <ol class="calendarWeek">
+                    <li class="calendarItem">Lun</li>
+                    <li class="calendarItem">Mar</li>
+                    <li class="calendarItem">Mie</li>
+                    <li class="calendarItem">Jue</li>
+                    <li class="calendarItem">Vie</li>
+                    <li class="calendarItem">Sab</li>
+                    <li class="calendarItem">Dom</li>
+                </ol>
+
+                <div class="calendarDates" id="dates"></div>
             </div>
-        
-            <ol class="calendarWeek">
-                <li class="calendarItem">Lun</li>
-                <li class="calendarItem">Mar</li>
-                <li class="calendarItem">Mie</li>
-                <li class="calendarItem">Jue</li>
-                <li class="calendarItem">Vie</li>
-                <li class="calendarItem">Sab</li>
-                <li class="calendarItem">Dom</li>
-            </ol>
-        
-            <div class="calendarDates" id="dates"></div>
+
+            <div id="toTop"></div>
+
         </div>
-    </div>
 
     </main>
     <footer id="myFooter"></footer>
@@ -58,6 +62,7 @@
 
 <script src="../js/index.js"></script>
 <script src="../js/load_header_footer.js"></script>
+<script src="../js/toTop.js"></script>
 <!-- defer nomodule -->
 
 </html>

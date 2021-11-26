@@ -203,6 +203,7 @@ textarea{
   margin-right: 15px;
 }
 
-/* #firstCard{
-  grid-area: card1;
-} */
+a {
+  text-decoration: none;
+  color: white;
+}
