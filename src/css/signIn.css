@@ -23,18 +23,21 @@ body {
 
 .loginImg {
     grid-area: clip;
-    height: 60vh;
     border-radius: 24px;
-    margin: 17vh;
+    align-self: center;
+    width: 50vw;
+    justify-self: center;
+
 }
 
 .formulario {
     background: #fff;
     padding: 4vh;
     grid-area: form;
-    margin: 10vh 10vw;    
+    width: 30vw;
     border-radius: 8px;
     align-self: center;
+    justify-self: center;
 }
 
 h1 {
