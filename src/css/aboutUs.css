@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Genos', sans-serif;
+}
+
+
+body {
+    background: black;
+}
+
+#container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "nav nav nav nav "
+        "h4 h4 h4 h4"
+        "card1 card1 card2 card2"
+        "fot fot fot fot";
+}
+
+
+.aboutSection {
+    color: white;
+    padding: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
+    grid-column: 1/5;
+}
+
+.h2 {
+    color: white;
+    font-size: 50px;
+    text-shadow: -2px -2px 1px #47126B, 2px 2px 1px #47126B, -2px 2px 1px #47126B, 2px -2px 1px #47126B;
+}
+
+h3 {
+    color: white;
+    text-shadow: -2px -2px 1px #47126B, 2px 2px 1px #47126B, -2px 2px 1px #47126B, 2px -2px 1px #47126B;
+    font-size: 50px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+h4 {
+    grid-area: h4;
+    text-align: center;
+    align-self: center;    
+    color: white;
+    font-size: 30px;
+    text-shadow: -2px -2px 1px #7b2cbf, 2px 2px 1px #7b2cbf, -2px 2px 1px #7b2cbf, 2px -2px 1px #7b2cbf;
+}
+
+.history {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+}
+
+.card {
+    width: 250px;
+    margin: 130px auto 0;
+    background-color: white;
+    box-shadow: 0 10px 90px #00000024;
+    text-align: center;
+    font-size: 20px;
+    border: 2px solid orange;
+    border-radius: 8px;
+    margin-bottom: 6vh;
+}
+
+.profileImg {
+    width: 130px;
+    height: 130px;
+    border-radius: 100%;
+    position: absolute;
+    transform: translate(-50%, -70%);
+    border: 2px solid orange;
+    box-shadow: 0 0 20px #00000033;
+}
+
+.cardBody {
+    padding: 10px 40px;
+}
+
+.name {
+    margin-top: 30px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.descriptionTwo {
+    margin-top: 35px;
+    font-size: 18px;
+}
+
+.buttonStyle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 60px 30px 60px;
+    border: 2px #7B2CBF solid;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    padding: 3px;
+    font-size: 16px;
+}
+
+.buttonStyle:hover {
+    border: 2px white solid;
+    background-color: #7B2CBF;
+}
+
+.linkStyle {
+    text-decoration: none;
+    color: #7B2CBF;
+}
+
+.buttonStyle:hover .linkStyle {
+    background-color: #7B2CBF;
+    color: white;
+}
+
+
+#firstCard {
+    grid-area: card1;
+    justify-self: center;
+    align-self: center;
+}
+
+#secondCard {
+    grid-area: card2;
+    justify-self: center;
+    align-self: center;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}

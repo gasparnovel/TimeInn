@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evacten</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/headerFooterTop.css">
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caesar+Dressing&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Genos:ital@1&display=swap" rel="stylesheet">
+    <!-- FONT -->
+    <link rel="shortcut icon" href="#">
+</head>
+
+<body>
+    <main>
+        <header id="myHeader"></header>
+        <div id="container">
+
+            <!-- <div class="videoBox"> -->
+            <p class="videoTitle">SSSS</p>
+            <video autoplay muted preload="none" loop id="videoStyle" src="../resources/video/hiking.mp4"></video>
+            <!-- </div> -->
+
+            <div class="calendar">
+                <div class="calendarInfo">
+                    <div class="calendarArrowPrev" id="prev-month">&#9664;</div>
+                    <div class="calendarMonth" id="month"></div>
+                    <p>/</p>
+                    <div class="calendarYear" id="year"></div>
+                    <div class="calendarArrowNext" id="next-month">&#9654;</div>
+                </div>
+
+                <ol class="calendarWeek">
+                    <li class="calendarItem">Lun</li>
+                    <li class="calendarItem">Mar</li>
+                    <li class="calendarItem">Mie</li>
+                    <li class="calendarItem">Jue</li>
+                    <li class="calendarItem">Vie</li>
+                    <li class="calendarItem">Sab</li>
+                    <li class="calendarItem">Dom</li>
+                </ol>
+
+                <div class="calendarDates" id="dates"></div>
+            </div>
+
+            <div id="toTop"></div>
+
+        </div>
+
+    </main>
+    <footer id="myFooter"></footer>
+</body>
+
+<script src="../js/index.js"></script>
+<script src="../js/load_header_footer.js"></script>
+<script src="../js/toTop.js"></script>
+<!-- defer nomodule -->
+
+</html>
