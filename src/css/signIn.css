@@ -1,3 +1,11 @@
+:root {
+    --primary: #7b2cbf;
+    --primaryVariant: #3D1660;
+    --secondary: #2cb2bf;
+    --secondaryVariant: #279CA7;
+    --error: #B00020;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -42,7 +50,7 @@ body {
 
 h1 {
     text-align: center;
-    color: #7B2CBF;
+    color: var(--secondary);
     font-size: 40px;
     margin-bottom: 1vh;
 }
@@ -71,14 +79,14 @@ input[type="password"] {
 
 .button {
     width: 100%;    
-    color: #7B2CBF;
+    color: var(--secondary);
     font-size: 20px;
     background: white;
     padding: 15px 20px;
     border-radius: 5px;
     cursor: pointer;
     margin-bottom: 1vh;
-    border: 2px #7B2CBF solid;
+    border: 2px var(--secondary) solid;
     border-top-left-radius: 100px;
     border-bottom-left-radius: 100px;
     border-top-right-radius: 100px;
@@ -87,7 +95,7 @@ input[type="password"] {
 
 .button:hover {
     border: 2px white solid;
-    background-color: #7B2CBF;
+    background-color: var(--secondary);
     color: white;
 }
 
@@ -97,7 +105,7 @@ input[type="password"] {
 
 .link {
     text-decoration: none;
-    color: #7B2CBF;
+    color: var(--secondary);
     font-weight: 600;
 }
 

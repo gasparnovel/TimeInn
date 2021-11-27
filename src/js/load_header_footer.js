@@ -8,10 +8,10 @@ document.getElementById("myHeader").innerHTML =
     "<i class='fa fa-bars'></i>" +
     "</label>" +
     "<ol class='nav-box'>" +
-    "<a href='./index.html'><li class='navLinkStyle'>Home</li></a>" +
-    "<a href='./formulario.html'><li class='navLinkStyle'>Events</li></a>" +
-    "<a href='./aboutUs.html'><li class='navLinkStyle'>About Us</li></a>" +
-    "<a href='./signIN.html'><li class='navLinkStyle'>Sign In</li></a>" +
+    "<a href='./index.html'><li >Home</li></a>" +
+    "<a href='./formulario.html'><li >Events</li></a>" +
+    "<a href='./aboutUs.html'><li >About Us</li></a>" +
+    "<a href='./signIn.html'><li >Sign In</li></a>" +
     "</ol>" +
     "</nav>";
 

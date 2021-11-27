@@ -1,3 +1,11 @@
+:root {
+  --primary: #7b2cbf;
+  --primaryVariant: #3D1660;
+  --secondary: #2cb2bf;
+  --secondaryVariant: #279CA7;
+  --error: #B00020;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -34,25 +42,29 @@ body {
   justify-content: center;
   color: white;
   font-size: 50px;
-  text-shadow: -2px -2px 1px #47126B, 2px 2px 1px #47126B, -2px 2px 1px #47126B, 2px -2px 1px #47126B;
+  height: 2vw;
+  text-shadow: -3px -1px 1px var(--secondaryVariant), 4px 2px 1px var(--primaryVariant), -2px 2px 1px var(--primaryVariant), 2px -2px 1px var(--primaryVariant);
 }
 
-#videoStyle {
+video{
   grid-area: clip;
   height: 40vh;
   border-radius: 24px;
-  background-image: url("../resources/img/fondoVideo.jpg");
-  width: 50vw;
-  border: 2px solid grey;
+  box-shadow: 0px 0px 10px var(--secondary);
+  background-image: radial-gradient(var(--secondary), black);
+  width: 25vw;
   background-repeat: repeat-x;
+  justify-self: center;
+  align-self: center;
+  
 }
 
 /*------------------------------------------------ */
 
 .calendar {
   grid-area: calendar;
-  box-shadow: 0px 0px 10px #7B2CBF;
-  background-image: radial-gradient(#7B2CBF, black);
+  box-shadow: 0px 0px 10px var(--primary);
+  background-image: radial-gradient(var(--primary), black);
   width: 25vw;
   justify-self: center;
   align-self: center;
@@ -96,6 +108,7 @@ body {
   text-align: center;
   line-height: 3.5vh;
   list-style-type: none;
+  color: white;
 }
 
 a {
@@ -103,7 +116,7 @@ a {
 }
 
 .calendarDate:hover {
-  background: #7B2CBF;
+  background: var(--primary);
   color: white;
   margin: auto;
   border: 1px solid rgba(0, 0, 0, 0.541);
@@ -115,7 +128,7 @@ a {
 
 
 .calendarToday {
-  background: #7B2CBF;
+  background: var(--primary);
   color: white;
   margin: auto;
   width: 25px;

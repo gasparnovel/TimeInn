@@ -1,3 +1,11 @@
+:root {
+    --primary: #7b2cbf;    
+    --primaryVariant: #3D1660;
+    --secondary: #2cb2bf;
+    --secondaryVariant: #279CA7;
+    --error: #B00020;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -33,12 +41,12 @@ body {
 .h2 {
     color: white;
     font-size: 50px;
-    text-shadow: -2px -2px 1px #47126B, 2px 2px 1px #47126B, -2px 2px 1px #47126B, 2px -2px 1px #47126B;
+    text-shadow: -3px -1px 1px var(--secondaryVariant), 4px 2px 1px var(--primaryVariant), -2px 2px 1px var(--primaryVariant), 2px -2px 1px var(--primaryVariant);
 }
 
 h3 {
     color: white;
-    text-shadow: -2px -2px 1px #47126B, 2px 2px 1px #47126B, -2px 2px 1px #47126B, 2px -2px 1px #47126B;
+    text-shadow: -3px -1px 1px var(--secondaryVariant), 4px 2px 1px var(--primaryVariant), -2px 2px 1px var(--primaryVariant), 2px -2px 1px var(--primaryVariant);
     font-size: 50px;
     display: flex;
     justify-content: flex-end;
@@ -51,7 +59,7 @@ h4 {
     align-self: center;    
     color: white;
     font-size: 30px;
-    text-shadow: -2px -2px 1px #7b2cbf, 2px 2px 1px #7b2cbf, -2px 2px 1px #7b2cbf, 2px -2px 1px #7b2cbf;
+    text-shadow: -3px -1px 1px var(--secondaryVariant), 4px 2px 1px var(--primaryVariant), -2px 2px 1px var(--primaryVariant), 2px -2px 1px var(--primaryVariant);
 }
 
 .history {
@@ -67,7 +75,7 @@ h4 {
     box-shadow: 0 10px 90px #00000024;
     text-align: center;
     font-size: 20px;
-    border: 2px solid orange;
+    border: 2px solid var(--primary);
     border-radius: 8px;
     margin-bottom: 6vh;
 }
@@ -78,7 +86,7 @@ h4 {
     border-radius: 100%;
     position: absolute;
     transform: translate(-50%, -70%);
-    border: 2px solid orange;
+    border: 2px solid var(--primary);
     box-shadow: 0 0 20px #00000033;
 }
 
@@ -102,7 +110,7 @@ h4 {
     justify-content: center;
     align-items: center;
     margin: 20px 60px 30px 60px;
-    border: 2px #7B2CBF solid;
+    border: 2px var(--secondary) solid;
     border-top-left-radius: 100px;
     border-bottom-left-radius: 100px;
     border-top-right-radius: 100px;
@@ -113,16 +121,16 @@ h4 {
 
 .buttonStyle:hover {
     border: 2px white solid;
-    background-color: #7B2CBF;
+    background-color: var(--secondary);
 }
 
 .linkStyle {
     text-decoration: none;
-    color: #7B2CBF;
+    color: var(--secondary);
 }
 
 .buttonStyle:hover .linkStyle {
-    background-color: #7B2CBF;
+    background-color: var(--secondary);
     color: white;
 }
 

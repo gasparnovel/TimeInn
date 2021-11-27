@@ -1,3 +1,11 @@
+:root {
+    --primary: #7b2cbf;    
+    --primaryVariant: #3D1660;
+    --secondary: #2cb2bf;
+    --secondaryVariant: #279CA7;
+    --error: #B00020;
+}
+
 nav {
     display: flex;
     height: 80px;
@@ -56,7 +64,7 @@ nav .menu-btn i {
 nav ol li.active,
 nav ol li:hover {
     background: none;
-    color: #7B2CBF;
+    color: var(--secondary);
 }
 
 input[type="checkbox"] {
@@ -93,6 +101,7 @@ input[type="checkbox"] {
     #click:checked~ol {
         left: 0;
         position: absolute;
+        z-index: 2;
     }
 
     nav ol li {
@@ -117,13 +126,13 @@ input[type="checkbox"] {
     nav ol li.active,
     nav ol li:hover {
         background: none;
-        color: #7B2CBF;
+        color: var(--secondary);
     }
 }
 
 a {
     text-decoration: none;
-    color: white;
+    color: var(--secondary);
 }
 
 .footer {
@@ -161,10 +170,10 @@ a {
     height: 45px;
     margin-bottom: 10px;
     line-height: 45px;
-    color: #7B2CBF;
+    color: var(--secondary);
     margin-right: 10px;
     background: white;
-    border: 2px #7B2CBF solid;
+    border: 2px var(--secondary) solid;
     text-align: center;
     transition: all 300ms ease;
     border-radius: 100%;
@@ -172,12 +181,12 @@ a {
 
 .grupOne .social a:hover {
     border: 2px white solid;
-    background-color: #7B2CBF;
+    background-color: var(--secondary);
     color: white;
 }
 
 .grupTwo {
-    background-color: #7B2CBF;
+    background-color: var(--primary);
     padding: 15px 10px;
     text-align: center;
     color: #fff;
@@ -197,14 +206,14 @@ small {
     outline: none;
     cursor: pointer;
     padding: 10px;
-    border: 2px #7B2CBF solid;
+    border: 2px var(--secondary) solid;
     background: white;
-    color: #7B2CBF;
+    color: var(--secondary);
     transition: all 300ms ease;
 }
 
 #scrollTop:hover {
     border: 2px white solid;
-    background-color: #7B2CBF;
+    background-color: var(--secondary);
     color: white;
 }
