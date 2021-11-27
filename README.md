@@ -17,6 +17,8 @@ Heu de crear un *wireframe* i un prototip de la pàgina web de **TimeInn**, un p
 
 ![Vista_telefono](/src/docs/Wireframe_desktop.png)
 
+**Link al Warframe:**
+- https://www.figma.com/file/1H1l0jGogjb9xLVYmxIcCy/Project?node-id=0%3A1
 # 1 General
 
 
@@ -109,3 +111,24 @@ Heu de crear un *wireframe* i un prototip de la pàgina web de **TimeInn**, un p
 |**ALTRES**| Podeu realitzar millores i ampliacions a la pràctica, més enllà de l’enunciat. Si ho feis, mencionau-les en la Documentació en un apartat anomenat **ALTRES**|
 | :-: | :- |
 
+# 7 Paleta de colors
+
+![Paleta](/src/resources/img/paleta.PNG)
+
+**Link a la paleta:**
+- https://docs.google.com/spreadsheets/d1s-_Rzp-fvJWxmf0dDcmCcAOsCFAF5oSf4a1u7GacTfY/edit?usp=sharing
+
+# 8 Fonts
+
+**1r Font:**
+- ![1r Font](/src/resources/img/primeraFont.PNG)
+- https://docs.google.com/spreadsheets/d1s-_Rzp-fvJWxmf0dDcmCcAOsCFAF5oSf4a1u7GacTfY/edit?usp=sharing
+- https://fonts.googleapis.com
+- https://fonts.gstatic.com
+- https://fonts.googleapis.com/css2?family=Caesar+Dressing&display=swap
+
+**2n Font:**
+- ![2N Font](/src/resources/img/segundaFont.PNG)
+- https://fonts.googleapis.com
+- https://fonts.gstatic.com
+- https://fonts.googleapis.com/css2?family=Genos:ital@1&-display=swap
