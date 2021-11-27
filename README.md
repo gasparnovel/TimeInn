@@ -68,7 +68,7 @@ Heu de crear un *wireframe* i un prototip de la pàgina web de **TimeInn**, un p
 | :- | :- |
 |**CAMPS**|[] Crea un formulari amb els camps necessaris per introduir les dades sobre un event.|
 |**DATA**|<p>[x] Per seleccionar la Data de l’event (suposarem que tots els events tenen només 1 data assignada), emprarem el [JQuery Data Picker](https://jqueryui.com/datepicker/) ([PILLS FOR PROJECTS](https://docs.google.com/document/d/1i6S9bQKPk2kWvi5dLfVLZ16hn2x8-CXe25NQe5UaV78/edit#heading=h.m0kqnwsw5qo2))</p><p>[x] La data es guardarà sempre en el mateix format.</p>|
-|**SAVE**|<p>[] En pulsar el botó **Guardar**, si tots els camps han estat emplenats, se guardara el nou event a l’estructura de dades</p><p>[] Si no han estat emplenats tots els camps, no es guardarà en nou event i la pantalla seguirà igual (no se tancarà)</p><p>[] Cada event tendrà un camp *id* amb valor aleatori entre 1 i 999.999</p>|
+|**SAVE**|<p>[] En pulsar el botó **Guardar**, si tots els camps han estat emplenats, se guardara el nou event a l’estructura de dades</p><p>[] Si no han estat emplenats tots els camps, no es guardarà en nou event i la pantalla seguirà igual (no se tancarà)</p><p>[x] Cada event tendrà un camp *id* pero el nostre estará en 'default' per la llogica</p>|
 ##
 
 # 4 CSS and Visual Requirements
