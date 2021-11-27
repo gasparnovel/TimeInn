@@ -18,8 +18,13 @@ body {
     "nav nav nav nav "
     "clipTitle clipTitle clipTitle clipTitle"
     ". clip clip ."
+    ". card card ."
+
     ". calendar calendar ."
     "fot fot fot fot";
+  overflow: auto;
+  scrollbar-width: none; 
+
 }
 
 
@@ -58,6 +63,7 @@ body {
   align-self: center;
   background-repeat: repeat-x;
   padding: 20px;
+  margin: 5vh 0vh;
 }
 
 .calendarInfo {
@@ -201,8 +207,8 @@ textarea {
 
 
 .card {
-  max-width: 250px;
-  margin: 150px auto 0;
+  /* max-width: 250px; */
+  margin: 3vh 1vw;
   background-color: white;
   box-shadow: 0 10px 90px #00000024;
   text-align: center;
@@ -266,3 +272,53 @@ textarea {
   justify-content: end;
   margin-right: 15px;
 }
+.eventBackgorund{
+  /* scrollbar-width: thin; */
+  grid-area: card;
+  /* scrollbar-width: none;  */
+  /* overflow: auto; */
+/*   background: green; */
+  visibility: visible;
+  /* position: fixed; */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  
+  margin-top: 2vh ;
+  width:100%;
+
+  /* z-index: -1; */
+  /* grid-area: 2/1/5/5; */
+  
+
+  /* background: green; */
+
+}
+
+.parStyle{
+  text-align: center;
+  color: white;
+  /* background: red; */
+  font-size: 2rem;
+}
+#news{
+  width: 90%;
+  /* background: green; */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+#events{
+  width: 90%;
+  /* background: green; */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+
+/* .newsParent{
+  grid-area: card;
+
+} */

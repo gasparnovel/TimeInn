@@ -1,4 +1,4 @@
-var contador = 0;
+export var contador = 0;
 export const layout = document.getElementById("backEvent");
 document.getElementById("addEventStyle").addEventListener('click',layoutToggle);
 document.getElementById("closeLayout").addEventListener('click',layoutToggle);

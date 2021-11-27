@@ -130,17 +130,27 @@ a {
     width: 100%;
     background-color: black;
     border-top: 1px solid white;
+    display:grid;
+    grid-area: fot;
 }
 
 .grupOne {
-    width: 100%;
+    /* width: 100%;
     max-width: 1200px;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 50px;
     padding: 45px 50px;
-    padding-left: 100px;
+    padding-left: 100px; */
+
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3vw;
+    padding: 7vh 4vh;
 }
 
 .grupOne h2 {

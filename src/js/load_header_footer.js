@@ -9,7 +9,7 @@ document.getElementById("myHeader").innerHTML =
     "</label>" +
     "<ol class='nav-box'>" +
     "<a href='./index.html'><li class='navLinkStyle'>Home</li></a>" +
-    "<a href='./formulario.html'><li class='navLinkStyle'>Events</li></a>" +
+    "<a href='./eventos.html'><li class='navLinkStyle'>Events</li></a>" +
     "<a href='./aboutUs.html'><li class='navLinkStyle'>About Us</li></a>" +
     "<a href='./signIN.html'><li class='navLinkStyle'>Sign In</li></a>" +
     "</ol>" +

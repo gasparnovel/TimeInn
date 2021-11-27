@@ -1,17 +1,20 @@
-// import {
-//     check,
-//     sorted,
-//     tt
-// } from "./indextest.js";
+// var contador = 0;
 
-document.getElementById("btnSubmit").addEventListener('click',()=>{
-    document.getElementById("cookieWrapper").style.visibility = "hidden";
+// document.getElementById("btnSubmit").addEventListener('click',()=>{
+//     document.getElementById("cookieWrapper").style.visibility = "hidden";
+// })
+import { event,sortevents } from "./addEvent.js";
+import { news,sortnews } from "./newsCard.js";
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    sortnews
+    news();
+    sortevents
+    event();
+
 })
-
-
-
-
-
 // document.addEventListener('DOMContentLoaded', () => {
 //     sorted
 //     check();
