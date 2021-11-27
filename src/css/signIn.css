@@ -35,7 +35,6 @@ body {
         grid-area: clip;
         border-radius: 24px;
         align-self: center;
-        width: 50vw;
         justify-self: center;
 
     }
