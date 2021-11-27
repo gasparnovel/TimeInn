@@ -17,174 +17,86 @@
 body {
     background: black;
 }
-@media screen and (min-width: 600px) {
 
-#container {
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-areas:
-        "nav nav nav nav "
-        "clip clip form form"
-        "fot fot fot fot";
-}
-
-
-
-.loginImg {
-    grid-area: clip;
-    border-radius: 24px;
-    align-self: center;
-    width: 50vw;
-    justify-self: center;
-    margin: 40px;
-}
-
-.formulario {
-    background: #fff;
-    padding: 4vh;
-    grid-area: form;
-    width: 30vw;
-    border-radius: 8px;
-    align-self: center;
-    justify-self: center;
-}
-
-h1 {
-    text-align: center;
-    color: var(--secondary);
-    font-size: 40px;
-    margin-bottom: 1vh;
-}
-
-input[type="text"],
-input[type="password"] {
-    font-size: 20px;
-    width: 82%;
-    padding: 10px;
-    border: none;
-    border-radius: 8px;
-}
-
-.input-contenedor {
-    margin-bottom: 15px;
-    border: 1px solid black;
-    border-radius: 8px;
-
-}
-
-.icon {
-    min-width: 50px;
-    text-align: center;
-    color: black;
-}
-
-.button {
-    width: 100%;    
-    color: var(--secondary);
-    font-size: 20px;
-    background: white;
-    padding: 15px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-bottom: 1vh;
-    border: 2px var(--secondary) solid;
-    border-top-left-radius: 100px;
-    border-bottom-left-radius: 100px;
-    border-top-right-radius: 100px;
-    border-bottom-right-radius: 100px;
-}
-
-.button:hover {
-    border: 2px white solid;
-    background-color: var(--secondary);
-    color: white;
-}
-
-.center {
-    text-align: center;
-}
-
-.link {
-    text-decoration: none;
-    color: var(--secondary);
-    font-weight: 600;
-}
-
-.link:hover {
-    color: var(--primary);
-}
-
-a{
-    text-decoration: none;
-    color: white;
-}
-}
 @media screen and (max-width: 600px) {
     #container {
-        height: 80vh;        
+        height: 100vh;        
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr ;
         grid-template-areas:
-            "nav nav nav nav "
-            "form form form form"
-            "fot fot fot fot";
+            "clip"
+            "form"
     }
 
     .loginImg {
         grid-area: clip;
-        border-radius: 24px;
+        border-radius: 10px;
         align-self: center;
-        width: 50vw;
+        width: 80vw;
         justify-self: center;
-        display: none;
+        margin-top: 60px;
     }
 
     .formulario {
+        width: 80vw;
         background: #fff;
-        padding: 4vh;
+        padding-top: 3vh;
+        padding-left: 4vh;
+        padding-right: 4vh;
+        padding-bottom: 4vh;
         grid-area: form;
         border-radius: 8px;
         align-self: center;
         justify-self: center;
         margin-left: 10vw;
         margin-right: 10vw;
+        margin-bottom: 60px;
+        margin-top: 40px;
     }
 
     h1 {
         text-align: center;
         color: var(--secondary);
-        font-size: 40px;
+        font-size: 25px;        
         margin-bottom: 1vh;
     }
 
     input[type="text"],
     input[type="password"] {
-        font-size: 20px;
-        padding: 10px;
+        font-size: 14px;
+        padding: 6px;
         border: none;
         border-radius: 8px;
     }
 
     .input-contenedor {
         margin-bottom: 15px;
+        padding-left: 6px;
         border: 1px solid black;
         border-radius: 8px;
         display: block ruby;
     }
 
+    p{
+        font-size: 12px;
+    }
     .icon {
-        min-width: 50px;
+        min-width: 10px;
         text-align: center;
         color: black;
     }
-
+    i{
+        font-size: 12px;
+    }
+    #toTop {
+        display: contents;
+    }
     .button {
-        width: 100%;
+        width: 226px;
+        padding: 9px;
         color: var(--secondary);
-        font-size: 20px;
+        font-size: 14px;
         background: white;
-        padding: 15px 20px;
         border-radius: 5px;
         cursor: pointer;
         margin-bottom: 1vh;
@@ -208,7 +120,7 @@ a{
     .link {
         text-decoration: none;
         color: var(--secondary);
-        font-weight: 600;
+        font-size: 12px;
     }
 
     .link:hover {
