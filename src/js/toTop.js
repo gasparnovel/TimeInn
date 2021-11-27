@@ -1,12 +1,12 @@
 // Añadimos despues del div con el id toTop la etiqueta a
-document.getElementById("toTop").innerHTML =
+let toTop= document.getElementById("toTop").innerHTML =
     "<a href='#' id='scrollTop'>🡹</a>";
 
 //Metemos a en una variable
-var mybutton = document.getElementById("scrollTop");
+let mybutton = document.getElementById("scrollTop");
 
 //Cuando usamos el scroll y bajamos 20 pixeles de lo alto del documento, mostramos el a
-window.onscroll = function () {
+let widow= window.onscroll = function () {
     scrollFunction()
 };
 
@@ -27,3 +27,5 @@ function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
+
+export { toTop, mybutton, widow, scrollFunction, topFunction };

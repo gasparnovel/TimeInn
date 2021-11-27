@@ -1,20 +1,10 @@
-import {
-    check,
-    sorted,
-    tt
-} from "./indextest.js";
-import {
-    layoutToggle,
-    windowOnClick,
-    layout
-} from "./showLayout.js";
+import {check,sorted, tt} from "./indextest.js";
+import {layoutToggle, windowOnClick,layout} from "./showLayout.js";
 
 document.addEventListener('DOMContentLoaded', () => {
     sorted
     check();
 })
-
-
 
 const btnsubm = document.getElementById("btnSubmit").addEventListener('click', (e) => {
     //    e.preventDefault();
@@ -29,3 +19,4 @@ const btnsubm = document.getElementById("btnSubmit").addEventListener('click', (
     // console.log(sorted);
     check();
 })
+

@@ -1,22 +1,13 @@
-// import {
-//     check,
-//     sorted,
-//     tt
-// } from "./indextest.js";
+import { header, footer } from "./load_header_footer.js";
+console.log(header, footer);
+
+import { toTop, mybutton, widow, scrollFunction, topFunction } from "./toTop.js";
+console.log(toTop, mybutton, widow(), scrollFunction(), topFunction());
+
 
 document.getElementById("btnSubmit").addEventListener('click',()=>{
     document.getElementById("cookieWrapper").style.visibility = "hidden";
 })
-
-
-
-
-
-// document.addEventListener('DOMContentLoaded', () => {
-//     sorted
-//     check();
-// })
-
 
 
 

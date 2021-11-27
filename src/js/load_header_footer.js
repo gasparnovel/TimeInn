@@ -1,4 +1,4 @@
-document.getElementById("myHeader").innerHTML =
+let header= document.getElementById("myHeader").innerHTML =
     "<nav> " +
     "<div> " +
     "<a href='./index.html'><h1 class='logo'>Evacten</h1></a>" +
@@ -15,7 +15,7 @@ document.getElementById("myHeader").innerHTML =
     "</ol>" +
     "</nav>";
 
-document.getElementById("myFooter").innerHTML =
+let footer= document.getElementById("myFooter").innerHTML =
     "<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>" +
     "<footer class='footer'>" +
         "<div class='grupOne'>" +
@@ -43,3 +43,5 @@ document.getElementById("myFooter").innerHTML =
             "<small>&copy; 2021 <b>Evacten</b> - All rights reserved.</small>" +
         "</div>" +
     "</footer>";
+
+export { header, footer };

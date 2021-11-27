@@ -63,7 +63,7 @@ export function check() {
     })
 }
 
-function create() {
+export function create() {
     let parentAreaa = document.getElementById('container');
     let parentArea = document.querySelector('.eventBackgorund');
 
