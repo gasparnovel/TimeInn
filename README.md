@@ -64,10 +64,10 @@ Heu de crear un *wireframe* i un prototip de la pàgina web de **TimeInn**, un p
 
 ## 3.-  Pàgina Form overlay/modal de nou event
 
-|**OVERL**|<p>[x] Aquesta pàgina apareixerà en forma de **Overlay o Modal**, amb la resta de la pantalla difuminada.</p><p>[] Per tancar-la, clicarem sobre una X situada en el cantó superior dret</p>|
+|**OVERL**|<p>[x] Aquesta pàgina apareixerà en forma de **Overlay o Modal**, amb la resta de la pantalla difuminada.</p><p>[x] Per tancar-la, clicarem sobre una X situada en el cantó superior dret</p>|
 | :- | :- |
 |**CAMPS**|[] Crea un formulari amb els camps necessaris per introduir les dades sobre un event.|
-|**DATA**|<p>[] Per seleccionar la Data de l’event (suposarem que tots els events tenen només 1 data assignada), emprarem el [JQuery Data Picker](https://jqueryui.com/datepicker/) ([PILLS FOR PROJECTS](https://docs.google.com/document/d/1i6S9bQKPk2kWvi5dLfVLZ16hn2x8-CXe25NQe5UaV78/edit#heading=h.m0kqnwsw5qo2))</p><p>[] La data es guardarà sempre en el mateix format.</p>|
+|**DATA**|<p>[x] Per seleccionar la Data de l’event (suposarem que tots els events tenen només 1 data assignada), emprarem el [JQuery Data Picker](https://jqueryui.com/datepicker/) ([PILLS FOR PROJECTS](https://docs.google.com/document/d/1i6S9bQKPk2kWvi5dLfVLZ16hn2x8-CXe25NQe5UaV78/edit#heading=h.m0kqnwsw5qo2))</p><p>[x] La data es guardarà sempre en el mateix format.</p>|
 |**SAVE**|<p>[] En pulsar el botó **Guardar**, si tots els camps han estat emplenats, se guardara el nou event a l’estructura de dades</p><p>[] Si no han estat emplenats tots els camps, no es guardarà en nou event i la pantalla seguirà igual (no se tancarà)</p><p>[] Cada event tendrà un camp *id* amb valor aleatori entre 1 i 999.999</p>|
 ##
 
@@ -89,7 +89,7 @@ Heu de crear un *wireframe* i un prototip de la pàgina web de **TimeInn**, un p
 |**STYLE**|[x] Segueix la[ ](https://docs.google.com/document/d/1ImIv0MihaxZJWmHPFyxGdp0GTb1QVYFfaTlQVcjVF_w/edit#heading=h.el0wyqg0rqwy)[Guia d’Estil DIW](https://docs.google.com/document/d/1ImIv0MihaxZJWmHPFyxGdp0GTb1QVYFfaTlQVcjVF_w/edit#heading=h.el0wyqg0rqwy) per escriure estils nets, ordenats i clars.|
 | :-: | :- |
 |**CODE**|[x] Segueix La[ Guia d'estil DWEC](https://docs.google.com/document/d/1ImIv0MihaxZJWmHPFyxGdp0GTb1QVYFfaTlQVcjVF_w/edit#heading=h.ggolcb3ezvce)  per crear un codi clar i ben escrit.|
-|**MODU**|[] Empra mòduls per a organitzar el codi. ([PILLS FOR PROJECTS])(https://docs.google.com/document/d/1i6S9bQKPk2kWvi5dLfVLZ16hn2x8-CXe25NQe5UaV78/edit#heading=h.eivg23w1jna)|
+|**MODU**|[x] Empra mòduls per a organitzar el codi. ([PILLS FOR PROJECTS])(https://docs.google.com/document/d/1i6S9bQKPk2kWvi5dLfVLZ16hn2x8-CXe25NQe5UaV78/edit#heading=h.eivg23w1jna)|
 
 ## Documentació:
 
