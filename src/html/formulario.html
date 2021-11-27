@@ -18,46 +18,50 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Genos:ital@1&display=swap" rel="stylesheet">
     <!-- FONT -->
+    
     <link rel="shortcut icon" href="#">
 </head>
 
 <body>
-    <main>
-        <header id="myHeader"></header>
+    <header id="myHeader"></header>
+
+    <!-- <main> -->
         <div id="container">
             
             <h1 id="title">Aqui Podras Añadir y Ver Tus Eventos</h1>
+            <p id="addEventStyle">+</p>
+
 
             <div id="backEvent">
                 <div class="modal-content">
                     <form class="formBox">
                         <h1>Add Event</h1>
                         <span id="closeLayout">&times;</span>
-                        <input class="eventFormStyle" type="text" name="eventName" id="eventName"
-                            placeholder="Name of Event">
-                        <input class="eventFormStyle" type="text" name="dateValue" id="dateValue"
+                        <input class="eventFormStyle" type="text" name="eventName" id="eventName" required
+                            placeholder="Name of Event" autofocus>
+                        <input class="eventFormStyle" type="text" name="dateValue" id="dateValue" required
                             placeholder="Add a Date">
                         <textarea class="eventFormStyle" name="eventDescription" id="eventDescription"
-                            placeholder="Add a Descripion of the event"></textarea>
+                            placeholder="Add a Descripion of the event" required></textarea>
                         <input class="eventFormStyle" type="file" name="eventImage" id="eventImage"
-                            placeholder="Add an Image">
+                            placeholder="Add an Image" required>
                         <input class="eventFormStyle" name="btnSubmit" id="btnSubmit" value="Add Event">
                     </form>
                 </div>
             </div>
 
 
-            <p id="addEventStyle">+</p>
 
             <div class="eventBackgorund">
             </div>
 
 
-            <div id="toTop"></div>
-
         </div>
-    </main>
+        <div id="toTop"></div>
+
         <footer id="myFooter"></footer>
+
+    <!-- </main> -->
 
 </body>
 <!-- <script type="module" src="../js/main.js"></script> -->

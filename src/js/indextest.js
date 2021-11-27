@@ -120,6 +120,10 @@ function create() {
     if (id == 'default') {
 
     } else {
+        newPatrocin.innerHTML = "New Event";
+
+        
+        
         parentArea.prepend(divParent)
     }
 }
