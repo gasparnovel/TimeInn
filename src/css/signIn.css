@@ -110,7 +110,7 @@ input[type="password"] {
 }
 
 .link:hover {
-    color: black;
+    color: var(--primary);
 }
 
 a{
