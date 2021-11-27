@@ -1,4 +1,21 @@
+// import {
+//     check,
+//     sorted,
+//     tt
+// } from "./indextest.js";
 
+document.getElementById("btnSubmit").addEventListener('click',()=>{
+    document.getElementById("cookieWrapper").style.visibility = "hidden";
+})
+
+
+
+
+
+// document.addEventListener('DOMContentLoaded', () => {
+//     sorted
+//     check();
+// })
 
 
 

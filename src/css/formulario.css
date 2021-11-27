@@ -5,22 +5,16 @@
   font-family: 'Genos', sans-serif;
 }
 
-html{
-  position: relative;
-  min-height: 100%;
-}
 
 body{
   background: black;
-  overflow-x: hidden;
 }
 
 #container{
   height: 100vh;
   display: grid;
   grid-template-columns: .5fr 1fr 1fr .5fr;
-  grid-template-rows: .5fr 1fr 1fr 1fr;
-  
+  grid-template-rows: 1fr 1fr 1fr 1fr;
   /* grid-template-areas: 
     "nav nav nav nav "
     "title title title  ."
@@ -34,24 +28,24 @@ body{
 
 
 
-/* nav{ */
+nav{
 /*   grid-area: nav; */
   /* grid-row-start
 grid-column-start
 grid-row-end
 grid-column-end */
-  /* grid-area: 1/1/1/5;
+  grid-area: 1/1/1/5;
   border-bottom: 1px white solid;
-} */
+}
 
-/* .nav-box{
+.nav-box{
   display:flex;
   justify-content:flex-end;
   height: 10vh;
   align-items: center;
   font-size: 1.1rem;
 
-} */
+}
 
 .navLinkStyle{
   margin: 0vh 3vw;
@@ -69,7 +63,7 @@ a{
   text-align: center;
 /*   background: green; */
   width: 65vw;
-  grid-area: 2/2/2/5;
+  grid-area: 1/2/2/5;
   height: 10vh;
 /*   text-align: center; */
   
@@ -89,6 +83,7 @@ a{
   border-radius:50%;  
   font-size: 1.5rem;
   cursor: pointer;
+  z-index: 1;
 }
 
 .logo{
@@ -103,15 +98,18 @@ a{
   font-size: 2rem;
 }
 
+footer{
+/*   grid-area: fot; */
 
-/* .footerStyle{
+}
+.footerStyle{
   background-color: #7B2CBF;
   color: white;
   display: flex;
   position: sticky;
   top: 100%;
   justify-content: space-between;
-} */
+}
 
 
 .formBox{
@@ -172,6 +170,10 @@ textarea{
 }
 
 .eventBackgorund{
+  scrollbar-width: thin;
+  
+  overflow: auto;
+/*   background: green; */
   visibility: visible;
   /* position: fixed; */
   display: flex;
@@ -180,7 +182,8 @@ textarea{
   width:100%;
   flex-wrap: wrap;
   /* z-index: -1; */
-  grid-area: 2/2/2/4;
+  grid-area: 2/1/5/5;
+  
 
   /* background: green; */
 
@@ -190,10 +193,11 @@ textarea{
 
 
 #closeLayout {
-  margin: 0vh 20vw;
+  justify-content: center;
   width: 5vw;
   cursor: pointer;
   border-radius: 0.25rem;
+  margin: 0vh 42vw;
 }
 
 #closeLayout:hover {
@@ -209,6 +213,7 @@ textarea{
   font-size: 20px;
   border: 2px solid orange;
   border-radius: 8px;
+  height: 50vh;
 }
 
 .profileImg {
@@ -278,15 +283,15 @@ textarea{
 }
 
 
-.footerStyle{
+/* .footerStyle{
   background-color: #7B2CBF;
   color: white;
-/*   grid-area: fot; */
+  grid-area: fot;
   display: flex;
   position: sticky;
   top: 100%;
   justify-content: space-between;
   grid-area: 5/1/5/5;
   
-}
+} */
 
