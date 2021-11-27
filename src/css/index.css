@@ -299,7 +299,7 @@ textarea {
     color: white;
     font-size: 30px;
     margin-top: 5vh;
-    text-shadow: -3px -1px 1px var(--secondaryVariant), 4px 2px 1px var(--primaryVariant), -2px 2px 1px var(--primaryVariant), 2px -2px 1px var(--primaryVariant);
+    text-shadow: -2px -1px 1px var(--secondaryVariant), 3px 2px 1px var(--primaryVariant), -2px 2px 1px var(--primaryVariant), 2px -2px 1px var(--primaryVariant);
   }
   
   video{
