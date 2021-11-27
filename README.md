@@ -78,7 +78,7 @@ Heu de crear un *wireframe* i un prototip de la pàgina web de **TimeInn**, un p
 | :-: | :- |
 |**DESIG**|[x]  Se segueixen en general els **criteris de disseny gràfic** de [B4.1.1](https://docs.google.com/document/d/1jFeR5CP9XJt_-D7DPrpodK7h5TEfot450u_ZTWHdP6o/edit)|
 |**UX**|[x] Se segueixen en general els **criteris d’UX** (B5.2)|
-|**RESPO**|<p>- El Front Page és responsive i **adaptive**.</p><p>- La Pàgina de llistat d’events i la Pàgina Form overlay seran responsive</p><p>- El **menu** serà responsiu i en el mòbil tendrà forma de [botó ](https://en.wikipedia.org/wiki/Hamburger_button)[*hamburguer*](https://en.wikipedia.org/wiki/Hamburger_button)</p><p>- Comprovau si funciona en varis navegadors. Si no funciona bé, indicau-ho a la documentació</p>|
+|**RESPO**|<p>- [] El Front Page és responsive i **adaptive**.</p><p>- La Pàgina de llistat d’events i la Pàgina Form overlay seran responsive</p><p>- El **menu** serà responsiu i en el mòbil tendrà forma de [botó ](https://en.wikipedia.org/wiki/Hamburger_button)[*hamburguer*](https://en.wikipedia.org/wiki/Hamburger_button)</p><p>- Comprovau si funciona en varis navegadors. Si no funciona bé, indicau-ho a la documentació</p>|
 |**CONT**|[x] Els textos i les imatges son **realistes**. Per a les fitxes dels llibres en la front page, emprarem una mateixa imatge i dades però han de ser mínimament realistes.|
 |**ICON**|[x] S’utilitzen almanco 3 **icones de [Font Awesome**](https://www.w3schools.com/icons/fontawesome5_intro.asp)** en la web.|
 
@@ -95,7 +95,7 @@ Heu de crear un *wireframe* i un prototip de la pàgina web de **TimeInn**, un p
 
 |**READ**|<p>- La documentació del projecte es crearà en el README.MD del repo</p><p>- Cal indicar l’adreça del **github project** emprat per a treballar en el projecte i del **wireframe** creat</p><p>- Cal indicar la **paleta de colors** i les **fonts emprades**, en el format indicat més adalt</p><p>- Cal indicar el elements predissenyats o codi *ad hoc* que hagueu emprat i la web d’on ho heu obtingut</p><p>- Indicau les **pàgines web** en les què us heu **inspirat** per crear el wireframe i/o el disseny</p>|
 | :-: | - |
-|**VIDEO**|[x] Creau un **video explicatiu** de la web, preferentment **en anglès**, que duri entre 5 i 10 minuts**.**|
+|**VIDEO**|[] Creau un **video explicatiu** de la web, preferentment **en anglès**, que duri entre 5 i 10 minuts**.**|
 
 
 # 6 Ampliacions
@@ -105,7 +105,7 @@ Heu de crear un *wireframe* i un prototip de la pàgina web de **TimeInn**, un p
 | :-: | :- |
 |**FILTR**| A la Pagina amb llistat d’events creau filtres per: nom d’event, per data, per preu i/o altres que se t’ocurreixin|
 |**GULP**| Emprau **GULP** per generar la versió de producció  ([PILLS FOR PROJECTS)](https://docs.google.com/document/d/1i6S9bQKPk2kWvi5dLfVLZ16hn2x8-CXe25NQe5UaV78/edit#heading=h.pb2c1yxlj6hy)|
-|**PENJA**|[] Empra *Netlify* (tal i com vam veure a classe) per penjar el projecte a la web|
+|**PENJA**|[x] Empra *Netlify* (tal i com vam veure a classe) per penjar el projecte a la web|
 
 
 |**ALTRES**| Podeu realitzar millores i ampliacions a la pràctica, més enllà de l’enunciat. Si ho feis, mencionau-les en la Documentació en un apartat anomenat **ALTRES**|
