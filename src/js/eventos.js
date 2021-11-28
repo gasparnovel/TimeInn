@@ -49,7 +49,6 @@ const btnsubm = document.getElementById("btnSubmit").addEventListener('click', (
             nameEvent: name,
             dateEvent: document.getElementById("dateValue").value,
             descriptionEvent: desc,
-            imgEvent: "party eating img"
         }
         sortevents.unshift(arrFormValues);
         layoutToggle();
