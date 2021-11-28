@@ -135,6 +135,6 @@ Heu de crear un *wireframe* i un prototip de la pàgina web de **TimeInn**, un p
 
 # 9 Video Explicatiu
 
-- 
+- https://drive.google.com/file/d/14YIwWDIvbprj0P4zEuWCC2LN2ywv6hws/view?usp=sharing
 
 
