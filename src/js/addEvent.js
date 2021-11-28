@@ -12,7 +12,7 @@ export var eventarr = [{
     dateEvent: '12/15/2021',
     descriptionEvent: 'Vuelve la feria del libro..',
     isPat: "00:30",
-    imgEvent: '../resources/img/boda.jpg'
+    imgEvent: '../resources/img/feria.jpg'
 },
 {
     id: 'default',
@@ -20,7 +20,7 @@ export var eventarr = [{
     dateEvent: '12/30/2021',
     descriptionEvent: 'imagenes del desfile neoyorquino..',
     isPat: "16:30",
-    imgEvent: '../resources/img/boda.jpg'
+    imgEvent: '../resources/img/desfile.webp'
 },
 {
     id: 'default',
@@ -28,14 +28,14 @@ export var eventarr = [{
     dateEvent: '12/2/2021',
     descriptionEvent: 'Los premidos de la noche..',
     isPat: "17:30",
-    imgEvent: '../resources/img/boda.jpg'
+    imgEvent: '../resources/img/dial.jpg'
 },{
     id: 'default',
     nameEvent: 'Gala Emmy',
     dateEvent: '12/1/2021',
     descriptionEvent: 'La gala se celebró..',
     isPat: "16:00",
-    imgEvent: '../resources/img/boda.jpg'
+    imgEvent: '../resources/img/emmy.jpg'
 },
 {
     id: 'default',
@@ -43,7 +43,7 @@ export var eventarr = [{
     dateEvent: '12/3/2021',
     descriptionEvent: 'exposición cuidado con..',
     isPat: "19:00",
-    imgEvent: '../resources/img/boda.jpg'
+    imgEvent: '../resources/img/exposicion.jpg'
 },
 {
     id: 'default',
@@ -51,7 +51,7 @@ export var eventarr = [{
     dateEvent: '12/10/2021',
     descriptionEvent: 'Se celebró den Barcelona..',
     isPat: "22:00",
-    imgEvent: '../resources/img/boda.jpg'
+    imgEvent: '../resources/img/salon.jpg'
 }
 
 ]
