@@ -70,6 +70,8 @@ document.getElementById("btnSubmit").addEventListener("click", () => {
     }
 });
 
+// variable que formatea la fecha de los meses
+
 var monthNames = [
     "Enero",
     "Febrero",
@@ -85,6 +87,7 @@ var monthNames = [
     "Diciembre",
 ];
 
+// variables que guardan fecha, dia o año
 var currentDate = new Date();
 var currentDay = currentDate.getDate();
 var monthNumber = currentDate.getMonth();
@@ -104,7 +107,7 @@ year.textContent = currentYear.toString();
 prevMonthDOM.addEventListener("click", () => lastMonth());
 nextMonthDOM.addEventListener("click", () => nextMonth());
 
-
+// funcion que escribe los dias del mes y les da diferentes clases segun si es dia acutal, del mes pasado o de este mes
 const writeMonth = (month) => {
     for (var i = startDay(); i > 0; i--) {
         dates.innerHTML += ` <div class="calendarDate calendarItem calendarLastDays">
@@ -121,6 +124,7 @@ const writeMonth = (month) => {
     }
 };
 
+// funcion que escoge los dias del mes en funcion si es impar, par o por defecto como febrero
 const getTotalDays = (month) => {
     if (month === -1) month = 11;
 
@@ -148,11 +152,13 @@ const isLeap = () => {
     );
 };
 
+// funcion que guarda el dia actual
 const startDay = () => {
     var start = new Date(currentYear, monthNumber, 1);
     return start.getDay() - 1 === -1 ? 6 : start.getDay() - 1;
 };
 
+// funcion que detecta el mes anterior al actual
 const lastMonth = () => {
     if (monthNumber !== 0) {
         monthNumber--;
@@ -164,6 +170,7 @@ const lastMonth = () => {
     setNewDate();
 };
 
+// funcion que detecta el mes siguiente al actual
 const nextMonth = () => {
     if (monthNumber !== 11) {
         monthNumber++;
@@ -175,6 +182,7 @@ const nextMonth = () => {
     setNewDate();
 };
 
+// funcion que añade todos los valores del mes siguiente o anterior
 const setNewDate = () => {
     month.textContent = monthNames[monthNumber];
     year.textContent = currentYear.toString();
