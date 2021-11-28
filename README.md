@@ -132,3 +132,9 @@ Heu de crear un *wireframe* i un prototip de la pàgina web de **TimeInn**, un p
 - https://fonts.googleapis.com
 - https://fonts.gstatic.com
 - https://fonts.googleapis.com/css2?family=Genos:ital@1&-display=swap
+
+# 9 Video Explicatiu
+
+- 
+
+
