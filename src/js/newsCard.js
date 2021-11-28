@@ -7,89 +7,81 @@ var arrNews = [];
 
 export var newsarr = [{
         id: 'default',
-        nameEvent: 'Hiking',
+        nameEvent: 'Covid',
         dateEvent: '12/15/2021',
-        descriptionEvent: 'hiking descr',
+        descriptionEvent: 'Países Bajos confirma 13 casos..',
         isPat: "Patrocinado",
         imgEvent: 'img Hiking'
     },
     {
         id: 'default',
-        nameEvent: 'wedding',
-        dateEvent: '12/30/2021',
-        descriptionEvent: 'wedding descr',
+        nameEvent: 'Conducción',
+        dateEvent: '1/30/2021',
+        descriptionEvent: 'Difícil equilibrio entre salud..',
         isPat: "Patrocinado",
         imgEvent: 'wedding Hiking'
     },
     {
         id: 'default',
-        nameEvent: 'pary',
+        nameEvent: 'Nieve',
         dateEvent: '12/2/2021',
-        descriptionEvent: 'pary descr',
+        descriptionEvent: 'Alerta roja al País Vasco..',
         isPat: "Patrocinado",
         imgEvent: 'pary Hiking'
     },{
         id: 'default',
-        nameEvent: 'one',
-        dateEvent: '12/1/2021',
-        descriptionEvent: 'hiking descr',
+        nameEvent: 'Israel',
+        dateEvent: '12/31/2021',
+        descriptionEvent: 'Cierra sus fronteras..',
         isPat: "No Patrocinado",
         imgEvent: 'img Hiking'
     },
     {
         id: 'default',
-        nameEvent: 'two',
+        nameEvent: 'Erupción ',
         dateEvent: '12/3/2021',
-        descriptionEvent: 'wedding descr',
+        descriptionEvent: 'Surge una nueva colada..',
         isPat: "Patrocinado",
         imgEvent: 'wedding Hiking'
     },
     {
         id: 'default',
-        nameEvent: 'y',
-        dateEvent: '12/10/2021',
-        descriptionEvent: 'pary descr',
+        nameEvent: 'Vacunar',
+        dateEvent: '12/30/2021',
+        descriptionEvent: 'Ya se puede vacunar..',
+        isPat: "No Patrocinado",
+        imgEvent: 'pary Hiking'
+    },
+    {
+        id: 'default',
+        nameEvent: 'Pasaporte Covid',
+        dateEvent: '1/10/2021',
+        descriptionEvent: 'Ya se exige en seis..',
         isPat: "Patrocinado",
         imgEvent: 'pary Hiking'
     },
     {
         id: 'default',
-        nameEvent: 'm',
-        dateEvent: '12/10/2021',
-        descriptionEvent: 'pary descr',
+        nameEvent: 'Dimisión',
+        dateEvent: '3/10/2021',
+        descriptionEvent: 'Se exige a Dolores Delgado..',
         isPat: "Patrocinado",
         imgEvent: 'pary Hiking'
     },
     {
         id: 'default',
-        nameEvent: 'j',
-        dateEvent: '12/10/2021',
-        descriptionEvent: 'pary descr',
-        isPat: "Patrocinado",
+        nameEvent: 'Polícias y Guardias',
+        dateEvent: '12/29/2021',
+        descriptionEvent: 'Marchan contra la reforma..',
+        isPat: "No Patrocinado",
         imgEvent: 'pary Hiking'
     },
     {
         id: 'default',
-        nameEvent: 'i',
-        dateEvent: '12/10/2021',
-        descriptionEvent: 'pary descr',
-        isPat: "Patrocinado",
-        imgEvent: 'pary Hiking'
-    },
-    {
-        id: 'default',
-        nameEvent: 'j',
-        dateEvent: '20/10/2021',
-        descriptionEvent: 'pary descr',
-        isPat: "Patrocinado",
-        imgEvent: 'pary Hiking'
-    } ,
-    {
-        id: 'default',
-        nameEvent: 'p',
-        dateEvent: '20/10/2021',
-        descriptionEvent: 'pary descr',
-        isPat: "Patrocinado",
+        nameEvent: 'Afectados Volcán',
+        dateEvent: '12/28/2021',
+        descriptionEvent: 'Canarias cede viivendas..',
+        isPat: "No Patrocinado",
         imgEvent: 'pary Hiking'
     } 
 ]

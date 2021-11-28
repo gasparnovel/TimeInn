@@ -7,49 +7,49 @@ export var arrEvents = [];
 
 export var eventarr = [{
     id: 'default',
-    nameEvent: 'Hiking',
+    nameEvent: 'Feria del Libro',
     dateEvent: '12/15/2021',
-    descriptionEvent: 'hiking descr',
-    isPat: "Patrocinado",
+    descriptionEvent: 'Vuelve la feria del libro..',
+    isPat: "00:30",
     imgEvent: 'img Hiking'
 },
 {
     id: 'default',
-    nameEvent: 'wedding',
+    nameEvent: 'Desfile',
     dateEvent: '12/30/2021',
-    descriptionEvent: 'wedding descr',
-    isPat: "Patrocinado",
+    descriptionEvent: 'imagenes del desfile neoyorquino..',
+    isPat: "16:30",
     imgEvent: 'wedding Hiking'
 },
 {
     id: 'default',
-    nameEvent: 'pary',
+    nameEvent: 'Premios Dial',
     dateEvent: '12/2/2021',
-    descriptionEvent: 'pary descr',
-    isPat: "Patrocinado",
+    descriptionEvent: 'Los premidos de la noche..',
+    isPat: "17:30",
     imgEvent: 'pary Hiking'
 },{
     id: 'default',
-    nameEvent: 'one',
+    nameEvent: 'Gala Emmy',
     dateEvent: '12/1/2021',
-    descriptionEvent: 'hiking descr',
-    isPat: "Patrocinado",
+    descriptionEvent: 'La gala se celebró..',
+    isPat: "16:00",
     imgEvent: 'img Hiking'
 },
 {
     id: 'default',
-    nameEvent: 'two',
+    nameEvent: 'Exposición Alfonso',
     dateEvent: '12/3/2021',
-    descriptionEvent: 'wedding descr',
-    isPat: "Patrocinado",
+    descriptionEvent: 'exposición cuidado con..',
+    isPat: "19:00",
     imgEvent: 'wedding Hiking'
 },
 {
     id: 'default',
-    nameEvent: 'three',
+    nameEvent: 'Salon del Manga',
     dateEvent: '12/10/2021',
-    descriptionEvent: 'pary descr',
-    isPat: "Patrocinado",
+    descriptionEvent: 'Se celebró den Barcelona..',
+    isPat: "22:00",
     imgEvent: 'pary Hiking'
 }
 
