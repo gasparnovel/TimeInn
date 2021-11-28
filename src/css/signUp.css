@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -10,8 +9,11 @@
 body {
     background: black;
 }
+
+/* media que hace que a partir de 600px se aplique el siguiente css*/
 @media screen and (min-width: 600px) {
 
+    /* grid*/
     #container {
         height: 100vh;
         display: grid;
@@ -22,6 +24,7 @@ body {
             "fot fot fot fot";
     }
 
+    /* grid*/
 
     .loginImg {
         grid-area: clip;
@@ -30,6 +33,8 @@ body {
         justify-self: center;
 
     }
+
+    /* grid*/
 
     .formulario {
         background: #fff;
@@ -111,15 +116,22 @@ body {
         color: white;
     }
 }
+
+/* media que hace que si es menor de 600px se aplique el siguiente css*/
 @media screen and (max-width: 600px) {
+
+    /* grid*/
+
     #container {
-        height: 100vh;        
+        height: 100vh;
         display: grid;
-        grid-template-columns: 1fr ;
+        grid-template-columns: 1fr;
         grid-template-areas:
             "clip"
             "form"
     }
+
+    /* grid*/
 
     .loginImg {
         grid-area: clip;
@@ -129,6 +141,8 @@ body {
         justify-self: center;
         margin-top: 60px;
     }
+
+    /* grid*/
 
     .formulario {
         width: 80vw;
@@ -150,7 +164,7 @@ body {
     .login {
         text-align: center;
         color: var(--secondary);
-        font-size: 25px;        
+        font-size: 25px;
         margin-bottom: 1vh;
     }
 
@@ -170,20 +184,24 @@ body {
         display: block ruby;
     }
 
-    p{
+    p {
         font-size: 12px;
     }
+
     .icon {
         min-width: 10px;
         text-align: center;
         color: black;
     }
-    i{
+
+    i {
         font-size: 12px;
     }
+
     #toTop {
         display: contents;
     }
+
     .button {
         width: 226px;
         padding: 9px;
