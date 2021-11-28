@@ -77,11 +77,7 @@ export function event() {
             Patroc = c.isPat
             newEvent();
             arrEvents.push(c.nameEvent);
-            // contador++;
-
         }
-        // console.log(id, name, date, desc)
-        // console.log(contador)
     })
 }
 
@@ -131,7 +127,6 @@ function newEvent() {
     newDate.innerHTML = date;
     newDesc.innerHTML = desc;
     newPatrocin.innerHTML = Patroc;
-    // parentAreaa.appendChild(parentArea);
 
     parentArea.appendChild(divParent);
     img.appendChild(imgValue);

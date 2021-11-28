@@ -17,13 +17,6 @@ body {
     display: grid;
     grid-template-columns: .5fr 1fr 1fr .5fr;
     grid-template-rows: .5fr 1fr 1fr 1fr;
-    /* grid-template-areas: 
-    "nav nav nav nav "
-    "title title title  ."
-    ". card card . "
-    ". card card btn"
-    "fot fot fot fot"; */
-    /*! z-index: 10; */
   }
 
 
@@ -153,21 +146,14 @@ body {
     scrollbar-width: thin;
     scrollbar-width: none;
     overflow: auto;
-    /*   background: green; */
     visibility: visible;
-    /* position: fixed; */
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 
     margin-top: 2vh;
     width: 100%;
-    /* z-index: -1; */
     grid-area: 2/1/5/5;
-
-
-    /* background: green; */
-
   }
 
 
@@ -212,14 +198,11 @@ body {
 
 
   .card {
-    /* max-width: 250px; */
     margin: 1vh 3vw;
     background-color: white;
     text-align: center;
-    /* font-size: 20px; */
     border: 2px solid var(--primary);
     border-radius: 8px;
-    /* height: 50vh; */
   }
 
   .card:hover {
@@ -304,8 +287,6 @@ body {
     border-radius: 100%;
     margin: 1vh 0vw;
     height: 20vh;
-    /* position: absolute; */
-    /* transform: translate(-50%, -70%); */
     border: 2px solid var(--primary);
     box-shadow: 0 0 20px #00000033;
 }
@@ -318,13 +299,6 @@ body {
     display: grid;
     grid-template-columns: .5fr 1fr 1fr .5fr;
     grid-template-rows: .5fr 1fr 1fr 1fr;
-    /* grid-template-areas: 
-    "nav nav nav nav "
-    "title title title  ."
-    ". card card . "
-    ". card card btn"
-    "fot fot fot fot"; */
-    /*! z-index: 10; */
   }
 
 
@@ -466,21 +440,13 @@ body {
     scrollbar-width: thin;
     scrollbar-width: none;
     overflow: auto;
-    /*   background: green; */
     visibility: visible;
-    /* position: fixed; */
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-
     margin-top: 2vh;
     width: 100%;
-    /* z-index: -1; */
     grid-area: 2/1/5/5;
-
-
-    /* background: green; */
-
   }
 
 
@@ -533,7 +499,6 @@ body {
 }
 
 .name {
-    /* margin-top: 25px; */
     font-size: 14px;
     font-weight: bold;
 }

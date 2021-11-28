@@ -11,14 +11,12 @@ import {
     windowOnClick,
     layout
 } from "./showLayout.js";
-// import { contador } from "./showLayout.js";
 
 document.addEventListener('DOMContentLoaded', () => {
     sortnews
     news();
     sortevents
     event();
-    // let inArr = arrEvents;
 })
 
 $(function () {
@@ -36,7 +34,6 @@ $(function () {
 
 const btnsubm = document.getElementById("btnSubmit").addEventListener('click', (e) => {
 
-    //    e.preventDefault();
     let name = document.getElementById("eventName").value;
     let desc = document.getElementById("eventDescription").value
     if (name == "" || desc == "") {
@@ -52,7 +49,6 @@ const btnsubm = document.getElementById("btnSubmit").addEventListener('click', (
         }
         sortevents.unshift(arrFormValues);
         layoutToggle();
-        // console.log(sorted);
         event();
     }
 })
@@ -71,9 +67,3 @@ function rmEventos() {
 }
 
 setInterval(rmEventos, 1000);
-// var cards = document.querySelectorAll(".remBtn");
-// cards.forEach((e)=>{
-//     e.addEventListener('click',()=>{
-//         console.log(e)
-//     })
-// })

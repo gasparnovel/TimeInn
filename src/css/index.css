@@ -152,19 +152,12 @@ body {
       scrollbar-width: thin;
       scrollbar-width: none;
       overflow: auto;
-      /*   background: green; */
       visibility: visible;
-      /* position: fixed; */
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
-  
       margin-top: 2vh;
       width: 100%;
-      /* z-index: -1; */
-  
-      /* background: green; */
-  
     }
   
   
@@ -209,14 +202,11 @@ body {
   
   
     .card {
-      /* max-width: 250px; */
       margin: 1vh 3vw;
       background-color: white;
       text-align: center;
-      /* font-size: 20px; */
       border: 2px solid var(--primary);
       border-radius: 8px;
-      /* height: 50vh; */
     }
   
     .card:hover {
@@ -434,8 +424,6 @@ a {
   border-radius: 100%;
   margin: 1vh 0vw;
   height: 20vh;
-  /* position: absolute; */
-  /* transform: translate(-50%, -70%); */
   border: 2px solid var(--primary);
   box-shadow: 0 0 20px #00000033;
 }
@@ -678,20 +666,12 @@ a {
     scrollbar-width: thin;
     scrollbar-width: none;
     overflow: auto;
-    /*   background: green; */
     visibility: visible;
-    /* position: fixed; */
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-
     margin-top: 2vh;
     width: 100%;
-    /* z-index: -1; */
-
-
-    /* background: green; */
-
   }
 
 

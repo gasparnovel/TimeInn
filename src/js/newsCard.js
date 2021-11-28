@@ -107,11 +107,7 @@ export function news() {
             Patroc = c.isPat
             newNews();
             arrNews.push(c.nameEvent);
-            // contador++;
-
         }
-        // console.log(id, name, date, desc)
-        // console.log(contador)
     })
 }
 

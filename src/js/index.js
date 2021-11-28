@@ -13,7 +13,6 @@ import {
 } from "./toTop.js";
 console.log(toTop, mybutton, widow(), scrollFunction(), topFunction());
 
-// var contador = 0;
 
 import {
     event,
@@ -68,15 +67,8 @@ document.getElementById("btnSubmit").addEventListener("click", () => {
         expiry.setTime(expiry.getTime() + 86400000); 
 
         document.cookie = "evacten=cookieValue; expires=" + expiry.toGMTString();
-        // alert("this is your first time");
     }
 });
-
-
-
-
-
-// Gaspar
 
 var monthNames = [
     "Enero",
@@ -108,12 +100,10 @@ var nextMonthDOM = document.getElementById("next-month");
 month.textContent = monthNames[monthNumber];
 year.textContent = currentYear.toString();
 
-// llaman a la funcion para pasar el mes o retroceder
 
 prevMonthDOM.addEventListener("click", () => lastMonth());
 nextMonthDOM.addEventListener("click", () => nextMonth());
 
-// Devuelve los numeros del calenadrio
 
 const writeMonth = (month) => {
     for (var i = startDay(); i > 0; i--) {
