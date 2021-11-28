@@ -95,7 +95,7 @@ Heu de crear un *wireframe* i un prototip de la pàgina web de **TimeInn**, un p
 
 |**READ**|<p>- La documentació del projecte es crearà en el README.MD del repo</p><p>- Cal indicar l’adreça del **github project** emprat per a treballar en el projecte i del **wireframe** creat</p><p>- Cal indicar la **paleta de colors** i les **fonts emprades**, en el format indicat més adalt</p><p>- Cal indicar el elements predissenyats o codi *ad hoc* que hagueu emprat i la web d’on ho heu obtingut</p><p>- Indicau les **pàgines web** en les què us heu **inspirat** per crear el wireframe i/o el disseny</p>|
 | :-: | - |
-|**VIDEO**|[] Creau un **video explicatiu** de la web, preferentment **en anglès**, que duri entre 5 i 10 minuts**.**|
+|**VIDEO**|[x] Creau un **video explicatiu** de la web, preferentment **en anglès**, que duri entre 5 i 10 minuts**.**|
 
 
 # 6 Ampliacions
