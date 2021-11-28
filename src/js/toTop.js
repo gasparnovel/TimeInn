@@ -28,4 +28,5 @@ function topFunction() {
     document.documentElement.scrollTop = 0;
 }
 
+// exportamos las variables y las funciones
 export { toTop, mybutton, widow, scrollFunction, topFunction };
