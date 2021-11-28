@@ -65,9 +65,7 @@ function rmEventos() {
     } else {
         btnRem.forEach((e) => {
             e.addEventListener('click', () => {
-                e.parentNode.removeChild(e);
-                // inArr = []
-                // console.log(arrEvents)
+                e.style.display = "none";
             })
         })
     }

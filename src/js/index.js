@@ -24,21 +24,21 @@ import {
     sortnews
 } from "./newsCard.js";
 
-// import { rmEventos } from "./eventos.js";
+import { createCookie } from "./checkCookie.js";
 
-document.addEventListener("DOMContentLoaded", () => {
-    sortnews;
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    sortnews
     news();
-    sortevents;
+    sortevents
     event();
-    if (document.cookie.indexOf("evacten=") >= 0) {
-        document.getElementById("cookieWrapper").style.visibility = "hidden";
-    } else {
-        setTimeout(3000, () => {
-            document.getElementById("cookieWrapper").style.visibility = "visible";
-        });
-    }
-});
+
+
+    setTimeout(createCookie,3000);
+
+})
+
 
 function rmEventos() {
     let btnRem = document.querySelectorAll('.remBtnn')
@@ -47,13 +47,12 @@ function rmEventos() {
     } else {
         btnRem.forEach((e) => {
             e.addEventListener('click', () => {
-                e.parentNode.removeChild(e);
-                // inArr = []
-                // console.log(arrEvents)
+                e.style.display = "none";
             })
         })
     }
 }
+rmEventos()
 
 setInterval(rmEventos, 1000);
 
@@ -72,10 +71,10 @@ document.getElementById("btnSubmit").addEventListener("click", () => {
         // alert("this is your first time");
     }
 });
-// document.addEventListener('DOMContentLoaded', () => {
-//     sorted
-//     check();
-// })
+
+
+
+
 
 // Gaspar
 
