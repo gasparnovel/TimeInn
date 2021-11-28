@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- titulo -->
+    <title>Evacten</title>
+    <!-- css -->
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/headerFooterTop.css">
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caesar+Dressing&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Genos:ital@1&display=swap" rel="stylesheet">
+    <!-- FONT -->
+    <link rel="shortcut icon" href="#">
+</head>
+
+<body>
+    <main>
+        <!-- etiqueta donde se incluira el header mediante js -->
+        <header id="myHeader"></header>
+
+        <!-- contenedor principal -->
+        <div id="container">
+
+            <!-- video y titulo -->
+            <h1 class="title">Video Destacado y Calendario</h1>
+            <video autoplay muted preload="none" loop id="videoStyle" src="../resources/video/hiking.mp4"></video>
+
+            <!-- calendario -->
+            <div class="calendar">
+                <div class="calendarInfo">
+                    <div class="calendarArrowPrev" id="prev-month">&#9664;</div>
+                    <div class="calendarMonth" id="month"></div>
+                    <p>/</p>
+                    <div class="calendarYear" id="year"></div>
+                    <div class="calendarArrowNext" id="next-month">&#9654;</div>
+                </div>
+
+                <ol class="calendarWeek">
+                    <li class="calendarItem">Lun</li>
+                    <li class="calendarItem">Mar</li>
+                    <li class="calendarItem">Mie</li>
+                    <li class="calendarItem">Jue</li>
+                    <li class="calendarItem">Vie</li>
+                    <li class="calendarItem">Sab</li>
+                    <li class="calendarItem">Dom</li>
+                </ol>
+
+                <div class="calendarDates" id="dates"></div>
+            </div>
+            <!-- bloque que contiene los eventos-->
+            <div class="eventBackgorund">
+                <div class="newsParent">
+                    <p class="parStyle">News</p>
+                    <div id="news"></div>
+                </div>
+
+                <div class="eventParent">
+                    <p class="parStyle">Events</p>
+                    <div id="events"></div>
+                </div>
+
+            </div>
+            <!-- formulario de la coockie -->
+            <div id="cookieWrapper">
+                <div class="modal-content">
+                    <form class="formBox">
+                        <h1 class="login">Subscribre Now</h1>
+                        <input class="eventFormStyle" type="email" name="emailValue" id="emailValue"
+                            placeholder="Add an Email">
+                        <input class="eventFormStyle" type="button" name="btnSubmit" id="btnSubmit" value="Submit">
+                    </form>
+                </div>
+            </div>
+
+
+        </div>
+        <!-- boton que va a lo alto de la pagina y se incluye mediante js -->
+        <div id="toTop"></div>
+
+    </main>
+    <!-- etiqueta donde se incluira el footer mediante js -->
+    <footer id="myFooter"></footer>
+</body>
+<!-- importa el script de tipo modulo -->
+<script type="module" src="../js/index.js"></script>
+
+</html>

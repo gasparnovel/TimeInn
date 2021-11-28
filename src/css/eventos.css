@@ -1,0 +1,580 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Genos', sans-serif;
+}
+
+
+body {
+  background: black;
+  overflow-x: hidden;
+}
+/* Esta media query, servira para poder hacer responsive la pagina de 600px >  */
+
+@media screen and (min-width: 600px) {
+
+  /* En este container, estpecificamos el grid-template row y columns para dividir la pagina */
+  #container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: .5fr 1fr 1fr .5fr;
+    grid-template-rows: .5fr 1fr 1fr 1fr;
+  }
+
+
+  .title {
+    /* El title se le especificara un grid-area: 1/5/1/1 */
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    align-self: center;
+    text-shadow: -2px -1px 1px var(--secondaryVariant), 4px 2px 1px var(--primaryVariant), -2px 2px 1px var(--primaryVariant), 2px -2px 1px var(--primaryVariant);
+    grid-area: 1/5/1/1;
+  }
+
+  .nav-box {
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 1.1rem;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  #eventImage {
+    color: white;
+  }
+
+  .login {
+    text-align: center;
+    color: white;
+    font-size: 40px;        
+    margin-bottom: 1vh;
+}
+
+/* Esto es el estilo de boton para poder crear un nuevo evento */
+  #addEventStyle {
+    position: fixed;
+    top: 105px;
+    left: 80px;
+    z-index: 1;
+    font-size: 40px;
+    outline: none;
+    cursor: pointer;
+    padding: 15px;
+    border: 2px white solid;
+    color: white;
+    transition: all 300ms ease;
+    background-image: radial-gradient(var(--secondaryVariant), black);
+  }
+
+  #addEventStyle:hover {
+    border: 2px white solid;
+    background-image: radial-gradient(var(--primaryVariant), black);
+    color: white;
+  }
+
+  .formBox {
+    text-align: center;
+    padding: 4vh 0vw;
+    flex-direction: column;
+
+  }
+
+  .eventFormStyle {
+        font-size: 20px;
+        width: 82%;
+        padding: 10px;
+        border-radius: 8px;
+        margin-bottom: 15px;
+  }
+
+  
+
+  #btnSubmit {
+    text-align: center;
+    width: 80%;
+    color: var(--secondary);
+    font-size: 20px;
+    background: white;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 1vh;
+    border: 2px var(--secondary) solid;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+
+
+
+  textarea {
+    resize: none;
+    scrollbar-width: thin;
+  }
+
+  #backEvent {
+    visibility: hidden;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    margin-top: 2vh;
+    width: 100%;
+    z-index: 10;
+  }
+
+  #backEvent:before {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    opacity: 60%;
+    width: 100vw;
+    height: 100vh;
+    background: black;
+  }
+
+  .modal-content {
+    background-image: radial-gradient(var(--secondaryVariant), black);
+    padding: 4vh;
+    grid-area: form;
+    width: 30vw;
+    border-radius: 8px;
+    align-self: center;
+    justify-self: center;
+  }
+
+    /* El eventBackgorund se le especificara un grid-area: 2/1/5/5 */
+
+  .eventBackgorund {
+    scrollbar-width: thin;
+    scrollbar-width: none;
+    overflow: auto;
+    visibility: visible;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    margin-top: 2vh;
+    width: 100%;
+    grid-area: 2/1/5/5;
+  }
+
+
+  #events {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  #news {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .parStyle {
+    text-align: center;
+    color: white;
+    font-size: 35px;
+    align-self: center;
+    text-decoration: underline;
+    text-shadow: -2px -1px 1px var(--secondaryVariant), 4px 2px 1px var(--primaryVariant), -2px 2px 1px var(--primaryVariant), 2px -2px 1px var(--primaryVariant);
+  }
+
+  /* ------form layout----- */
+
+
+  #closeLayout {
+    justify-content: center;
+    display: flex;
+    justify-content: flex-end;    
+    cursor: pointer;
+    border-radius: 0.25rem;
+    margin: 0vh 5vw;    
+    font-weight: bold;
+    color: white;
+    font-size: 30px;
+  }
+
+
+
+  .card {
+    margin: 1vh 3vw;
+    background-color: white;
+    text-align: center;
+    border: 2px solid var(--primary);
+    border-radius: 8px;
+  }
+
+  .card:hover {
+    box-shadow: 0 10px 90px black;
+
+  }
+
+  .cardBody {
+    padding: 10px 40px;
+  }
+
+  .name {
+    font-size: 22px;
+    font-weight: bold;
+  }
+
+  .description {
+    margin-top: 20px;
+    font-size: 14px;
+  }
+
+
+  .buttonStyle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 60px 30px 60px;
+    border: 2px var(--secondary) solid;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    padding: 3px;
+    font-size: 16px;
+  }
+
+  .buttonStyle:hover {
+    background-color: var(--secondary);
+  }
+
+  .linkStyle {
+    text-decoration: none;
+    color: var(--secondary);
+    padding-left: 1vw;
+    padding-right: 1vw;
+  }
+
+  .buttonStyle:hover .linkStyle {
+    background-color: var(--secondary);
+    color: white;
+  }
+
+  .cardFooter {
+    padding-bottom: 10px;
+  }
+
+  .date {
+    font-size: 14px;
+    display: flex;
+    justify-content: end;
+    margin-right: 15px;
+  }
+
+  .btnSty {
+    border: none;
+    padding: 1vh 1vw;
+    border-radius: 8px;
+    font-weight: bold;
+    background: var(--error);
+    color: white;
+    margin-top: 1vh;
+  }
+
+  .btnSty:hover {
+    background: black;
+    color: var(--error);
+    border: 1px solid var(--error);
+  }
+
+  .profileImg {
+    width: 10vw;
+    border-radius: 100%;
+    margin: 1vh 0vw;
+    height: 20vh;
+    border: 2px solid var(--primary);
+    box-shadow: 0 0 20px #00000033;
+}
+
+}
+/* Esta media query, servira para poder hacer responsive la pagina de 600px <  */
+
+@media screen and (max-width: 600px) {
+  #container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: .5fr 1fr 1fr .5fr;
+    grid-template-rows: .5fr 1fr 1fr 1fr;
+  }
+
+
+  .title {
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    margin-left: 80px; 
+    margin-right: 75px;       
+    align-self: center;
+    text-shadow: -2px -1px 1px var(--secondaryVariant), 4px 2px 1px var(--primaryVariant), -2px 2px 1px var(--primaryVariant), 2px -2px 1px var(--primaryVariant);
+    grid-area: 1/5/1/1;
+  }
+
+  .nav-box {
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 1.1rem;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  #addEventStyle {
+    position: fixed;
+    top: 105px;
+    left: 35px;
+    z-index: 1;
+    font-size: 18px;
+    outline: none;
+    cursor: pointer;
+    padding: 5px;
+    border: 2px white solid;
+    color: white;
+    transition: all 300ms ease;
+    background-image: radial-gradient(var(--secondaryVariant), black);
+  }
+
+  #addEventStyle:hover {
+    border: 2px white solid;
+    background-image: radial-gradient(var(--primaryVariant), black);
+    color: white;
+  }
+
+  .formBox {
+    text-align: center;
+    padding: 4vh 0vw;
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .eventFormStyle {
+    font-size: 12px;
+    padding: 6px;
+    border-radius: 8px;
+    margin: 8px;
+  }
+
+
+  #btnSubmit {
+    width: 40vw;    
+    padding: 5px;
+    font-size: 12px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 1vh;
+    border: 2px var(--secondary) solid;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    background-color: var(--secondary);
+    color: white;
+    align-self: center;
+}
+
+
+  textarea {
+    resize: none;
+    scrollbar-width: thin;
+  }
+
+  #backEvent {
+    visibility: hidden;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    margin-top: 2vh;
+    width: 100%;
+    z-index: 10;
+  }
+
+  #backEvent:before {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    opacity: 60%;
+    width: 100vw;
+    height: 100vh;
+    background: black;
+  }
+
+  .modal-content {
+    width: 75vw;
+    padding-top: 0vh;
+    padding-left: 3vh;
+    padding-right: 3vh;
+    padding-bottom: 2vh;
+    grid-area: form;
+    background-image: radial-gradient(var(--secondaryVariant), black);
+    border-radius: 8px;
+    align-self: center;
+    justify-self: center;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-bottom: 60px;
+    margin-top: 40px;
+  }
+
+#eventImage {
+  color: white;
+}
+
+.login {
+    text-align: center;
+    color: white;
+    font-size: 25px;        
+    margin-bottom: 1vh;
+}
+
+
+  
+
+  .eventBackgorund {
+    scrollbar-width: thin;
+    scrollbar-width: none;
+    overflow: auto;
+    visibility: visible;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2vh;
+    width: 100%;
+    grid-area: 2/1/5/5;
+  }
+
+
+  #events {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  #news {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .parStyle {
+    text-align: center;
+    color: white;
+    font-size: 22px;
+    align-self: center;
+    text-shadow: -2px -1px 1px var(--secondaryVariant), 4px 2px 1px var(--primaryVariant), -2px 2px 1px var(--primaryVariant), 2px -2px 1px var(--primaryVariant);
+    padding-bottom: 10px;
+    text-decoration: underline;
+  }
+
+  /* ------form layout----- */
+
+
+  #closeLayout {
+    justify-content: center;
+    display: flex;
+    justify-content: flex-end;    
+    cursor: pointer;
+    border-radius: 0.25rem;
+    margin: 0vh 5vw;    
+    font-weight: bold;
+    color: white;
+  }
+
+  .card {
+    background-color: white;
+    box-shadow: 0 10px 90px #00000024;
+    text-align: center;
+    border: 2px solid var(--primary);
+    border-radius: 8px;
+    margin: 1vw 3vh;
+    width: 36vw;
+}
+
+.name {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.description {
+    margin-top: 15px;
+    font-size: 12px;
+}
+
+.buttonStyle {
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px var(--secondary) solid;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    font-size: 12px;
+}
+
+.buttonStyle:hover {
+    border: 2px white solid;
+    background-color: var(--secondary);
+}
+
+.linkStyle {
+    text-decoration: none;
+    color: var(--secondary);
+}
+
+.buttonStyle:hover .linkStyle {
+    background-color: var(--secondary);
+    color: white;
+}
+
+  .cardFooter {
+    padding-bottom: 10px;
+  }
+
+  .date {
+    font-size: 14px;
+    display: flex;
+    justify-content: end;
+    margin-right: 15px;
+  }
+
+  .btnSty {
+    border: none;
+    padding: 1vh 1vw;
+    border-radius: 8px;
+    font-weight: bold;
+    background: var(--error);
+    color: white;
+    margin-top: 1vh;
+  }
+
+  .btnSty:hover {
+    background: black;
+    color: var(--error);
+    border: 1px solid var(--error);
+  }
+  .profileImg {
+    width: 20vw;
+    border-radius: 100%;
+    height: 12vh;
+    margin: 1vh 0vw;
+    border: 2px solid var(--primary);
+    box-shadow: 0 0 20px #00000033;
+}
+}

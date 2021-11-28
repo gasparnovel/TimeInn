@@ -1,0 +1,312 @@
+/* Especificamos las variables */
+:root {
+    --primary: #7b2cbf;    
+    --primaryVariant: #3D1660;
+    --secondary: #2cb2bf;
+    --secondaryVariant: #279CA7;
+    --error: #B00020;
+}
+
+/* El css para el nav */
+nav {
+    display: flex;
+    height: 80px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px 0 100px;
+    flex-wrap: wrap;
+    border-bottom: 1px solid white;
+}
+
+.logo {
+    font-size: 35px;
+    font-weight: 600;
+    color: white;
+    font-family: 'Caesar Dressing', cursive;
+    font-size: 2rem;
+}
+
+nav ol {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    font-size: 1.1rem;
+}
+
+nav ol li {
+    margin: 0vh 3vw;
+    color: white;
+    list-style: none;
+}
+
+nav ol li a {
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+nav ol li a.active,
+nav ol li a:hover {
+    color: #111;
+    background: #fff;
+}
+
+nav .menu-btn i {
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+}
+nav ol li.active,
+nav ol li:hover {
+    background: none;
+    color: var(--secondary);
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--secondary);
+}
+
+/* Esta media query, servira para poder hacer responsive la pagina de 600px >  */
+@media (min-width: 600px) {
+.footer {
+    width: 100%;
+    background-color: black;
+    border-top: 1px solid white;
+}
+/* El Layout del footer */
+.grupOne {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 50px;
+    padding-left: 100px;
+}
+
+.grupOne h2 {
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.grupOne .footerP {
+    color: #efefef;
+    margin-bottom: 10px;
+}
+
+.grupOne .social a {
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    margin-bottom: 10px;
+    line-height: 45px;
+    color: var(--secondary);
+    margin-right: 10px;
+    background: white;
+    border: 2px var(--secondary) solid;
+    text-align: center;
+    transition: all 300ms ease;
+    border-radius: 100%;
+}
+
+.grupOne .social a:hover {
+    border: 2px white solid;
+    background-color: var(--secondary);
+    color: white;
+}
+/* El footer */
+.grupTwo {
+    background-color: var(--primary);
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+
+small {
+    font-size: 15px;
+}
+
+#scrollTop {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    outline: none;
+    cursor: pointer;
+    padding: 10px;
+    border: 2px var(--secondary) solid;
+    background: white;
+    color: var(--secondary);
+    transition: all 300ms ease;
+}
+
+#scrollTop:hover {
+    border: 2px white solid;
+    background-color: var(--secondary);
+    color: white;
+}
+}
+/* Esta media query, servira para poder hacer responsive la pagina de 1000px <  */
+
+@media (max-width: 1000px) {
+    nav {
+        padding: 0 40px 0 50px;
+    }
+}
+/* Esta media query, servira para poder hacer responsive la pagina de 920px <  */
+
+@media (max-width: 920px) {
+    nav .menu-btn i {
+        display: block;
+    }
+
+    #click:checked~.menu-btn i:before {
+        content: "\f00d";
+    }
+
+    nav ol {
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        background: black;
+        height: 72vh;
+        width: 100%;
+        text-align: center;
+        display: block;
+        transition: all 0.3s ease;
+    }
+
+    #click:checked~ol {
+        left: 0;
+        position: absolute;
+        z-index: 2;
+        height: 100vh;
+    }
+
+    nav ol li {
+        width: 100%;
+        margin: 40px 0;
+        font-size: 1.1rem;
+    }
+
+    nav ol li a {
+        width: 100%;
+        margin-left: -100%;
+        display: block;
+        font-size: 20px;
+        transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+
+    #click:checked~ol li a {
+        margin-left: 0px;
+        
+    }
+
+    nav ol li.active,
+    nav ol li:hover {
+        background: none;
+        color: var(--secondary);
+    }
+}
+/* Esta media query, servira para poder hacer responsive la pagina de 600px <  */
+
+@media screen and (max-width: 600px) {
+    .footer {
+        width: 100%;
+        background-color: black;
+        border-top: 1px solid white;
+    }
+    
+    .grupOne {
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+        display: grid;
+        grid-gap: 50px;
+        padding: 45px 50px;
+        padding-left: 80px;
+    }
+    
+    .grupOne h2 {
+        color: #fff;
+        margin-bottom: 25px;
+        font-size: 20px;
+    }
+    
+    .grupOne .footerP {
+        color: #efefef;
+        margin-bottom: 10px;
+    }
+    
+    .grupOne .social a {
+        display: inline-block;
+        text-decoration: none;
+        width: 35px;
+        height: 35px;
+        margin-bottom: 10px;
+        line-height: 35px;
+        color: var(--secondary);
+        margin-right: 10px;
+        background: white;
+        border: 2px var(--secondary) solid;
+        text-align: center;
+        transition: all 300ms ease;
+        border-radius: 100%;
+    }
+    
+    .grupOne .social a:hover {
+        border: 2px white solid;
+        background-color: var(--secondary);
+        color: white;
+    }
+    
+    .grupTwo {
+        background-color: var(--primary);
+        padding: 15px 10px;
+        text-align: center;
+        color: #fff;
+    }
+    
+    small {
+        font-size: 15px;
+    }
+    
+    #scrollTop {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        z-index: 99;
+        font-size: 16px;
+        outline: none;
+        cursor: pointer;
+        padding: 5px;
+        border: 2px var(--secondary) solid;
+        background: white;
+        color: var(--secondary);
+        transition: all 300ms ease;
+    }
+    
+    #scrollTop:hover {
+        border: 2px white solid;
+        background-color: var(--secondary);
+        color: white;
+    }
+}
