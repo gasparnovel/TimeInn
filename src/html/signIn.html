@@ -1,49 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- titulo -->
     <title>Sign In</title>
+    <!-- css -->
     <link rel="stylesheet" href="../css/signIN.css">
     <link rel="stylesheet" href="../css/headerFooterTop.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" >
-    <!-- FONT -->
+        <!-- font awensome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <!-- FONT-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caesar+Dressing&display=swap" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Genos:ital@1&display=swap" rel="stylesheet"> 
-    <!-- FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Genos:ital@1&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <main>
         <header id="myHeader"></header>
+
         <div id="container">
-            
+
+            <!-- imagen -->
             <img src="../resources/img/login.svg" class="loginImg" alt="">
 
+            <!-- formulario -->
             <form class="formulario">
                 <h1 class="login">Login</h1>
-                    <div class="input-contenedor">
-                        <i class="fas fa-envelope icon"></i>
-                        <input type="text" placeholder="Correo Electronico">
-                    </div>
-                    <div class="input-contenedor">
-                        <i class="fas fa-key icon"></i>
-                        <input type="password" placeholder="Contraseña">
-                    </div>
-                    <input type="submit" value="Login" class="button">
-                    <p class="center">Si ya tienes cuenta, has aceptado nuestras Condiciones de uso y Política de privacidad.</p>
-                    <p class="center">¿No tienes una cuenta? <a class="link" href="./signUp.html">Registrate </a></p>
+                <div class="input-contenedor">
+                    <!-- iconos de fontawensome -->
+
+                    <i class="fas fa-envelope icon"></i>
+                    <input type="text" placeholder="Correo Electronico">
+                </div>
+                <div class="input-contenedor">
+                    <!-- iconos de fontawensome -->
+                    <i class="fas fa-key icon"></i>
+                    <input type="password" placeholder="Contraseña">
+                </div>
+                <input type="submit" value="Login" class="button">
+                <p class="center">Si ya tienes cuenta, has aceptado nuestras Condiciones de uso y Política de
+                    privacidad.</p>
+                <p class="center">¿No tienes una cuenta? <a class="link" href="./signUp.html">Registrate </a></p>
             </form>
+
+            <!-- boton que nos lleva hacia arriba de la pagina -->
             <div id="toTop"></div>
         </div>
         <footer id="myFooter"></footer>
     </main>
 </body>
+<!-- importacion del modulo js -->
 <script type="module" src="../js/index.js"></script>
 
 </html>

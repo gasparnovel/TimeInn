@@ -11,6 +11,7 @@
 body {
     background: black;
 }
+/* media que hace que a partir de 600px se aplique el siguiente css*/
 
 @media screen and (min-width: 600px) {
 
@@ -113,7 +114,7 @@ body {
         color: white;
     }
 }
-
+/* media que hace que si es menor de 600px se aplique el siguiente css*/
 @media screen and (max-width: 600px) {
     #container {
         height: 100vh;        
