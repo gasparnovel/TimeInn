@@ -90,6 +90,10 @@ function newEvent() {
     let divParent = document.createElement('div');
     divParent.classList.add('card','remBtnn');
 
+    let img = document.createElement('div');
+    let imgValue = document.createElement('img');
+    imgValue.className = "profileImg";
+
     let nameDescDiv = document.createElement('div');
     nameDescDiv.className = 'cardBody';
 
@@ -126,12 +130,19 @@ function newEvent() {
     // parentAreaa.appendChild(parentArea);
 
     parentArea.appendChild(divParent);
+    img.appendChild(imgValue);
     nameDescDiv.appendChild(newName);
     nameDescDiv.appendChild(newDesc);
     nameDescDiv.appendChild(newPatrocin);
     divButt.appendChild(butt);
     divFott.appendChild(newDate);
     divFott.appendChild(remBtn);
+
+    divParent.appendChild(img);
+    divParent.appendChild(nameDescDiv);
+    divParent.appendChild(divButt);
+    divParent.appendChild(divFott);
+
 
 
     divParent.appendChild(nameDescDiv);

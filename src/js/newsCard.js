@@ -131,6 +131,10 @@ function newNews() {
     let divParent = document.createElement('div');
     divParent.classList.add('card', 'cardGridLeft');
 
+    let img = document.createElement('div');
+    let imgValue = document.createElement('img');
+    imgValue.className = "profileImg";
+
     let nameDescDiv = document.createElement('div');
     nameDescDiv.className = 'cardBody';
 
@@ -163,12 +167,15 @@ function newNews() {
 
 
     parentArea.appendChild(divParent);
+    img.appendChild(imgValue);
+
     nameDescDiv.appendChild(newName);
     nameDescDiv.appendChild(newDesc);
     nameDescDiv.appendChild(newPatrocin);
     divButt.appendChild(butt);
     divFott.appendChild(newDate);
-
+    
+    divParent.appendChild(img);
     divParent.appendChild(nameDescDiv);
     divParent.appendChild(divButt);
     divParent.appendChild(divFott);
