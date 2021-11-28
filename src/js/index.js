@@ -39,6 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 });
+
 function rmEventos() {
     let btnRem = document.querySelectorAll('.remBtnn')
     if (btnRem.length == 0) {
@@ -55,6 +56,7 @@ function rmEventos() {
 }
 
 setInterval(rmEventos, 1000);
+
 
 
 document.getElementById("btnSubmit").addEventListener("click", () => {
