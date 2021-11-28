@@ -1,8 +1,6 @@
 // var contador = 0;
 
-// document.getElementById("btnSubmit").addEventListener('click',()=>{
-//     document.getElementById("cookieWrapper").style.visibility = "hidden";
-// })
+
 import { event,sortevents } from "./addEvent.js";
 import { news,sortnews } from "./newsCard.js";
 
@@ -13,7 +11,30 @@ document.addEventListener('DOMContentLoaded', () => {
     news();
     sortevents
     event();
+    if (document.cookie.indexOf("evacten=") >= 0) {
+            document.getElementById("cookieWrapper").style.visibility = "hidden";
 
+      }
+      else {
+        setTimeout(3000,()=>{
+          document.getElementById("cookieWrapper").style.visibility = "visible";
+        })
+    }
+})
+
+document.getElementById("btnSubmit").addEventListener('click',()=>{
+    let email = document.getElementById("emailValue").value;
+    if(email == ""){
+        document.getElementById("cookieWrapper").style.visibility = "visible";
+
+    }else{
+    document.getElementById("cookieWrapper").style.visibility = "hidden";
+    let expiry = new Date();
+    expiry.setTime(expiry.getTime()+(30000)); // Ten minutes
+  
+    document.cookie = "evacten=cookieValue; expires=" + expiry.toGMTString();
+    // alert("this is your first time");
+    }
 })
 // document.addEventListener('DOMContentLoaded', () => {
 //     sorted

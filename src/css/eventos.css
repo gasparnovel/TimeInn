@@ -313,18 +313,17 @@ textarea{
   margin-right: 15px;
 }
 
+.remBtnn{
+  z-index: 100;
+    border: none;
+  padding: 1vh 1vw;
+  border-radius: 8px;
+  font-weight: bold;
+}
+.remBtn:hover{
+  background: red;
 
-/* .footerStyle{
-  background-color: #7B2CBF;
-  color: white;
-  grid-area: fot;
-  display: flex;
-  position: sticky;
-  top: 100%;
-  justify-content: space-between;
-  grid-area: 5/1/5/5;
-  
-} */
+}
 @media (max-width: 920px) {
   #container{
   grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -332,6 +331,7 @@ textarea{
   }
   .modal-content {
     width: 50vw;
+    z-index: 1;
   }
   #closeLayout {
     margin: 0vh 37vw;

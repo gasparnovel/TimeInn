@@ -88,7 +88,7 @@ function newEvent() {
     let parentArea = document.getElementById("events");
 
     let divParent = document.createElement('div');
-    divParent.classList.add('card', 'cardGridLeft');
+    divParent.classList.add('card', 'cardGridLeft','remBtnn');
 
     let nameDescDiv = document.createElement('div');
     nameDescDiv.className = 'cardBody';
@@ -112,6 +112,10 @@ function newEvent() {
     let divFott = document.createElement('div');
     divFott.className = 'cardFooter';
 
+    let remBtn = document.createElement("button");
+    remBtn.className = 'remBtnn';
+
+    remBtn.innerHTML = "Remove";
     let newDate = document.createElement('p');
     newDate.className = 'date';
 
@@ -127,6 +131,8 @@ function newEvent() {
     nameDescDiv.appendChild(newPatrocin);
     divButt.appendChild(butt);
     divFott.appendChild(newDate);
+    divFott.appendChild(remBtn);
+
 
     divParent.appendChild(nameDescDiv);
     divParent.appendChild(divButt);

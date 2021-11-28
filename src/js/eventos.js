@@ -12,6 +12,19 @@ document.addEventListener('DOMContentLoaded', () => {
     news();
     sortevents
     event();
+    // let toRemove = document.querySelectorAll(".card").forEach((f) =>{
+    let btnRem = document.querySelectorAll('.remBtnn')
+    if(btnRem.length == 0){
+
+    }else{
+    btnRem.forEach((e)=>{
+            e.addEventListener('click',()=>{
+                e.parentNode.removeChild(e);
+
+            })
+        })
+    }
+    // })
 
 })
 
@@ -49,3 +62,22 @@ const btnsubm = document.getElementById("btnSubmit").addEventListener('click', (
     event();
     }
 })
+
+let btnRem = document.querySelectorAll('.remBtnn')
+if(btnRem.length == 0){
+
+}else{
+btnRem.forEach((e)=>{
+        e.addEventListener('click',()=>{
+            e.parentNode.removeChild(e);
+
+        })
+    })
+}
+// var cards = document.querySelectorAll(".remBtn");
+// cards.forEach((e)=>{
+//     e.addEventListener('click',()=>{
+//         console.log(e)
+//     })
+// })
+
