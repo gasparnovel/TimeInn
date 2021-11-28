@@ -10,8 +10,11 @@ body {
   background: black;
   overflow-x: hidden;
 }
+/* Esta media query, servira para poder hacer responsive la pagina de 600px >  */
 
 @media screen and (min-width: 600px) {
+
+  /* En este container, estpecificamos el grid-template row y columns para dividir la pagina */
   #container {
     height: 100vh;
     display: grid;
@@ -21,6 +24,7 @@ body {
 
 
   .title {
+    /* El title se le especificara un grid-area: 1/5/1/1 */
     text-align: center;
     color: white;
     font-size: 40px;
@@ -49,6 +53,8 @@ body {
     font-size: 40px;        
     margin-bottom: 1vh;
 }
+
+/* Esto es el estilo de boton para poder crear un nuevo evento */
   #addEventStyle {
     position: fixed;
     top: 105px;
@@ -111,7 +117,6 @@ body {
     scrollbar-width: thin;
   }
 
-  /* ---------------------------- */
   #backEvent {
     visibility: hidden;
     position: absolute;
@@ -141,6 +146,8 @@ body {
     align-self: center;
     justify-self: center;
   }
+
+    /* El eventBackgorund se le especificara un grid-area: 2/1/5/5 */
 
   .eventBackgorund {
     scrollbar-width: thin;
@@ -292,6 +299,7 @@ body {
 }
 
 }
+/* Esta media query, servira para poder hacer responsive la pagina de 600px <  */
 
 @media screen and (max-width: 600px) {
   #container {
@@ -384,7 +392,6 @@ body {
     scrollbar-width: thin;
   }
 
-  /* ---------------------------- */
   #backEvent {
     visibility: hidden;
     position: absolute;

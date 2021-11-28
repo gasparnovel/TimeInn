@@ -30,13 +30,19 @@
 </head>
 
 <body>
+        <!-- El Header, el footer y el toTop, estan en un archivo aparte, 
+        y gracias a eso en este Html solo lo importamos -->
     <header id="myHeader"></header>
 
+            <!-- este div es el container y es el que tendra el grid para posicionar
+            los hijos -->
         <div id="container">
             <h1 class="title">Aqui Podras Añadir y Ver Eventos</h1>
+            <!-- El addEventStyle es el boton para crear los eventos, ademas es el encargado de mostrar
+            el overlay-->
             <p id="addEventStyle">+</p>
 
-
+                <!-- Este  div es el encargado de almacenar toda la información de un nuevo evento -->
             <div id="backEvent">
                 <div class="modal-content">
                     <form class="formBox">
@@ -56,7 +62,7 @@
             </div>
             
 
-
+            <!-- El div eventBackground, es el encargado de estructurar los eventos y las news -->
             <div class="eventBackgorund">
                 <div class="newsParent">
                     <p class="parStyle">News</p>
@@ -71,6 +77,8 @@
 
 
         </div>
+        <!-- El Header, el footer y el toTop, estan en un archivo aparte, 
+        y gracias a eso en este Html solo lo importamos -->
         <button id="toTop"></button>
 
         <footer id="myFooter"></footer>

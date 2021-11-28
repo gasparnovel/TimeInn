@@ -1,3 +1,4 @@
+/* Especificamos las variables */
 :root {
     --primary: #7b2cbf;    
     --primaryVariant: #3D1660;
@@ -6,6 +7,7 @@
     --error: #B00020;
 }
 
+/* El css para el nav */
 nav {
     display: flex;
     height: 80px;
@@ -75,13 +77,15 @@ a {
     text-decoration: none;
     color: var(--secondary);
 }
+
+/* Esta media query, servira para poder hacer responsive la pagina de 600px >  */
 @media (min-width: 600px) {
 .footer {
     width: 100%;
     background-color: black;
     border-top: 1px solid white;
 }
-
+/* El Layout del footer */
 .grupOne {
     width: 100%;
     max-width: 1200px;
@@ -125,7 +129,7 @@ a {
     background-color: var(--secondary);
     color: white;
 }
-
+/* El footer */
 .grupTwo {
     background-color: var(--primary);
     padding: 15px 10px;
@@ -159,11 +163,14 @@ small {
     color: white;
 }
 }
+/* Esta media query, servira para poder hacer responsive la pagina de 1000px <  */
+
 @media (max-width: 1000px) {
     nav {
         padding: 0 40px 0 50px;
     }
 }
+/* Esta media query, servira para poder hacer responsive la pagina de 920px <  */
 
 @media (max-width: 920px) {
     nav .menu-btn i {
@@ -218,6 +225,7 @@ small {
         color: var(--secondary);
     }
 }
+/* Esta media query, servira para poder hacer responsive la pagina de 600px <  */
 
 @media screen and (max-width: 600px) {
     .footer {
