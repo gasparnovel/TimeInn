@@ -1,11 +1,3 @@
-:root {
-  --primary: #7b2cbf;
-  --primaryVariant: #3D1660;
-  --secondary: #2cb2bf;
-  --secondaryVariant: #279CA7;
-  --error: #B00020;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -46,7 +38,7 @@ body {
   color: white;
   font-size: 50px;
   height: 10vw;
-  text-shadow: -3px -1px 1px var(--secondaryVariant), 4px 2px 1px var(--primaryVariant), -2px 2px 1px var(--primaryVariant), 2px -2px 1px var(--primaryVariant);
+  text-shadow: -2px -1px 1px var(--secondaryVariant), 4px 2px 1px var(--primaryVariant), -2px 2px 1px var(--primaryVariant), 2px -2px 1px var(--primaryVariant);
 }
 
 video{

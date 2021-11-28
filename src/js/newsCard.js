@@ -46,13 +46,52 @@ export var newsarr = [{
     },
     {
         id: 'default',
-        nameEvent: 'three',
+        nameEvent: 'y',
         dateEvent: '12/10/2021',
         descriptionEvent: 'pary descr',
         isPat: "Patrocinado",
         imgEvent: 'pary Hiking'
-    }
-    
+    },
+    {
+        id: 'default',
+        nameEvent: 'm',
+        dateEvent: '12/10/2021',
+        descriptionEvent: 'pary descr',
+        isPat: "Patrocinado",
+        imgEvent: 'pary Hiking'
+    },
+    {
+        id: 'default',
+        nameEvent: 'j',
+        dateEvent: '12/10/2021',
+        descriptionEvent: 'pary descr',
+        isPat: "Patrocinado",
+        imgEvent: 'pary Hiking'
+    },
+    {
+        id: 'default',
+        nameEvent: 'i',
+        dateEvent: '12/10/2021',
+        descriptionEvent: 'pary descr',
+        isPat: "Patrocinado",
+        imgEvent: 'pary Hiking'
+    },
+    {
+        id: 'default',
+        nameEvent: 'j',
+        dateEvent: '20/10/2021',
+        descriptionEvent: 'pary descr',
+        isPat: "Patrocinado",
+        imgEvent: 'pary Hiking'
+    } ,
+    {
+        id: 'default',
+        nameEvent: 'p',
+        dateEvent: '20/10/2021',
+        descriptionEvent: 'pary descr',
+        isPat: "Patrocinado",
+        imgEvent: 'pary Hiking'
+    } 
 ]
 
 

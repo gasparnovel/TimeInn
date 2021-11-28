@@ -1,5 +1,11 @@
-import { event,sortevents } from "./addEvent.js";
-import { news,sortnews } from "./newsCard.js";
+import {
+    event,
+    sortevents
+} from "./addEvent.js";
+import {
+    news,
+    sortnews
+} from "./newsCard.js";
 import {
     layoutToggle,
     windowOnClick,
@@ -15,17 +21,17 @@ document.addEventListener('DOMContentLoaded', () => {
     // let inArr = arrEvents;
 })
 
-$( function() {
+$(function () {
     let date = new Date();
     let currDay = date.getTime();
     let currMonth = date.getMonth();
     let currYear = date.getFullYear();
 
-    var startDate = new Date(currDay,currMonth,currYear);
-  
+    var startDate = new Date(currDay, currMonth, currYear);
+
     $("#dateValue").datepicker();
     $("#dateValue").datepicker("setDate", startDate);
-  } );
+});
 
 
 const btnsubm = document.getElementById("btnSubmit").addEventListener('click', (e) => {
@@ -33,30 +39,30 @@ const btnsubm = document.getElementById("btnSubmit").addEventListener('click', (
     //    e.preventDefault();
     let name = document.getElementById("eventName").value;
     let desc = document.getElementById("eventDescription").value
-    if(name == "" || desc == ""){
+    if (name == "" || desc == "") {
         // contador = 1;
         layoutToggle()
-    }else{
-    let arrFormValues = {
-        nameEvent: name,
-        dateEvent: document.getElementById("dateValue").value,
-        descriptionEvent: desc,
-        imgEvent: "party eating img"
-    }
-    sortevents.unshift(arrFormValues);
-    layoutToggle();
-    // console.log(sorted);
-    event();
+    } else {
+        let arrFormValues = {
+            nameEvent: name,
+            dateEvent: document.getElementById("dateValue").value,
+            descriptionEvent: desc,
+            imgEvent: "party eating img"
+        }
+        sortevents.unshift(arrFormValues);
+        layoutToggle();
+        // console.log(sorted);
+        event();
     }
 })
 
-function rmEventos(){
+function rmEventos() {
     let btnRem = document.querySelectorAll('.remBtnn')
-    if(btnRem.length == 0){
+    if (btnRem.length == 0) {
 
-    }else{
-    btnRem.forEach((e)=>{
-            e.addEventListener('click',()=>{
+    } else {
+        btnRem.forEach((e) => {
+            e.addEventListener('click', () => {
                 e.parentNode.removeChild(e);
                 // inArr = []
                 // console.log(arrEvents)

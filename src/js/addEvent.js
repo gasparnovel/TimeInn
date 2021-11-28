@@ -112,12 +112,12 @@ function newEvent() {
     let divFott = document.createElement('div');
     divFott.className = 'cardFooter';
 
-    let remBtn = document.createElement("button");
-    remBtn.classList.add('btnSty','remBtnn');
-    
-    remBtn.innerHTML = "Remove";
     let newDate = document.createElement('p');
     newDate.className = 'date';
+
+    let remBtn = document.createElement("button");
+    remBtn.classList.add('btnSty','remBtnn');
+    remBtn.innerHTML = "Remove";
 
     newName.innerHTML = name;
     newDate.innerHTML = date;
