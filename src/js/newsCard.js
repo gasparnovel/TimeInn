@@ -77,7 +77,7 @@ export function news() {
             // contador++;
 
         }
-        console.log(id, name, date, desc)
+        // console.log(id, name, date, desc)
         // console.log(contador)
     })
 }

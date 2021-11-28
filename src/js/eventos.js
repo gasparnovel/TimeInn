@@ -12,20 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
     news();
     sortevents
     event();
-    // let toRemove = document.querySelectorAll(".card").forEach((f) =>{
-    let btnRem = document.querySelectorAll('.remBtnn')
-    if(btnRem.length == 0){
-
-    }else{
-    btnRem.forEach((e)=>{
-            e.addEventListener('click',()=>{
-                e.parentNode.removeChild(e);
-
-            })
-        })
-    }
-    // })
-
+    // let inArr = arrEvents;
 })
 
 $( function() {
@@ -63,17 +50,22 @@ const btnsubm = document.getElementById("btnSubmit").addEventListener('click', (
     }
 })
 
-let btnRem = document.querySelectorAll('.remBtnn')
-if(btnRem.length == 0){
+function rmEventos(){
+    let btnRem = document.querySelectorAll('.remBtnn')
+    if(btnRem.length == 0){
 
-}else{
-btnRem.forEach((e)=>{
-        e.addEventListener('click',()=>{
-            e.parentNode.removeChild(e);
-
+    }else{
+    btnRem.forEach((e)=>{
+            e.addEventListener('click',()=>{
+                e.parentNode.removeChild(e);
+                // inArr = []
+                // console.log(arrEvents)
+            })
         })
-    })
+    }
 }
+
+setInterval(rmEventos, 1000);
 // var cards = document.querySelectorAll(".remBtn");
 // cards.forEach((e)=>{
 //     e.addEventListener('click',()=>{

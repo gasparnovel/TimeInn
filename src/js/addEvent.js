@@ -3,7 +3,7 @@ var name;
 var date;
 var desc;
 var Patroc;
-var arrEvents = [];
+export var arrEvents = [];
 
 export var eventarr = [{
     id: 'default',
@@ -78,7 +78,7 @@ export function event() {
             // contador++;
 
         }
-        console.log(id, name, date, desc)
+        // console.log(id, name, date, desc)
         // console.log(contador)
     })
 }
@@ -88,7 +88,7 @@ function newEvent() {
     let parentArea = document.getElementById("events");
 
     let divParent = document.createElement('div');
-    divParent.classList.add('card', 'cardGridLeft','remBtnn');
+    divParent.classList.add('card','remBtnn');
 
     let nameDescDiv = document.createElement('div');
     nameDescDiv.className = 'cardBody';
