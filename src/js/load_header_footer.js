@@ -1,3 +1,6 @@
+// Guardamos en una variable el id de la etiqueta donde añadiremos 
+// el siguiente codigo para tener footer y header separado
+
 let header= document.getElementById("myHeader").innerHTML =
     "<nav> " +
     "<div> " +
@@ -44,4 +47,5 @@ let footer= document.getElementById("myFooter").innerHTML =
         "</div>" +
     "</footer>";
 
+//exportamos las variables
 export { header, footer };

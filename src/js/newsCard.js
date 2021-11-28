@@ -1,11 +1,14 @@
-var id;
-var name;
-var date;
-var desc;
-var Patroc;
-var imgNewss;
-var arrNews = [];
+// declaramos variables globales
 
+let id;
+let name;
+let date;
+let desc;
+let Patroc;
+let imgNewss;
+let arrNews = [];
+
+//funcion que crea  las news
 export var newsarr = [{
         id: 'default',
         nameEvent: 'Covid',
@@ -29,7 +32,7 @@ export var newsarr = [{
         descriptionEvent: 'Alerta roja al País Vasco..',
         isPat: "Patrocinado",
         imgNews: '../resources/img/nieve.JPG'
-    },{
+    }, {
         id: 'default',
         nameEvent: 'Israel',
         dateEvent: '12/31/2021',
@@ -84,15 +87,15 @@ export var newsarr = [{
         descriptionEvent: 'Canarias cede viivendas..',
         isPat: "No Patrocinado",
         imgNews: '../resources/img/casa.jpg'
-    } 
+    }
 ]
 
-
+// funcion que ordena el array de news por fecha
 export var sortnews = newsarr.sort((a, b) => {
     return (new Date(a.dateEvent) > new Date(b.dateEvent)) ? 1 : -1;
 })
 
-
+// funcion con bucle que comprueba que no se repita el nombre de la new 
 export function news() {
     sortnews.forEach(c => {
 
@@ -111,9 +114,7 @@ export function news() {
     })
 }
 
-
-
-
+// funcion que añade la tarjeta new 
 function newNews() {
     let parentAreaa = document.getElementById('container');
     let parentArea = document.getElementById("news");
@@ -166,10 +167,9 @@ function newNews() {
     nameDescDiv.appendChild(newPatrocin);
     divButt.appendChild(butt);
     divFott.appendChild(newDate);
-    
+
     divParent.appendChild(img);
     divParent.appendChild(nameDescDiv);
     divParent.appendChild(divButt);
     divParent.appendChild(divFott);
 }
-
