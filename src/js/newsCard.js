@@ -1,19 +1,14 @@
-
-
-// setTimeout(3000,setCookie())
-
-// var contador = 0;
 var id;
 var name;
 var date;
 var desc;
 var Patroc;
-var inArr = [];
+var arrNews = [];
 
-export var tt = [{
+export var newsarr = [{
         id: 'default',
         nameEvent: 'Hiking',
-        dateEvent: '2020-12-15',
+        dateEvent: '12/15/2021',
         descriptionEvent: 'hiking descr',
         isPat: "Patrocinado",
         imgEvent: 'img Hiking'
@@ -21,7 +16,7 @@ export var tt = [{
     {
         id: 'default',
         nameEvent: 'wedding',
-        dateEvent: '2020-12-30',
+        dateEvent: '12/30/2021',
         descriptionEvent: 'wedding descr',
         isPat: "Patrocinado",
         imgEvent: 'wedding Hiking'
@@ -29,23 +24,47 @@ export var tt = [{
     {
         id: 'default',
         nameEvent: 'pary',
-        dateEvent: '2020-12-10',
+        dateEvent: '12/2/2021',
+        descriptionEvent: 'pary descr',
+        isPat: "Patrocinado",
+        imgEvent: 'pary Hiking'
+    },{
+        id: 'default',
+        nameEvent: 'one',
+        dateEvent: '12/1/2021',
+        descriptionEvent: 'hiking descr',
+        isPat: "No Patrocinado",
+        imgEvent: 'img Hiking'
+    },
+    {
+        id: 'default',
+        nameEvent: 'two',
+        dateEvent: '12/3/2021',
+        descriptionEvent: 'wedding descr',
+        isPat: "Patrocinado",
+        imgEvent: 'wedding Hiking'
+    },
+    {
+        id: 'default',
+        nameEvent: 'three',
+        dateEvent: '12/10/2021',
         descriptionEvent: 'pary descr',
         isPat: "Patrocinado",
         imgEvent: 'pary Hiking'
     }
+    
 ]
 
-export var sorted = tt.sort((a, b) => {
-    return (a.dateEvent > b.dateEvent) ? 1 : -1;
+
+export var sortnews = newsarr.sort((a, b) => {
+    return (new Date(a.dateEvent) > new Date(b.dateEvent)) ? 1 : -1;
 })
 
 
+export function news() {
+    sortnews.forEach(c => {
 
-export function check() {
-    sorted.forEach(c => {
-
-        if (inArr.includes(c.nameEvent) == true) {
+        if (arrNews.includes(c.nameEvent) == true) {
 
         } else {
             id = c.id;
@@ -53,19 +72,22 @@ export function check() {
             date = c.dateEvent;
             desc = c.descriptionEvent;
             Patroc = c.isPat
-            create();
-            inArr.push(c.nameEvent);
+            newNews();
+            arrNews.push(c.nameEvent);
             // contador++;
 
         }
-        console.log(id, name, date, desc)
+        // console.log(id, name, date, desc)
         // console.log(contador)
     })
 }
 
-export function create() {
+
+
+
+function newNews() {
     let parentAreaa = document.getElementById('container');
-    let parentArea = document.querySelector('.eventBackgorund');
+    let parentArea = document.getElementById("news");
 
     let divParent = document.createElement('div');
     divParent.classList.add('card', 'cardGridLeft');
@@ -101,8 +123,6 @@ export function create() {
     newPatrocin.innerHTML = Patroc;
 
 
-    parentAreaa.appendChild(parentArea);
-
     parentArea.appendChild(divParent);
     nameDescDiv.appendChild(newName);
     nameDescDiv.appendChild(newDesc);
@@ -113,28 +133,5 @@ export function create() {
     divParent.appendChild(nameDescDiv);
     divParent.appendChild(divButt);
     divParent.appendChild(divFott);
-
-
-    if (id == 'default') {
-
-    } else {
-        newPatrocin.innerHTML = "New Event";
-
-        
-        
-        parentArea.prepend(divParent)
-    }
 }
-
-
-
-
-
-
-
-
-
-
-
-
 

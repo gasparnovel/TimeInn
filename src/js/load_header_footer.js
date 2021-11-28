@@ -9,7 +9,7 @@ let header= document.getElementById("myHeader").innerHTML =
     "</label>" +
     "<ol class='nav-box'>" +
     "<a href='./index.html'><li >Home</li></a>" +
-    "<a href='./formulario.html'><li >Events</li></a>" +
+    "<a href='./eventos.html'><li >Events</li></a>" +
     "<a href='./aboutUs.html'><li >About Us</li></a>" +
     "<a href='./signIn.html'><li >Sign In</li></a>" +
     "</ol>" +

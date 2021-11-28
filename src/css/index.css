@@ -18,17 +18,20 @@ body {
   background: black;
 }
 @media screen and (min-width: 600px) {
-#container {
-  height: 100vh;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-areas:
-    "nav nav nav nav "
-    "clipTitle clipTitle clipTitle clipTitle"
-    ". clip clip ."
-    ". calendar calendar ."
-    "fot fot fot fot";
-}
+  #container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "nav nav nav nav "
+      "clipTitle clipTitle clipTitle clipTitle"
+      ". clip clip ."
+      ". card card ."
+      ". calendar calendar ."
+      "fot fot fot fot";
+    overflow: auto;
+    scrollbar-width: none; 
+  }
 
 
 .iconStyle {
@@ -42,7 +45,7 @@ body {
   justify-content: center;
   color: white;
   font-size: 50px;
-  height: 1vw;
+  height: 10vw;
   text-shadow: -3px -1px 1px var(--secondaryVariant), 4px 2px 1px var(--primaryVariant), -2px 2px 1px var(--primaryVariant), 2px -2px 1px var(--primaryVariant);
 }
 
@@ -69,6 +72,7 @@ video{
   align-self: center;
   background-repeat: repeat-x;
   padding: 20px;
+  margin: 5vh 0vh;
 }
 
 .calendarInfo {
@@ -213,8 +217,8 @@ textarea {
 
 
 .card {
-  max-width: 250px;
-  margin: 150px auto 0;
+  /* max-width: 250px; */
+  margin: 3vh 1vw;
   background-color: white;
   box-shadow: 0 10px 90px #00000024;
   text-align: center;
@@ -278,6 +282,55 @@ textarea {
   justify-content: end;
   margin-right: 15px;
 }
+.eventBackgorund{
+  /* scrollbar-width: thin; */
+  grid-area: card;
+  /* scrollbar-width: none;  */
+  /* overflow: auto; */
+/*   background: green; */
+  visibility: visible;
+  /* position: fixed; */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  
+  margin-top: 2vh ;
+  width:100%;
+
+  /* z-index: -1; */
+  /* grid-area: 2/1/5/5; */
+  
+
+  /* background: green; */
+
+}
+
+.parStyle{
+  text-align: center;
+  color: white;
+  /* background: red; */
+  font-size: 2rem;
+}
+#news{
+  width: 90%;
+  /* background: green; */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+#events{
+  width: 90%;
+  /* background: green; */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+
+/* .newsParent{
+  grid-area: card;
+} */
 }
 @media screen and (max-width: 600px) {
 

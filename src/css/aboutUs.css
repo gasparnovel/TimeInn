@@ -37,6 +37,7 @@ body {
         color: white;
         padding-left: 10vh;
         padding-right: 10vh;
+        font-size: 24px;
     }
 
     .h2 {
@@ -62,10 +63,6 @@ body {
         font-size: 40px;
         text-shadow: -3px -1px 1px var(--secondaryVariant), 4px 2px 1px var(--primaryVariant), -2px 2px 1px var(--primaryVariant), 2px -2px 1px var(--primaryVariant);
         margin-bottom: 30px;
-    }
-
-    p{
-        font-size: 24px;
     }
 
     .history {
