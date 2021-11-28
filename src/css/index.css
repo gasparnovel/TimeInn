@@ -1,0 +1,798 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Genos', sans-serif;
+}
+
+
+body {
+  background: black;
+}
+@media screen and (min-width: 600px) {
+  #container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "title title title title"
+        "video video calendar calendar"
+        "event event event event";
+}
+
+  
+  
+    .title {
+      grid-area: title;
+      text-align: center;
+      color: white;
+      margin: 50px;
+      font-size: 40px;
+      align-self: center;
+      text-shadow: -2px -1px 1px var(--secondaryVariant), 4px 2px 1px var(--primaryVariant), -2px 2px 1px var(--primaryVariant), 2px -2px 1px var(--primaryVariant);
+    }
+  
+    .nav-box {
+      justify-content: flex-end;
+      align-items: center;
+      font-size: 1.1rem;
+    }
+  
+    a {
+      text-decoration: none;
+    }
+  
+    #eventImage {
+      color: white;
+    }
+  
+    .login {
+      text-align: center;
+      color: white;
+      font-size: 40px;        
+      margin-bottom: 1vh;
+  }
+    #addEventStyle {
+      position: fixed;
+      top: 105px;
+      left: 80px;
+      z-index: 1;
+      font-size: 40px;
+      outline: none;
+      cursor: pointer;
+      padding: 15px;
+      border: 2px white solid;
+      color: white;
+      transition: all 300ms ease;
+      background-image: radial-gradient(var(--secondaryVariant), black);
+    }
+  
+    #addEventStyle:hover {
+      border: 2px white solid;
+      background-image: radial-gradient(var(--primaryVariant), black);
+      color: white;
+    }
+  
+    .formBox {
+      text-align: center;
+      padding: 4vh 0vw;
+      flex-direction: column;
+  
+    }
+  
+    .eventFormStyle {
+          font-size: 20px;
+          width: 82%;
+          padding: 10px;
+          border-radius: 8px;
+          margin-bottom: 15px;
+    }
+  
+    
+  
+    #btnSubmit {
+      text-align: center;
+      width: 80%;
+      color: var(--primaryVariant);
+      font-size: 20px;
+      background: white;
+      padding: 15px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-bottom: 1vh;
+      border: 2px var(--primaryVariant) solid;
+      border-top-left-radius: 100px;
+      border-bottom-left-radius: 100px;
+      border-top-right-radius: 100px;
+      border-bottom-right-radius: 100px;
+  }
+  
+  
+  
+    textarea {
+      resize: none;
+      scrollbar-width: thin;
+    }
+  
+    /* ---------------------------- */
+    #backEvent {
+      visibility: hidden;
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      margin-top: 2vh;
+      width: 100%;
+      z-index: 10;
+    }
+  
+    #backEvent:before {
+      z-index: -1;
+      content: '';
+      position: absolute;
+      opacity: 60%;
+      width: 100vw;
+      height: 100vh;
+      background: black;
+    }
+  
+    .modal-content {
+      background-image: radial-gradient(var(--primaryVariant), black);
+      padding: 4vh;
+      grid-area: form;
+      width: 30vw;
+      border-radius: 8px;
+      align-self: center;
+      justify-self: center;
+    }
+  
+    .eventBackgorund {
+      grid-area: event;
+      scrollbar-width: thin;
+      scrollbar-width: none;
+      overflow: auto;
+      /*   background: green; */
+      visibility: visible;
+      /* position: fixed; */
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+  
+      margin-top: 2vh;
+      width: 100%;
+      /* z-index: -1; */
+  
+      /* background: green; */
+  
+    }
+  
+  
+    #events {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  
+    #news {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  
+    .parStyle {
+      text-align: center;
+      color: white;
+      font-size: 35px;
+      align-self: center;
+      text-decoration: underline;
+      text-shadow: -2px -1px 1px var(--secondaryVariant), 4px 2px 1px var(--primaryVariant), -2px 2px 1px var(--primaryVariant), 2px -2px 1px var(--primaryVariant);
+    }
+  
+    /* ------form layout----- */
+  
+  
+    #closeLayout {
+      justify-content: center;
+      display: flex;
+      justify-content: flex-end;    
+      cursor: pointer;
+      border-radius: 0.25rem;
+      margin: 0vh 5vw;    
+      font-weight: bold;
+      color: white;
+      font-size: 30px;
+    }
+  
+  
+  
+    .card {
+      /* max-width: 250px; */
+      margin: 1vh 3vw;
+      background-color: white;
+      text-align: center;
+      /* font-size: 20px; */
+      border: 2px solid var(--primary);
+      border-radius: 8px;
+      /* height: 50vh; */
+    }
+  
+    .card:hover {
+      box-shadow: 0 10px 90px black;
+  
+    }
+  
+    .cardBody {
+      padding: 10px 40px;
+    }
+  
+    .name {
+      margin-top: 30px;
+      font-size: 22px;
+      font-weight: bold;
+    }
+  
+    .description {
+      margin-top: 20px;
+      font-size: 14px;
+    }
+  
+  
+    .buttonStyle {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 20px 60px 30px 60px;
+      border: 2px var(--secondary) solid;
+      border-top-left-radius: 100px;
+      border-bottom-left-radius: 100px;
+      border-top-right-radius: 100px;
+      border-bottom-right-radius: 100px;
+      padding: 3px;
+      font-size: 16px;
+    }
+  
+    .buttonStyle:hover {
+      background-color: var(--secondary);
+    }
+  
+    .linkStyle {
+      text-decoration: none;
+      color: var(--secondary);
+      padding-left: 1vw;
+      padding-right: 1vw;
+    }
+  
+    .buttonStyle:hover .linkStyle {
+      background-color: var(--secondary);
+      color: white;
+    }
+  
+    .cardFooter {
+      padding-bottom: 10px;
+    }
+  
+    .date {
+      font-size: 14px;
+      display: flex;
+      justify-content: end;
+      margin-right: 15px;
+    }
+  
+    .btnSty {
+      border: none;
+      padding: 1vh 1vw;
+      border-radius: 8px;
+      font-weight: bold;
+      background: var(--error);
+      color: white;
+      margin-top: 1vh;
+    }
+  
+    .btnSty:hover {
+      background: black;
+      color: var(--error);
+      border: 1px solid var(--error);
+    }
+
+.iconStyle {
+  display: flex;
+  align-items: center;
+}
+
+.videoTitle {
+  grid-area: title;
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  align-self: center;
+  text-shadow: -2px -1px 1px var(--secondaryVariant), 4px 2px 1px var(--primaryVariant), -2px 2px 1px var(--primaryVariant), 2px -2px 1px var(--primaryVariant);
+}
+
+video{
+  grid-area: video;
+  border-radius: 24px;
+  box-shadow: 0px 0px 10px var(--secondary);
+  background-image: radial-gradient(var(--secondary), black);
+  width: 35vw;
+  background-repeat: repeat-x;
+  justify-self: center;
+  align-self: center;
+  width: 35vw;
+  margin-left: 5vw;
+}
+
+/*------------------------------------------------ */
+
+.calendar {
+  grid-area: calendar;
+  box-shadow: 0px 0px 10px var(--primary);
+  background-image: radial-gradient(var(--primary), black);
+  width: 32vw;
+  justify-self: center;
+  align-self: center;
+  background-repeat: repeat-x;
+  padding: 20px;
+  margin: 5vh 0vh;
+  height: 35vh;
+  margin-right: 5vw;
+}
+
+.calendarInfo {
+  color: white;
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+  font-size: 2vw;
+  text-transform: uppercase;
+}
+
+.calendarArrowPrev,
+.calendarArrowNext {
+  color: white;
+  cursor: pointer;
+  font-size: 2vw;
+}
+
+.calendarArrowPrev {
+  margin-right: auto;
+}
+
+.calendarArrowNext {
+  margin-left: auto;
+}
+
+.calendarWeek,
+.calendarDates {
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  font-size: 1.3vw;
+}
+
+.calendarItem {
+  text-align: center;
+  line-height: 3.5vh;
+  list-style-type: none;
+  color: white;
+}
+
+a {
+  color: white;
+}
+
+.calendarDate:hover {
+  background: var(--primary);
+  color: white;
+  margin: auto;
+  border: 1px solid rgba(0, 0, 0, 0.541);
+  border-radius: 100%;
+  transition: all 300ms ease;
+  width: 40px;
+}
+
+
+
+.calendarToday {
+  background: var(--primary);
+  color: white;
+  margin: auto;
+  width: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.541);
+}
+
+.calendarLastDays {
+  opacity: 50%;
+}
+
+/* ------------------ */
+
+#cookieWrapper {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  margin-top: 2vh;
+  width: 100%;
+  z-index: 10;
+}
+
+#cookieWrapper::before {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  opacity: 60%;
+  width: 100vw;
+  height: 100vh;
+  background: black;
+  display: flex;
+}
+}
+
+
+@media screen and (max-width: 600px) {
+
+  #container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "title title title title"
+        "video video video video"
+        "calendar calendar calendar calendar"
+        "event event event event";
+}
+
+
+.title {
+  grid-area: title;
+  text-align: center;
+  color: white;
+  margin-top: 20px;
+  font-size: 30px;
+  align-self: center;
+  text-shadow: -2px -1px 1px var(--secondaryVariant), 4px 2px 1px var(--primaryVariant), -2px 2px 1px var(--primaryVariant), 2px -2px 1px var(--primaryVariant);
+}
+  
+  video{
+    grid-area: video;
+    border-radius: 24px;
+    box-shadow: 0px 0px 10px var(--secondary);
+    background-image: radial-gradient(var(--secondary), black);
+    width: 72vw;
+    background-repeat: repeat-x;
+    justify-self: center;
+    align-self: center;
+    margin-top: 3vh;
+  }
+  
+  /*------------------------------------------------ */
+  
+  .calendar {
+    grid-area: calendar;
+    margin-top: 5vh;
+    margin-bottom: 1vh;
+    box-shadow: 0px 0px 10px var(--primary);
+    background-image: radial-gradient(var(--primary), black);
+    justify-self: center;
+    align-self: center;
+    background-repeat: repeat-x;
+    padding: 20px;
+  }
+  
+  .calendarInfo {
+    color: white;
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+    font-size: 4vw;
+    text-transform: uppercase;
+  }
+  
+  .calendarArrowPrev,
+  .calendarArrowNext {
+    color: white;
+    cursor: pointer;
+    font-size: 4vw;
+  }
+  
+  .calendarArrowPrev {
+    margin-right: auto;
+  }
+  
+  .calendarArrowNext {
+    margin-left: auto;
+  }
+  
+  .calendarWeek,
+  .calendarDates {
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    font-size: 3vw;
+  }
+  
+  .calendarItem {
+    text-align: center;
+    line-height: 2.5vh;
+    list-style-type: none;
+    color: white;
+  }
+  
+  a {
+    color: white;
+  }
+  
+  .calendarDate:hover {
+    background: var(--primary);
+    color: white;
+    margin: auto;
+    border: 1px solid rgba(0, 0, 0, 0.541);
+    border-radius: 100%;    
+    transition: all 300ms ease;
+    width: 25px;
+  }
+  
+  
+  
+  .calendarToday {
+    background: var(--primary);
+    color: white;
+    margin: auto;
+    width: 25px;
+    border: 1px solid rgba(0, 0, 0, 0.541);
+  }
+  
+  .calendarLastDays {
+    opacity: 50%;
+  }
+  
+  /* ------------------ */
+  
+  #cookieWrapper {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    margin-top: 2vh;
+    width: 100%;
+    z-index: 10;
+  }
+  
+  #cookieWrapper::before {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    opacity: 60%;
+    width: 100vw;
+    height: 100vh;
+    background: black;
+    display: flex;
+  
+  }
+
+  .formBox {
+    text-align: center;
+    padding: 4vh 0vw;
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .eventFormStyle {
+    font-size: 12px;
+    padding: 6px;
+    border-radius: 8px;
+    margin: 8px;
+  }
+
+
+  #btnSubmit {
+    width: 40vw;    
+    padding: 5px;
+    font-size: 12px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 1vh;
+    color: var(--primaryVariant);
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    border: 2px var(--primaryVariant) solid;
+    background: white;
+    align-self: center;
+}
+
+  textarea {
+    resize: none;
+    scrollbar-width: thin;
+  }
+
+  /* ---------------------------- */
+  #backEvent {
+    visibility: hidden;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    margin-top: 2vh;
+    width: 100%;
+    z-index: 10;
+  }
+
+  #backEvent:before {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    opacity: 60%;
+    width: 100vw;
+    height: 100vh;
+    background: black;
+  }
+
+  .modal-content {
+    width: 75vw;
+    padding-top: 0vh;
+    padding-left: 3vh;
+    padding-right: 3vh;
+    padding-bottom: 2vh;
+    grid-area: form;
+    background-image: radial-gradient(var(--primaryVariant), black);
+    border-radius: 8px;
+    align-self: center;
+    justify-self: center;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-bottom: 60px;
+    margin-top: 40px;
+  }
+
+#eventImage {
+  color: white;
+}
+
+.login {
+    text-align: center;
+    color: white;
+    font-size: 25px;        
+    margin-bottom: 1vh;
+}
+
+
+  
+
+  .eventBackgorund {
+    grid-area: event;
+    scrollbar-width: thin;
+    scrollbar-width: none;
+    overflow: auto;
+    /*   background: green; */
+    visibility: visible;
+    /* position: fixed; */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    margin-top: 2vh;
+    width: 100%;
+    /* z-index: -1; */
+
+
+    /* background: green; */
+
+  }
+
+
+  #events {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  #news {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .parStyle {
+    text-align: center;
+    color: white;
+    font-size: 22px;
+    align-self: center;
+    text-shadow: -2px -1px 1px var(--secondaryVariant), 4px 2px 1px var(--primaryVariant), -2px 2px 1px var(--primaryVariant), 2px -2px 1px var(--primaryVariant);
+    padding-bottom: 10px;
+    text-decoration: underline;
+  }
+
+  /* ------form layout----- */
+
+
+  #closeLayout {
+    justify-content: center;
+    display: flex;
+    justify-content: flex-end;    
+    cursor: pointer;
+    border-radius: 0.25rem;
+    margin: 0vh 5vw;    
+    font-weight: bold;
+    color: white;
+  }
+
+  .card {
+    background-color: white;
+    box-shadow: 0 10px 90px #00000024;
+    text-align: center;
+    border: 2px solid var(--primary);
+    border-radius: 8px;
+    margin: 1vw 3vh;
+    width: 36vw;
+}
+
+.name {
+    margin-top: 25px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.description {
+    margin-top: 15px;
+    font-size: 12px;
+}
+
+.buttonStyle {
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px var(--secondary) solid;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    font-size: 12px;
+}
+
+.buttonStyle:hover {
+    border: 2px white solid;
+    background-color: var(--secondary);
+}
+
+.linkStyle {
+    text-decoration: none;
+    color: var(--secondary);
+}
+
+.buttonStyle:hover .linkStyle {
+    background-color: var(--secondary);
+    color: white;
+}
+
+  .cardFooter {
+    padding-bottom: 10px;
+  }
+
+  .date {
+    font-size: 14px;
+    display: flex;
+    justify-content: end;
+    margin-right: 15px;
+  }
+
+  .btnSty {
+    border: none;
+    padding: 1vh 1vw;
+    border-radius: 8px;
+    font-weight: bold;
+    background: var(--error);
+    color: white;
+    margin-top: 1vh;
+  }
+
+  .btnSty:hover {
+    background: black;
+    color: var(--error);
+    border: 1px solid var(--error);
+  }
+}

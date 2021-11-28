@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evacten</title>
+    <link rel="stylesheet" href="../css/eventos.css">
+    <link rel="stylesheet" href="../css/headerFooterTop.css">
+
+        <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caesar+Dressing&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Genos:ital@1&display=swap" rel="stylesheet">
+        <!-- FONT -->
+
+        <!-- JQuery Date -->
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+        <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+        <!-- JQuery Date -->
+    
+    <link rel="shortcut icon" href="#">
+</head>
+
+<body>
+    <header id="myHeader"></header>
+
+    <!-- <main> -->
+        <div id="container">
+            <h1 class="title">Aqui Podras Añadir y Ver Eventos</h1>
+            <p id="addEventStyle">+</p>
+
+
+            <div id="backEvent">
+                <div class="modal-content">
+                    <form class="formBox">
+                        <span id="closeLayout">&times;</span>
+                        <h1 class="login">Add Event</h1>
+                        <input class="eventFormStyle" type="text" name="eventName" id="eventName" required
+                            placeholder="Name of Event" autofocus>
+                        <input class="eventFormStyle" type="text" name="dateValue" id="dateValue" required
+                            placeholder="Add a Date">
+                        <input class="eventFormStyle" name="eventDescription" id="eventDescription"
+                            placeholder="Place of the event" required></input>
+                        <input class="eventFormStyle" type="file" name="eventImage" id="eventImage"
+                            placeholder="Add an Image" required>
+                        <input class="eventFormStyle" name="btnSubmit" id="btnSubmit" value="Add Event">
+                    </form>
+                </div>
+            </div>
+            
+
+
+            <div class="eventBackgorund">
+                <div class="newsParent">
+                    <p class="parStyle">News</p>
+                    <div id="news"></div>
+                </div>
+
+                <div class="eventParent">
+                    <p class="parStyle">Events</p>
+                    <div id="events"></div>
+                </div>
+            </div>
+
+
+        </div>
+        <button id="toTop"></button>
+
+        <footer id="myFooter"></footer>
+
+
+
+    <!-- </main> -->
+
+</body>
+<!-- <script type="module" src="../js/main.js"></script> -->
+<script type="module" src="../js/eventos.js"></script>
+<script type="module" src="../js/index.js"></script>
+
+
+
+</html>
+<!-- async  -->
