@@ -1,3 +1,4 @@
+//importamos los modulos
 import {
     header,
     footer
@@ -26,19 +27,18 @@ import {
 import { createCookie } from "./checkCookie.js";
 
 
-
+//Al entrar a la página lo que se hara es generar las cards y las news, de manera ordenada
 document.addEventListener('DOMContentLoaded', () => {
     sortnews
     news();
     sortevents
     event();
-
-
+//Este timeout, servira para que el layout de la cookie salga luego de 3s
     setTimeout(createCookie,3000);
 
 })
 
-
+//Esta funcion permitira eliminar un evento 
 function rmEventos() {
     let btnRem = document.querySelectorAll('.remBtnn')
     if (btnRem.length == 0) {
@@ -56,7 +56,7 @@ rmEventos()
 setInterval(rmEventos, 1000);
 
 
-
+//Al introducir un correo y dar-le  click al boton submit, se creara la cookie
 document.getElementById("btnSubmit").addEventListener("click", () => {
     let email = document.getElementById("emailValue").value;
     if (email == "") {

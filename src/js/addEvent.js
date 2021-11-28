@@ -1,11 +1,13 @@
-var id;
-var name;
-var date;
-var desc;
-var imgEventt;
-var Patroc;
+//Declarando las variables globales
+let id;
+let name;
+let date;
+let desc;
+let imgEventt;
+let Patroc;
+//exportando el array
 export var arrEvents = [];
-
+//array de objectos
 export var eventarr = [{
     id: 'default',
     nameEvent: 'Feria del Libro',
@@ -57,12 +59,12 @@ export var eventarr = [{
 ]
 
 
-
+//esta variable, es la que almacenara el array de objectos ordenado
 export var sortevents = eventarr.sort((a, b) => {
     return (new Date(a.dateEvent) > new Date(b.dateEvent)) ? 1 : -1;
 })
 
-
+//esta funcion comprueba si el objecto fue creado, si no fue creado entonces lo va a crear
 export function event() {
     sortevents.forEach(c => {
 
@@ -81,6 +83,7 @@ export function event() {
     })
 }
 
+//Esta funcion es la encargada de poder generar los eventos
 function newEvent() {
     let parentAreaa = document.getElementById('container');
     let parentArea = document.getElementById("events");
@@ -147,7 +150,6 @@ function newEvent() {
     divParent.appendChild(nameDescDiv);
     divParent.appendChild(divButt);
     divParent.appendChild(divFott);
-
 
     if (id == 'default') {
 

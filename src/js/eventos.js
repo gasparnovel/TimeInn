@@ -1,3 +1,5 @@
+//importando los modulos
+
 import {
     event,
     sortevents
@@ -12,6 +14,7 @@ import {
     layout
 } from "./showLayout.js";
 
+//Cuando el DOM se carge va a generar las cards, estas cards y news estaran ordenadas
 document.addEventListener('DOMContentLoaded', () => {
     sortnews
     news();
@@ -19,6 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
     event();
 })
 
+//La funcion para elegir la nueva fecha, cuand ose crea un evento
 $(function () {
     let date = new Date();
     let currDay = date.getTime();
@@ -32,8 +36,10 @@ $(function () {
 });
 
 
+//Al crear un nuevo evento, este guardara los valores en un array de objectos, para luego generar las cards
 const btnsubm = document.getElementById("btnSubmit").addEventListener('click', (e) => {
 
+       e.preventDefault();
     let name = document.getElementById("eventName").value;
     let desc = document.getElementById("eventDescription").value
     if (name == "" || desc == "") {
@@ -53,6 +59,7 @@ const btnsubm = document.getElementById("btnSubmit").addEventListener('click', (
     }
 })
 
+//esta funcion se encarga de poder eliminar una card
 function rmEventos() {
     let btnRem = document.querySelectorAll('.remBtnn')
     if (btnRem.length == 0) {
@@ -65,5 +72,4 @@ function rmEventos() {
         })
     }
 }
-
 setInterval(rmEventos, 1000);
