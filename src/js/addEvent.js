@@ -2,6 +2,7 @@ var id;
 var name;
 var date;
 var desc;
+var imgEventt;
 var Patroc;
 export var arrEvents = [];
 
@@ -11,7 +12,7 @@ export var eventarr = [{
     dateEvent: '12/15/2021',
     descriptionEvent: 'Vuelve la feria del libro..',
     isPat: "00:30",
-    imgEvent: 'img Hiking'
+    imgEvent: '../resources/img/boda.jpg'
 },
 {
     id: 'default',
@@ -19,7 +20,7 @@ export var eventarr = [{
     dateEvent: '12/30/2021',
     descriptionEvent: 'imagenes del desfile neoyorquino..',
     isPat: "16:30",
-    imgEvent: 'wedding Hiking'
+    imgEvent: '../resources/img/boda.jpg'
 },
 {
     id: 'default',
@@ -27,14 +28,14 @@ export var eventarr = [{
     dateEvent: '12/2/2021',
     descriptionEvent: 'Los premidos de la noche..',
     isPat: "17:30",
-    imgEvent: 'pary Hiking'
+    imgEvent: '../resources/img/boda.jpg'
 },{
     id: 'default',
     nameEvent: 'Gala Emmy',
     dateEvent: '12/1/2021',
     descriptionEvent: 'La gala se celebró..',
     isPat: "16:00",
-    imgEvent: 'img Hiking'
+    imgEvent: '../resources/img/boda.jpg'
 },
 {
     id: 'default',
@@ -42,7 +43,7 @@ export var eventarr = [{
     dateEvent: '12/3/2021',
     descriptionEvent: 'exposición cuidado con..',
     isPat: "19:00",
-    imgEvent: 'wedding Hiking'
+    imgEvent: '../resources/img/boda.jpg'
 },
 {
     id: 'default',
@@ -50,7 +51,7 @@ export var eventarr = [{
     dateEvent: '12/10/2021',
     descriptionEvent: 'Se celebró den Barcelona..',
     isPat: "22:00",
-    imgEvent: 'pary Hiking'
+    imgEvent: '../resources/img/boda.jpg'
 }
 
 ]
@@ -72,6 +73,7 @@ export function event() {
             name = c.nameEvent;
             date = c.dateEvent;
             desc = c.descriptionEvent;
+            imgEventt = c.imgEvent
             Patroc = c.isPat
             newEvent();
             arrEvents.push(c.nameEvent);
@@ -92,6 +94,7 @@ function newEvent() {
 
     let img = document.createElement('div');
     let imgValue = document.createElement('img');
+    imgValue.src = imgEventt;
     imgValue.className = "profileImg";
 
     let nameDescDiv = document.createElement('div');
@@ -153,7 +156,11 @@ function newEvent() {
     if (id == 'default') {
 
     } else {
+
         newPatrocin.innerHTML = "New Event";
         parentArea.prepend(divParent)
+        let newSrcImg = document.getElementById("eventImage").files[0].name
+        imgValue.src =  "../resources/img/" + newSrcImg;
+        console.log(newg)
     }
 }

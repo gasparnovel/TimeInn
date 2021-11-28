@@ -3,6 +3,7 @@ var name;
 var date;
 var desc;
 var Patroc;
+var imgNewss;
 var arrNews = [];
 
 export var newsarr = [{
@@ -11,7 +12,7 @@ export var newsarr = [{
         dateEvent: '12/15/2021',
         descriptionEvent: 'Países Bajos confirma 13 casos..',
         isPat: "Patrocinado",
-        imgEvent: 'img Hiking'
+        imgNews: '../resources/img/boda.jpg'
     },
     {
         id: 'default',
@@ -19,7 +20,7 @@ export var newsarr = [{
         dateEvent: '1/30/2021',
         descriptionEvent: 'Difícil equilibrio entre salud..',
         isPat: "Patrocinado",
-        imgEvent: 'wedding Hiking'
+        imgNews: '../resources/img/boda.jpg'
     },
     {
         id: 'default',
@@ -27,14 +28,14 @@ export var newsarr = [{
         dateEvent: '12/2/2021',
         descriptionEvent: 'Alerta roja al País Vasco..',
         isPat: "Patrocinado",
-        imgEvent: 'pary Hiking'
+        imgNews: '../resources/img/boda.jpg'
     },{
         id: 'default',
         nameEvent: 'Israel',
         dateEvent: '12/31/2021',
         descriptionEvent: 'Cierra sus fronteras..',
         isPat: "No Patrocinado",
-        imgEvent: 'img Hiking'
+        imgNews: '../resources/img/boda.jpg'
     },
     {
         id: 'default',
@@ -42,7 +43,7 @@ export var newsarr = [{
         dateEvent: '12/3/2021',
         descriptionEvent: 'Surge una nueva colada..',
         isPat: "Patrocinado",
-        imgEvent: 'wedding Hiking'
+        imgNews: '../resources/img/boda.jpg'
     },
     {
         id: 'default',
@@ -50,7 +51,7 @@ export var newsarr = [{
         dateEvent: '12/30/2021',
         descriptionEvent: 'Ya se puede vacunar..',
         isPat: "No Patrocinado",
-        imgEvent: 'pary Hiking'
+        imgNews: '../resources/img/boda.jpg'
     },
     {
         id: 'default',
@@ -58,7 +59,7 @@ export var newsarr = [{
         dateEvent: '1/10/2021',
         descriptionEvent: 'Ya se exige en seis..',
         isPat: "Patrocinado",
-        imgEvent: 'pary Hiking'
+        imgNews: '../resources/img/boda.jpg'
     },
     {
         id: 'default',
@@ -66,7 +67,7 @@ export var newsarr = [{
         dateEvent: '3/10/2021',
         descriptionEvent: 'Se exige a Dolores Delgado..',
         isPat: "Patrocinado",
-        imgEvent: 'pary Hiking'
+        imgNews: '../resources/img/boda.jpg'
     },
     {
         id: 'default',
@@ -74,7 +75,7 @@ export var newsarr = [{
         dateEvent: '12/29/2021',
         descriptionEvent: 'Marchan contra la reforma..',
         isPat: "No Patrocinado",
-        imgEvent: 'pary Hiking'
+        imgNews: '../resources/img/boda.jpg'
     },
     {
         id: 'default',
@@ -82,7 +83,7 @@ export var newsarr = [{
         dateEvent: '12/28/2021',
         descriptionEvent: 'Canarias cede viivendas..',
         isPat: "No Patrocinado",
-        imgEvent: 'pary Hiking'
+        imgNews: '../resources/img/boda.jpg'
     } 
 ]
 
@@ -102,6 +103,7 @@ export function news() {
             name = c.nameEvent;
             date = c.dateEvent;
             desc = c.descriptionEvent;
+            imgNewss = c.imgNews
             Patroc = c.isPat
             newNews();
             arrNews.push(c.nameEvent);
@@ -125,6 +127,7 @@ function newNews() {
 
     let img = document.createElement('div');
     let imgValue = document.createElement('img');
+    imgValue.src = imgNewss;
     imgValue.className = "profileImg";
 
     let nameDescDiv = document.createElement('div');
