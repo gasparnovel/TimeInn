@@ -115,6 +115,7 @@ function newEvent() {
     let butt = document.createElement('a');
     butt.innerHTML = 'Saber más';
     butt.className = 'linkStyle';
+    butt.href = "./eventos.html"
 
     let divFott = document.createElement('div');
     divFott.className = 'cardFooter';
