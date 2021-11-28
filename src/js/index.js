@@ -24,6 +24,8 @@ import {
     sortnews
 } from "./newsCard.js";
 
+// import { rmEventos } from "./eventos.js";
+
 document.addEventListener("DOMContentLoaded", () => {
     sortnews;
     news();
@@ -37,6 +39,23 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 });
+function rmEventos() {
+    let btnRem = document.querySelectorAll('.remBtnn')
+    if (btnRem.length == 0) {
+
+    } else {
+        btnRem.forEach((e) => {
+            e.addEventListener('click', () => {
+                e.parentNode.removeChild(e);
+                // inArr = []
+                // console.log(arrEvents)
+            })
+        })
+    }
+}
+
+setInterval(rmEventos, 1000);
+
 
 document.getElementById("btnSubmit").addEventListener("click", () => {
     let email = document.getElementById("emailValue").value;

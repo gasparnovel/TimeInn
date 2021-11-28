@@ -40,8 +40,7 @@ const btnsubm = document.getElementById("btnSubmit").addEventListener('click', (
     let name = document.getElementById("eventName").value;
     let desc = document.getElementById("eventDescription").value
     if (name == "" || desc == "") {
-        // contador = 1;
-        layoutToggle()
+        document.getElementById("backEvent").style.visibility = "visible";
     } else {
         let arrFormValues = {
             nameEvent: name,
@@ -55,6 +54,7 @@ const btnsubm = document.getElementById("btnSubmit").addEventListener('click', (
         event();
     }
 })
+
 
 function rmEventos() {
     let btnRem = document.querySelectorAll('.remBtnn')
