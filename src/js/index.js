@@ -65,7 +65,7 @@ document.getElementById("btnSubmit").addEventListener("click", () => {
     } else {
         document.getElementById("cookieWrapper").style.visibility = "hidden";
         let expiry = new Date();
-        expiry.setTime(expiry.getTime() + 30000); // Ten minutes
+        expiry.setTime(expiry.getTime() + 86400000); 
 
         document.cookie = "evacten=cookieValue; expires=" + expiry.toGMTString();
         // alert("this is your first time");
