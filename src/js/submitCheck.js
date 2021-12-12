@@ -8,6 +8,7 @@ export function submitCheck(namechecker,emailchecker,passwordchecker){
 
         let showError = document.getElementById("showError");
         let addedSucc = document.getElementById("addedSucc")
+        let delSucc = addedSucc.innerHTML = "";
 
         let emValue = document.getElementById('emailInput').value
         let passValue = document.getElementById('passwordInput').value
@@ -19,7 +20,11 @@ export function submitCheck(namechecker,emailchecker,passwordchecker){
         let newUser = {name:"test",Email:emValue,password:"testt"};
         let target = registeredUsers.find(e=>e.Email == emValue)
 
-        if(emValue === "" && passValue !== "" && nameValue !== ""){
+
+        if(namechecker == true && emailchecker == true && passwordchecker == true){
+            showError.innerHTML = "";
+        }
+        else if(emValue === "" && passValue !== "" && nameValue !== ""){
             emPosition.style.border = "2px red solid";
             showError.innerHTML = "email empty";
             
@@ -56,31 +61,5 @@ export function submitCheck(namechecker,emailchecker,passwordchecker){
             emPosition.style.border = "2px red solid";
             passPosition.style.border = "2px red solid";
             showError.innerHTML = "All the inputs are empty";
-            
         }
-        else if(target){
-            emPosition.style.border = "2px red solid";
-            showError.innerHTML = "Email already in use";
-            
-
-        }
-        else{
-            showError.innerHTML = "";
-
-        }
-        if(namechecker == true && emailchecker == true && passwordchecker == true){
-            if(target){
-                emPosition.style.border = "2px red solid";
-                console.log("Email already in use")
-            }
-            else{
-                registeredUsers.push(newUser);
-                addedSucc.innerHTML = "Account Created"
-            }
-        }else{
-            console.log("not true")
-            addedSucc.innerHTML = ""
-
-        }
-        console.log(registeredUsers);
 }
