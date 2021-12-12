@@ -8,12 +8,12 @@ export function passwordCheker(){
     let regexResultPassword = regexcheckpass.test(passValue);
 
     if(passValue == ''){
-    passPosition.style.border = "2px red solid";
+    passPosition.style.border = "2px var(--error) solid";
         return false
 
         
     }else if(regexResultPassword == false){
-        passPosition.style.border = "2px red solid";
+        passPosition.style.border = "2px var(--error) solid";
         if(lengArr < 8){
             showError.innerHTML = "Password lenght needs to be between 8-20"
         }else{
@@ -22,7 +22,7 @@ export function passwordCheker(){
         return false
     }
     else{
-        passPosition.style.border = "2px green solid";
+        passPosition.style.border = "2px var(--correct) solid";
         return true
     }
 }

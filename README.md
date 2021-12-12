@@ -137,4 +137,59 @@ Heu de crear un *wireframe* i un prototip de la pàgina web de **TimeInn**, un p
 
 - https://drive.google.com/file/d/14YIwWDIvbprj0P4zEuWCC2LN2ywv6hws/view?usp=sharing
 
+<br /><br /><br /> 
 
+# **Forms**
+
+Es una aplicació del anterior projecte, se tracta de practicar validació de formularis, formularis accessibles i tests unitaris amb Mocha.
+
+# 1 Formularis
+
+|**PAGS**|[x] Afegiu un **Formulari de Login i un Formulari de Registre**|
+| :-: | - |
+|**STRUC**|[x] Els formularis no mostraran ni el Header ni el Footer|
+|**FORMS**|[x] El Formulari login i el formulari de Sign Up està en fitxers html separats.. Un exemple [aquí](https://www.pccomponentes.com/login)|
+
+# 2 Els Formularis
+## Login:
+
+|**FIELDS**|[x] Tendrà els camps necessaris.|
+| :-: | :- |
+|**LOGIN**|<p>[x] **Login incorrecte** (’usuari s’equivoca en l’email o el password) →  Sortirà un missatge d’error en el formulari (els errors tendran el color d’error de la Paleta de Colors)</p><p>[] **Login correcte** → redireccionam a *front page* i es mostra un missatge com “Hola, Maria”  (per exemple, si l’usuària és Maria)</p><p>[] El nom d’usuari es guarda a una *Cookie*. Així en refrescar la pàgina, continuarà sortint el missatge “Hola, Maria”</p>|
+
+## Sign up:
+
+|**FIELDS**|<p>[x] Camps mínims:</p><p>- **Email**</p><p>- **Name**</p><p>- **Password** i **Password2** (per confirmar el password introduït en el primer     camp). Les contrasenyes estaran ocultes amb asteriscs o similar</p>|
+| :-: | :- |
+|**RESP**|<p>[x] Els dos formularis seran responsive.</p><p>[x] En versió mòbil, els <label> aniran a sobre dels <input> per usabilitat</p>|
+|**ACCES**|[x] Follow the [*Accessible Forms*](https://docs.google.com/presentation/d/16GLdtr0k3y10OH14-SIq3V2HwiaNLRbr-46FgC1LP9M/edit#slide=id.g70a89d522b_1_1) tutorial to make the form accessible|
+
+
+|**NAME**|[x] El camp **Name** té un màxim de caracters que indicareu en el README|
+| :-: | - |
+|**EMAIL**|[x] El camp **Email** es valida en sortir del camp (en perdre el focus), comprovarem que  1) Compleix el patró de validació (fila següent) i que 2) no existeixi ja a la **taula d’usuaris** (Que és un **array** amb les dades usuaris registrats)|
+|**VALID**|<p>[] El patró de validació de l’Email és**:**</p><p>**                                                aaaaaaaaa@bbbbbbbb.ccc   </p><p>- **aaaaaaaaa**  en minúscules. La primera lletra pot ser majúscula</p><p>- **bbbbbbbb** té entre 5  i 10 lletres minúscules</p><p>- **ccc** només pot valer:   *com*, *net* o *gov*</p><p>- Només hi ha 1 arrova i 1 punt (i l’arrova abans que el punt)</p>|
+
+
+|**PASSWD**|<p>[] El camp **Password** es validarà en sortir del camp, comprovarem que 1) Compleix el patró de validacio (fila següent) i  2)  el valor és igual als 2 camps de Password</p><p>[] En els camps de Password: Sortirà un **ull**. En clicar i sostenir el clic sobre l’ull, es mostra la contrasenya</p><p>[x] Mostrau missatges a sota dels camps per als errors que puguin succeir.</p>|
+| :-: | - |
+|**VALID**|[x] La patró de validació del Password l’establireu vosaltres. Ha de ser una contrasenya segura (fixau-vos en el que es sol fer en les pàgines reals). Indicau al README el patró escollit.|
+|**EXPR**|[x] Validau els camps sempre que sigui possible amb **Expressions Regulars**|
+|**SUBMIT**|<p>[x] En acabar el registre,</p><p>[x] **Si tot és correcte** → 1) Mostra un missatge que s’ha realitzat el registre) i 2) Guarda dades en **taula d’usuaris**</p><p>[] Si alguna cosa no funciona → [posar el focus](https://www.w3schools.com/jsref/met_html_focus.asp) en **el primer camp amb errors**</p>|
+
+|**MODU**|[x] Crear funcions per validar:  email i Password i ubicau-les en un fitxer de **mòdul**|
+| :-: | :- |
+
+# 3 Ampliacions
+
+|**TESTS**|[] Creau tests per les funcions de validació amb Mocha.js. Creau mínim **3 *describe*** i un mínim de **2 *it* functions** per cada *describe*|
+| :-: | :- |
+
+
+# 4 Informació Regex
+
+1. **NAME** , el camp **Name** té un mínim de 4 caracters i un màxim de 20 caracters i pot contenir caràcter az, AZ, 0-9, inclòs _ (guió baix).
+
+2. **EMAIL** , el camp **Email** té un patró de validació:**</p><p>**                                                - aaaaaaaaa@bbbbbbbb.ccc   </p><p>- **aaaaaaaaa**  en minúscules. La primera lletra pot ser majúscula</p><p>- **bbbbbbbb** té entre 5  i 10 lletres minúscules</p><p>- **ccc** només pot valer:   *com*, *net* o *gov*</p><p>- Només hi ha 1 arrova i 1 punt (i l’arrova abans que el punt).</p>
+
+3. **PASSWD**, el camp **Passwd** té un mínim de 8 caracters i un màxim de 20 caracters, pot contenir una combinació de caràcter com az, AZ, 0-9, inclòs _ (guió baix) i caracteres espceials.

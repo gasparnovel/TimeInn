@@ -9,12 +9,12 @@ export function nameChecker(){
     let regexResultName = regexcheckname.test(nameValue);
     
     if(nameValue == ''){
-        namePosition.style.border = "2px red solid";
+        namePosition.style.border = "2px var(--error) solid";
         return false
 
     }
     else if(regexResultName == false){
-        namePosition.style.border = "2px red solid";
+        namePosition.style.border = "2px var(--error) solid";
         if(lengArr < 4){
             showError.innerHTML = "Name lenght needs to be between 4-20"
         }else{
@@ -23,7 +23,7 @@ export function nameChecker(){
         return false
     }
     else{
-        namePosition.style.border = "2px green solid";
+        namePosition.style.border = "2px var(--correct) solid";
         return true;
 
     }

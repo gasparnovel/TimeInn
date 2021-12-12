@@ -8,17 +8,17 @@ export function emailCheker(){
     let emPosition = document.getElementById('emailInput')
     let emValue = document.getElementById('emailInput').value
 
-    let emailRegex = "^([A-Za-z0-9_]{3,9})+@([a-zA-Z_])+.([/com/|/net/|/gov/]{3,3})$"
+    let emailRegex = "^([A-Za-z]{1})([a-z]{8})@([a-z]{5,10})\.(com|net|gov)$"
     let regexcheckem = new RegExp(emailRegex); 
     let regexResultEmail = regexcheckem.test(emValue);
     
     if(emValue == ''){
-        emPosition.style.border = "2px red solid";
+        emPosition.style.border = "2px var(--error) solid";
         return false
 
 
     }else if(regexResultEmail == false){
-        emPosition.style.border = "2px red solid";
+        emPosition.style.border = "2px var(--error) solid";
         showError.innerHTML = "Add a correct email, and try again"
         return false
 
@@ -26,11 +26,11 @@ export function emailCheker(){
     else{
         let target = registeredUsers.find(e=>e.Email == emValue)
         if(target){
-            emPosition.style.border = "2px red solid";
+            emPosition.style.border = "2px var(--error) solid";
             showError.innerHTML = "Email already in use";
         }
         else{
-            emPosition.style.border = "2px green solid";
+            emPosition.style.border = "2px var(--correct) solid";
             showError.innerHTML = "";
 
             
@@ -40,5 +40,3 @@ export function emailCheker(){
         return true;
     }
 }
-
-

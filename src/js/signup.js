@@ -19,7 +19,7 @@ document.getElementById('login').addEventListener('click',()=>{
         if(target){
             showError.innerHTML = "Email already in use";
 
-            emPosition.style.border = "2px red solid";
+            emPosition.style.border = "2px var(--error) solid";
             console.log("Email already in use")
         }
         else{

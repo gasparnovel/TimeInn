@@ -9,10 +9,7 @@
     <title>Sign Up</title>
 
     <!-- css -->
-
     <link rel="stylesheet" href="../css/signUp.css">
-    <link rel="stylesheet" href="../css/headerFooterTop.css">
-
     <!-- font awensome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
 
@@ -30,18 +27,18 @@
 
 <body>
     <main>
-        <header id="myHeader"></header>
         <div id="container">
             
             <!-- imagen -->
+            <a href='./index.html'><h1 class="logo">Evacten</h1></a>
             <img src="../resources/img/register.svg" class="loginImg" alt="">
             
             <!-- formulario -->
 
             <form class="formulario">
                 <h1 class="login">Create Account</h1>
-                <p style="text-align: center; color: red;" id="showError"></p>
-                <p style="text-align: center; color: green;" id="addedSucc"></p>
+                <p class="error" id="showError"></p>
+                <p class="correct" id="addedSucc"></p>
 
 
                 <div class="input-contenedor">
@@ -59,6 +56,10 @@
                     <i class="fas fa-key icon"></i>
                     <input type="password" id="passwordInput" placeholder="Contraseña">
                 </div>
+                <div class="input-contenedor">
+                    <i class="fas fa-key icon"></i>
+                    <input type="password" id="passwordInput passwordInput2" placeholder="Repite la Contraseña">
+                </div>
                 <input value="Login" id="login" class="button">
                 <p class="center">Al registrarte, aceptas nuestras Condiciones de uso y Política de privacidad.</p>
                 <p class="center">¿Ya tienes una cuenta? <a class="link" href="./signIn.html">Iniciar sesión </a></p>
@@ -66,10 +67,7 @@
             <!-- boton que nos lleva hacia arriba de la pagina -->
 
             <div id="toTop"></div>
-        </div>
-        
-        <footer id="myFooter"></footer>
-    
+        </div>    
     </main>
 </body>
 <!-- importacion del modulo js -->
