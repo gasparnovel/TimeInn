@@ -5,8 +5,6 @@ import { submitCheck } from "./submitCheck.js"
 import { nameChecker } from "./nameChecker.js";
 import { showpassword, showpasswordDos } from "./showPassword.js";
 
-let eyeUno;
-let eyeDos; 
 
 // cuando hacemos click en login activamos una arrow function
 document.getElementById('login').addEventListener('click',()=>{
@@ -17,9 +15,12 @@ document.getElementById('login').addEventListener('click',()=>{
         let addedSucc = document.getElementById("addedSucc")
 
         let emPosition = document.getElementById('emailInput')
-
         let emValue = document.getElementById('emailInput').value
-        let newUser = {name:"test",Email:emValue,password:"testt"};
+        let nameValue = document.getElementById('nameInput').value;
+        let passValue = document.getElementById('passwordInput').value
+
+
+        let newUser = {name:nameValue,Email:emValue,password:passValue};
 
         let target = registeredUsers.find(e=>e.Email == emValue)
         // si el email esta en uso 
@@ -31,6 +32,7 @@ document.getElementById('login').addEventListener('click',()=>{
         else{
             registeredUsers.push(newUser);
             addedSucc.innerHTML = "Account Created"
+                localStorage.setItem('newAccount', JSON.stringify(newUser))
         }
     }else{
         console.log("not true")

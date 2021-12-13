@@ -3,7 +3,9 @@ import {showpasswordTres} from "./showPassword.js";
 
 let contadorError = 0;
 console.log(registeredUsers)
-
+let newObject = window.localStorage.getItem("newAccount");
+let newAccountParser = JSON.parse(newObject);
+registeredUsers.push(newAccountParser);
 // cuando hacemos click en eye activamos una function
 document.getElementById('eye').addEventListener('click',showpasswordTres);
 
