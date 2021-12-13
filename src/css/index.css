@@ -25,7 +25,12 @@ body {
       "calendar calendar event event";
   }
 
+#cookieMessage{
+  grid-area: event;
+  color: white;
+  text-align: center;
 
+}
 
   .title {
     grid-area: title;
@@ -449,7 +454,11 @@ body {
       "calendar calendar calendar calendar"
       "event event event event";
   }
-
+  #cookieMessage{
+    grid-area: title;
+    color: white;
+    text-align: center;
+  }
 
   .title {
     grid-area: title;

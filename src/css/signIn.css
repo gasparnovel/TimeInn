@@ -1,4 +1,12 @@
-
+/* Especificamos las variables */
+:root {
+    --primary: #7b2cbf;    
+    --primaryVariant: #3D1660;
+    --secondary: #2cb2bf;
+    --secondaryVariant: #279CA7;
+    --error: #B00020;
+    --correct: rgb(3, 179, 3);
+}
 
 * {
     margin: 0;
@@ -21,8 +29,15 @@ body {
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-areas:
             "nav nav nav nav "
+            ". logo logo ."
             "clip clip form form"
             "fot fot fot fot";
+    }
+
+    .logo {
+        font-family: 'Caesar Dressing', cursive;
+        font-size: 50px;
+        margin-top: 30px;
     }
 
 
@@ -110,8 +125,30 @@ body {
     }
 
     a {
-        text-decoration: none;
+        grid-area: logo;
         color: white;
+        justify-content: center;
+        align-self: center;
+        display: flex;
+        justify-self: center;
+    }
+
+    .error {
+        text-align: center; 
+        color: var(--error);
+    }
+
+    .correct {
+        text-align: center; 
+        color: var(--correct);
+        
+    }
+    .eye {
+        text-decoration: none;
+        background-color: white;
+        border: none;
+        text-align: center;
+        margin-left: 2px;
     }
 }
 /* media que hace que si es menor de 600px se aplique el siguiente css*/
@@ -121,8 +158,15 @@ body {
         display: grid;
         grid-template-columns: 1fr ;
         grid-template-areas:
+            "logo"
             "clip"
             "form"
+    }
+
+    .logo {
+        font-size: 35px;
+        font-family: 'Caesar Dressing', cursive;
+        margin-top: 23px;
     }
 
     .loginImg {
@@ -131,7 +175,6 @@ body {
         align-self: center;
         width: 80vw;
         justify-self: center;
-        margin-top: 60px;
     }
 
     .formulario {
@@ -147,8 +190,8 @@ body {
         justify-self: center;
         margin-left: 10vw;
         margin-right: 10vw;
-        margin-bottom: 60px;
-        margin-top: 40px;
+        margin-bottom: 40px;
+        margin-top: 20px;
     }
 
     .login {
@@ -225,7 +268,28 @@ body {
     }
 
     a {
-        text-decoration: none;
+        grid-area: logo;
         color: white;
+        justify-content: center;
+        align-self: center;
+        display: flex;
+        justify-self: center;
+    }
+    .error {
+        text-align: center; 
+        color: var(--error);
+    }
+
+    .correct {
+        text-align: center; 
+        color: var(--correct);
+        
+    }
+    .eye {
+        text-decoration: none;
+        background-color: white;
+        border: none;
+        text-align: center;
+        margin-left: 15px;
     }
 }
