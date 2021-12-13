@@ -20,3 +20,15 @@ export function showpasswordDos(){
         id2.type = "password";
     }
 }
+
+export function showpasswordTres(){
+    var id3 = document.getElementById("passwordValue");
+    if(id3.type == "password"){
+        id3.type = "text";
+    }else if (id3.type == "text") {
+        id3.type = "password";
+    }else {
+        id3.type = "password";
+    }
+}
+

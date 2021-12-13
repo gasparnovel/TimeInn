@@ -27,9 +27,12 @@ body {
 
 #cookieMessage{
   grid-area: event;
-  color: white;
-  text-align: center;
-
+  color: yellow;
+  text-align: right;
+  margin-top: 5px;
+  margin-right: 86px; 
+  font-size: 20px;
+  text-shadow: -2px -1px 1px var(--secondaryVariant), 4px 2px 1px var(--primaryVariant), -2px 2px 1px var(--primaryVariant), 2px -2px 1px var(--primaryVariant);
 }
 
   .title {
@@ -456,8 +459,12 @@ body {
   }
   #cookieMessage{
     grid-area: title;
-    color: white;
-    text-align: center;
+    color: yellow;
+    text-align: right;
+    margin-top: 5px;
+    margin-right: 50px; 
+    font-size: 15px;
+    text-shadow: -2px -1px 1px var(--secondaryVariant), 4px 2px 1px var(--primaryVariant), -2px 2px 1px var(--primaryVariant), 2px -2px 1px var(--primaryVariant);
   }
 
   .title {

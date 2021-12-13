@@ -69,7 +69,7 @@ body {
     input[type="text"],
     input[type="password"] {
         font-size: 20px;
-        width: 82%;
+        width: 72%;        
         padding: 10px;
         border: none;
         border-radius: 8px;
@@ -148,7 +148,6 @@ body {
         background-color: white;
         border: none;
         text-align: center;
-        margin-left: 2px;
     }
 }
 /* media que hace que si es menor de 600px se aplique el siguiente css*/
