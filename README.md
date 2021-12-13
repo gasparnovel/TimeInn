@@ -164,7 +164,7 @@ Es una aplicació del anterior projecte, se tracta de practicar validació de fo
 
 |**FIELDS**|[x] Tendrà els camps necessaris.|
 | :-: | :- |
-|**LOGIN**|<p>[x] **Login incorrecte** (’usuari s’equivoca en l’email o el password) →  Sortirà un missatge d’error en el formulari (els errors tendran el color d’error de la Paleta de Colors)</p><p>[] **Login correcte** → redireccionam a *front page* i es mostra un missatge com “Hola, Maria”  (per exemple, si l’usuària és Maria)</p><p>[] El nom d’usuari es guarda a una *Cookie*. Així en refrescar la pàgina, continuarà sortint el missatge “Hola, Maria”</p>|
+|**LOGIN**|<p>[x] **Login incorrecte** (’usuari s’equivoca en l’email o el password) →  Sortirà un missatge d’error en el formulari (els errors tendran el color d’error de la Paleta de Colors)</p><p>[x] **Login correcte** → redireccionam a *front page* i es mostra un missatge com “Hola, Maria”  (per exemple, si l’usuària és Maria)</p><p>[x] El nom d’usuari es guarda a una *Cookie*. Així en refrescar la pàgina, continuarà sortint el missatge “Hola, Maria”</p>|
 
 ## Sign up:
 
@@ -180,7 +180,7 @@ Es una aplicació del anterior projecte, se tracta de practicar validació de fo
 |**VALID**|<p>[x] El patró de validació de l’Email és**:**</p><p>**                                                aaaaaaaaa@bbbbbbbb.ccc   </p><p>- **aaaaaaaaa**  en minúscules. La primera lletra pot ser majúscula</p><p>- **bbbbbbbb** té entre 5  i 10 lletres minúscules</p><p>- **ccc** només pot valer:   *com*, *net* o *gov*</p><p>- Només hi ha 1 arrova i 1 punt (i l’arrova abans que el punt)</p>|
 
 
-|**PASSWD**|<p>[x] El camp **Password** es validarà en sortir del camp, comprovarem que 1) Compleix el patró de validacio (fila següent) i  2)  el valor és igual als 2 camps de Password</p><p>[] En els camps de Password: Sortirà un **ull**. En clicar i sostenir el clic sobre l’ull, es mostra la contrasenya</p><p>[x] Mostrau missatges a sota dels camps per als errors que puguin succeir.</p>|
+|**PASSWD**|<p>[x] El camp **Password** es validarà en sortir del camp, comprovarem que 1) Compleix el patró de validacio (fila següent) i  2)  el valor és igual als 2 camps de Password</p><p>[x] En els camps de Password: Sortirà un **ull**. En clicar i sostenir el clic sobre l’ull, es mostra la contrasenya</p><p>[x] Mostrau missatges a sota dels camps per als errors que puguin succeir.</p>|
 | :-: | - |
 |**VALID**|[x] La patró de validació del Password l’establireu vosaltres. Ha de ser una contrasenya segura (fixau-vos en el que es sol fer en les pàgines reals). Indicau al README el patró escollit.|
 |**EXPR**|[x] Validau els camps sempre que sigui possible amb **Expressions Regulars**|
