@@ -203,4 +203,7 @@ Es una aplicació del anterior projecte, se tracta de practicar validació de fo
 
 3. **PASSWD**, el camp **Passwd** té un mínim de 8 caracters i un màxim de 20 caracters, pot contenir una combinació de caràcter com az, AZ, 0-9, inclòs _ (guió baix) i caracteres especials.
 
-
+- Ejemplo: 
+    1. name: Jose 
+    2. email: Jose53@gmail.com 
+    3. password: 123456789Josee 
