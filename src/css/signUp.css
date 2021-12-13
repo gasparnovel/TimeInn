@@ -1,3 +1,13 @@
+/* Especificamos las variables */
+:root {
+    --primary: #7b2cbf;    
+    --primaryVariant: #3D1660;
+    --secondary: #2cb2bf;
+    --secondaryVariant: #279CA7;
+    --error: #B00020;
+    --correct: rgb(3, 179, 3);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -20,8 +30,15 @@ body {
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-areas:
             "nav nav nav nav "
+            ". logo logo . "
             "clip clip form form"
             "fot fot fot fot";
+    }
+
+    .logo {
+        font-family: 'Caesar Dressing', cursive;
+        font-size: 50px;
+        margin-top: 15px;
     }
 
     /* grid*/
@@ -31,7 +48,7 @@ body {
         border-radius: 24px;
         align-self: center;
         justify-self: center;
-
+        margin-left: 4vw;
     }
 
     /* grid*/
@@ -89,6 +106,7 @@ body {
         border-bottom-left-radius: 100px;
         border-top-right-radius: 100px;
         border-bottom-right-radius: 100px;
+        text-align: center;
     }
 
     .button:hover {
@@ -112,8 +130,29 @@ body {
     }
 
     a {
-        text-decoration: none;
+        grid-area: logo;
         color: white;
+        justify-content: center;
+        align-self: center;
+        display: flex;
+        justify-self: center;
+    }
+    .error {
+        text-align: center; 
+        color: var(--error);
+    }
+
+    .correct {
+        text-align: center; 
+        color: var(--correct);
+        
+    }
+    .eye {
+        text-decoration: none;
+        background-color: white;
+        border: none;
+        text-align: center;
+        margin-left: 2px;
     }
 }
 
@@ -123,12 +162,19 @@ body {
     /* grid*/
 
     #container {
-        height: 100vh;
+        height: 100vh;        
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr ;
         grid-template-areas:
+            "logo"
             "clip"
             "form"
+    }
+
+    .logo {
+        font-size: 35px;
+        font-family: 'Caesar Dressing', cursive;
+        margin-top: 40px;
     }
 
     /* grid*/
@@ -139,7 +185,7 @@ body {
         align-self: center;
         width: 80vw;
         justify-self: center;
-        margin-top: 60px;
+        margin-top: 40px;
     }
 
     /* grid*/
@@ -216,6 +262,7 @@ body {
         border-bottom-left-radius: 100px;
         border-top-right-radius: 100px;
         border-bottom-right-radius: 100px;
+        text-align: center;
     }
 
     .button:hover {
@@ -239,7 +286,29 @@ body {
     }
 
     a {
-        text-decoration: none;
+        grid-area: logo;
         color: white;
+        justify-content: center;
+        align-self: center;
+        display: flex;
+        justify-self: center;
+    }
+    .error {
+        text-align: center; 
+        color: var(--error);
+    }
+
+    .correct {
+        text-align: center; 
+        color: var(--correct);
+        
+    }
+
+    .eye {
+        text-decoration: none;
+        background-color: white;
+        border: none;
+        text-align: center;
+        margin-left: 15px;
     }
 }
