@@ -143,6 +143,15 @@ Heu de crear un *wireframe* i un prototip de la pàgina web de **TimeInn**, un p
 
 Es una aplicació del anterior projecte, se tracta de practicar validació de formularis, formularis accessibles i tests unitaris amb Mocha.
 
+## Vista SingIn (Phone):
+
+![Vista_telefono_singIn](/src/docs/singIn_phone.PNG )
+
+## Vista SingUp (Desktop):
+
+
+![Vista_desktop_singUp](/src/docs/singUp.PNG)
+
 # 1 Formularis
 
 |**PAGS**|[x] Afegiu un **Formulari de Login i un Formulari de Registre**|
@@ -168,14 +177,14 @@ Es una aplicació del anterior projecte, se tracta de practicar validació de fo
 |**NAME**|[x] El camp **Name** té un màxim de caracters que indicareu en el README|
 | :-: | - |
 |**EMAIL**|[x] El camp **Email** es valida en sortir del camp (en perdre el focus), comprovarem que  1) Compleix el patró de validació (fila següent) i que 2) no existeixi ja a la **taula d’usuaris** (Que és un **array** amb les dades usuaris registrats)|
-|**VALID**|<p>[] El patró de validació de l’Email és**:**</p><p>**                                                aaaaaaaaa@bbbbbbbb.ccc   </p><p>- **aaaaaaaaa**  en minúscules. La primera lletra pot ser majúscula</p><p>- **bbbbbbbb** té entre 5  i 10 lletres minúscules</p><p>- **ccc** només pot valer:   *com*, *net* o *gov*</p><p>- Només hi ha 1 arrova i 1 punt (i l’arrova abans que el punt)</p>|
+|**VALID**|<p>[x] El patró de validació de l’Email és**:**</p><p>**                                                aaaaaaaaa@bbbbbbbb.ccc   </p><p>- **aaaaaaaaa**  en minúscules. La primera lletra pot ser majúscula</p><p>- **bbbbbbbb** té entre 5  i 10 lletres minúscules</p><p>- **ccc** només pot valer:   *com*, *net* o *gov*</p><p>- Només hi ha 1 arrova i 1 punt (i l’arrova abans que el punt)</p>|
 
 
-|**PASSWD**|<p>[] El camp **Password** es validarà en sortir del camp, comprovarem que 1) Compleix el patró de validacio (fila següent) i  2)  el valor és igual als 2 camps de Password</p><p>[] En els camps de Password: Sortirà un **ull**. En clicar i sostenir el clic sobre l’ull, es mostra la contrasenya</p><p>[x] Mostrau missatges a sota dels camps per als errors que puguin succeir.</p>|
+|**PASSWD**|<p>[x] El camp **Password** es validarà en sortir del camp, comprovarem que 1) Compleix el patró de validacio (fila següent) i  2)  el valor és igual als 2 camps de Password</p><p>[] En els camps de Password: Sortirà un **ull**. En clicar i sostenir el clic sobre l’ull, es mostra la contrasenya</p><p>[x] Mostrau missatges a sota dels camps per als errors que puguin succeir.</p>|
 | :-: | - |
 |**VALID**|[x] La patró de validació del Password l’establireu vosaltres. Ha de ser una contrasenya segura (fixau-vos en el que es sol fer en les pàgines reals). Indicau al README el patró escollit.|
 |**EXPR**|[x] Validau els camps sempre que sigui possible amb **Expressions Regulars**|
-|**SUBMIT**|<p>[x] En acabar el registre,</p><p>[x] **Si tot és correcte** → 1) Mostra un missatge que s’ha realitzat el registre) i 2) Guarda dades en **taula d’usuaris**</p><p>[] Si alguna cosa no funciona → [posar el focus](https://www.w3schools.com/jsref/met_html_focus.asp) en **el primer camp amb errors**</p>|
+|**SUBMIT**|<p>[x] En acabar el registre,</p><p>[x] **Si tot és correcte** → 1) Mostra un missatge que s’ha realitzat el registre) i 2) Guarda dades en **taula d’usuaris**</p><p>[x] Si alguna cosa no funciona → [posar el focus](https://www.w3schools.com/jsref/met_html_focus.asp) en **el primer camp amb errors**</p>|
 
 |**MODU**|[x] Crear funcions per validar:  email i Password i ubicau-les en un fitxer de **mòdul**|
 | :-: | :- |
@@ -192,4 +201,6 @@ Es una aplicació del anterior projecte, se tracta de practicar validació de fo
 
 2. **EMAIL** , el camp **Email** té un patró de validació:**</p><p>**                                                - aaaaaaaaa@bbbbbbbb.ccc   </p><p>- **aaaaaaaaa**  en minúscules. La primera lletra pot ser majúscula</p><p>- **bbbbbbbb** té entre 5  i 10 lletres minúscules</p><p>- **ccc** només pot valer:   *com*, *net* o *gov*</p><p>- Només hi ha 1 arrova i 1 punt (i l’arrova abans que el punt).</p>
 
-3. **PASSWD**, el camp **Passwd** té un mínim de 8 caracters i un màxim de 20 caracters, pot contenir una combinació de caràcter com az, AZ, 0-9, inclòs _ (guió baix) i caracteres espceials.
+3. **PASSWD**, el camp **Passwd** té un mínim de 8 caracters i un màxim de 20 caracters, pot contenir una combinació de caràcter com az, AZ, 0-9, inclòs _ (guió baix) i caracteres especials.
+
+

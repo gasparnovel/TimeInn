@@ -29,7 +29,7 @@ body {
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-areas:
             "nav nav nav nav "
-            "logo logo logo logo "
+            ". logo logo ."
             "clip clip form form"
             "fot fot fot fot";
     }
@@ -130,6 +130,7 @@ body {
         justify-content: center;
         align-self: center;
         display: flex;
+        justify-self: center;
     }
 
     .error {
@@ -141,6 +142,13 @@ body {
         text-align: center; 
         color: var(--correct);
         
+    }
+    .eye {
+        text-decoration: none;
+        background-color: white;
+        border: none;
+        text-align: center;
+        margin-left: 2px;
     }
 }
 /* media que hace que si es menor de 600px se aplique el siguiente css*/
@@ -156,15 +164,9 @@ body {
     }
 
     .logo {
-        grid-area: logo;
         font-size: 35px;
-        color: white;
         font-family: 'Caesar Dressing', cursive;
-        font-size: 2rem;
-        justify-content: center;
-        align-content: center;
-        display: flex;
-        margin-top: 50px;
+        margin-top: 23px;
     }
 
     .loginImg {
@@ -266,7 +268,12 @@ body {
     }
 
     a {
+        grid-area: logo;
         color: white;
+        justify-content: center;
+        align-self: center;
+        display: flex;
+        justify-self: center;
     }
     .error {
         text-align: center; 
@@ -277,5 +284,12 @@ body {
         text-align: center; 
         color: var(--correct);
         
+    }
+    .eye {
+        text-decoration: none;
+        background-color: white;
+        border: none;
+        text-align: center;
+        margin-left: 15px;
     }
 }
