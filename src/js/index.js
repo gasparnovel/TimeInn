@@ -3,7 +3,7 @@ import {
     header,
     footer
 } from "./load_header_footer.js";
-console.log(header, footer);
+// console.log(header, footer);
 
 import {
     toTop,
@@ -12,7 +12,7 @@ import {
     scrollFunction,
     topFunction,
 } from "./toTop.js";
-console.log(toTop, mybutton, widow(), scrollFunction(), topFunction());
+// console.log(toTop, mybutton, widow(), scrollFunction(), topFunction());
 
 
 import {
@@ -24,7 +24,7 @@ import {
     sortnews
 } from "./newsCard.js";
 
-import { createCookie } from "./checkCookie.js";
+import { createCookie,getCookie } from "./checkCookie.js";
 
 
 //Al entrar a la página lo que se hara es generar las cards y las news, de manera ordenada
@@ -36,6 +36,15 @@ document.addEventListener('DOMContentLoaded', () => {
 //Este timeout, servira para que el layout de la cookie salga luego de 3s
     setTimeout(createCookie,3000);
 
+    let checkCooki = document.cookie.indexOf('Name=');
+    if(checkCooki != -1){
+        console.log("exists")
+        let valueCookie = getCookie("Name")
+        document.getElementById("cookieMessage").innerHTML = `Hola ${valueCookie}`
+        
+    }else{
+        console.log("doesn't exist")
+    }
 })
 
 //Esta funcion permitira eliminar un evento 
