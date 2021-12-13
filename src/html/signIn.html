@@ -19,6 +19,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Genos:ital@1&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="#">
 </head>
 
 <body>
@@ -33,18 +34,21 @@
             <!-- formulario -->
             <form class="formulario">
                 <h1 class="login">Login</h1>
+                <p style="color: red; text-align: center;" id="showError"></p>
+                <p style="color: green; text-align: center;" id="addedSucc"></p>
+
                 <div class="input-contenedor">
                     <!-- iconos de fontawensome -->
 
                     <i class="fas fa-envelope icon"></i>
-                    <input type="text" placeholder="Correo Electronico">
+                    <input type="text" id="emailValue" placeholder="Correo Electronico">
                 </div>
                 <div class="input-contenedor">
                     <!-- iconos de fontawensome -->
                     <i class="fas fa-key icon"></i>
-                    <input type="password" placeholder="Contraseña">
+                    <input type="password" id="passwordValue" placeholder="Contraseña">
                 </div>
-                <input type="button" value="Login" class="button">
+                <input type="button"  value="Login" id="loginBtn" class="button">
                 <p class="center">Si ya tienes cuenta, has aceptado nuestras Condiciones de uso y Política de
                     privacidad.</p>
                 <p class="center">¿No tienes una cuenta? <a class="link" href="./signUp.html">Registrate </a></p>
@@ -56,6 +60,6 @@
     </main>
 </body>
 <!-- importacion del modulo js -->
-<script type="module" src="../js/index.js"></script>
+<script type="module" src="../js/signin.js"></script>
 
 </html>
